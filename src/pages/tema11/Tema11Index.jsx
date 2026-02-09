@@ -38,7 +38,7 @@ export default function RutaWordPressDesdeCero() {
             <li><a href="#gratis-pro">Comparativa: versión gratis vs Pro</a></li>
             <li><a href="#starter-templates">Starter Templates y plantillas recientes</a></li>
             <li><a href="#creadores">Creadores de páginas: Gutenberg vs Elementor</a></li>
-            <li><a href="#brizy">Ajuste clave: activar creador de plantillas en Brizy</a></li>
+            
             <li><a href="#paginas">Crear páginas y asignar portada</a></li>
             <li><a href="#menu">Añadir páginas al menú y reordenar</a></li>
             <li><a href="#actividades">Actividades y checklist de entrega</a></li>
@@ -147,48 +147,83 @@ export default function RutaWordPressDesdeCero() {
           <h2>4) Tema vs plantilla: lo que el alumnado debe entender</h2>
 
           <details className="dd" open>
-            <summary>Concepto clave: el tema NO crea tu web</summary>
-            <div className="dd-body">
-              <p>
-                Esta frase hay que memorizarla:
-                <strong> el tema controla el diseño y la estructura, pero no “te crea” la web.</strong>
-              </p>
+  <summary>Concepto clave: el tema NO crea tu web</summary>
+  <div className="dd-body">
+    <p>
+      Esta frase hay que memorizarla:
+      <strong> el tema controla el diseño y la estructura base, pero no “te crea” la web.</strong>
+    </p>
 
-              <div className="table-wrap" tabIndex={0}>
-                <table className="table table-zebra">
-                  <thead>
-                    <tr>
-                      <th>Elemento</th>
-                      <th>Qué hace</th>
-                      <th>Ejemplo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">Tema</th>
-                      <td>Estilos, layout, cabecera, pie, estructura base</td>
-                      <td>Astra / GeneratePress / Kadence</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Plantilla (template)</th>
-                      <td>Diseño prehecho de una página o sección</td>
-                      <td>Landing “Agencia digital” ya montada</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Creador de páginas</th>
-                      <td>Herramienta para construir el contenido visual</td>
-                      <td>Gutenberg / Elementor / Brizy</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+    <p>
+      En WordPress, una web se construye siempre combinando <strong>varias capas</strong>.
+      Si no entiendes estas capas, es muy fácil perderse o depender de plantillas sin saber
+      realmente qué estás haciendo.
+    </p>
 
-              <div className="callout tip">
-                <strong>En el curso:</strong> siempre habrá <strong>un tema</strong> + <strong>un creador</strong>.
-                Las plantillas aceleran, pero tú decides y editas.
-              </div>
-            </div>
-          </details>
+    <div className="table-wrap" tabIndex={0}>
+      <table className="table table-zebra">
+        <thead>
+          <tr>
+            <th>Elemento</th>
+            <th>Qué es realmente</th>
+            <th>Qué controla</th>
+            <th>Ejemplos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Tema</th>
+            <td>La base visual y estructural del sitio</td>
+            <td>Colores, tipografías, layout, cabecera, pie, responsive</td>
+            <td>Astra · GeneratePress · Kadence</td>
+          </tr>
+          <tr>
+            <th scope="row">Plantilla (template)</th>
+            <td>Diseño prehecho reutilizable</td>
+            <td>Estructura inicial de una página o sección</td>
+            <td>Landing “Agencia”, Home “Portfolio”</td>
+          </tr>
+          <tr>
+            <th scope="row">Creador de páginas</th>
+            <td>Herramienta para construir el contenido</td>
+            <td>Bloques, columnas, textos, imágenes, botones</td>
+            <td>Gutenberg · Elementor · Bricks</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div className="callout warning">
+      <strong>Error muy común:</strong> pensar que “instalar un tema” significa que la web ya está hecha.
+      <br />
+      El tema solo pone las reglas del juego. <strong>La web la construyes tú.</strong>
+    </div>
+
+    <h4>🧠 Cómo se construye una web WordPress (modelo mental correcto)</h4>
+    <ol>
+      <li>Instalas un <strong>tema</strong> (define el aspecto general).</li>
+      <li>Usas un <strong>creador de páginas</strong> para construir el contenido.</li>
+      <li>Opcionalmente partes de una <strong>plantilla</strong> para ahorrar tiempo.</li>
+      <li>Personalizas con <strong>bloques, ajustes y CSS</strong>.</li>
+    </ol>
+
+    <div className="callout tip">
+      <strong>En este curso:</strong>
+      <ul>
+        <li>Trabajaremos siempre con <strong>un tema ligero</strong> + <strong>Gutenberg</strong>.</li>
+        <li>Las plantillas sirven para acelerar, <strong>no para sustituir el aprendizaje</strong>.</li>
+        <li>Aprenderás a modificar y entender lo que usas, no solo a “arrastrar bloques”.</li>
+      </ul>
+    </div>
+
+    <div className="callout info">
+      <strong>Nota importante:</strong> existen sistemas donde el tema y el constructor son la misma cosa
+      (como Bricks). Los conocerás como referencia profesional, pero aquí aprenderás el modelo estándar
+      que funciona en cualquier WordPress.
+    </div>
+  </div>
+</details>
+
         </section>
 
         {/* 5) FUENTES */}
@@ -238,7 +273,7 @@ export default function RutaWordPressDesdeCero() {
           <h2>6) Comparativa: versión gratis vs Pro</h2>
 
           <details className="dd">
-            <summary>Cómo explicarlo al alumnado sin humo</summary>
+            <summary>¿Qué suele aportar una versión pro?</summary>
             <div className="dd-body">
               <p>
                 La versión gratis suele permitir construir un sitio completo.
@@ -588,43 +623,90 @@ export default function RutaWordPressDesdeCero() {
     </p>
 
     <div className="table-wrap" tabIndex={0}>
-      <table className="table table-zebra">
-        <thead>
-          <tr>
-            <th>Situación</th>
-            <th>Recomendación</th>
-            <th>Por qué</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Aprender WordPress desde cero</th>
-            <td><strong>Gutenberg</strong></td>
-            <td>Base nativa, menos dependencia, aprendes estructura y bloques.</td>
-          </tr>
-          <tr>
-            <th scope="row">Landing sencilla y rápida</th>
-            <td>Gutenberg (o Elementor si urge)</td>
-            <td>Con Gutenberg queda limpio; con Elementor vas más rápido si ya lo dominas.</td>
-          </tr>
-          <tr>
-            <th scope="row">Diseños muy “marketing” (mucho layout, efectos)</th>
-            <td><strong>Elementor</strong></td>
-            <td>Más herramientas visuales y widgets listos.</td>
-          </tr>
-          <tr>
-            <th scope="row">Sitios grandes con muchas páginas estándar</th>
-            <td><strong>Depende</strong></td>
-            <td>Gutenberg puede ser más estable; Elementor acelera si hay sistema de plantillas bien montado.</td>
-          </tr>
-          <tr>
-            <th scope="row">Máxima ligereza / mantenimiento simple</th>
-            <td><strong>Gutenberg</strong></td>
-            <td>Menos capas, menos dependencia, más “WordPress puro”.</td>
-          </tr>
-        </tbody>
-      </table>
+     <div className="table-wrap" tabIndex={0}>
+  <table className="table table-zebra">
+    <thead>
+      <tr>
+        <th>Creador</th>
+        <th>Qué es</th>
+        <th>Ventajas</th>
+        <th>Cuándo lo uso en clase</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Gutenberg</th>
+        <td>Editor nativo de WordPress (bloques)</td>
+        <td>Ligero, estándar, enseña estructura real</td>
+        <td>Base del curso y todos los proyectos</td>
+      </tr>
+      <tr>
+        <th scope="row">Spectra</th>
+        <td>Bloques extra para Gutenberg (plugin)</td>
+        <td>Más diseño sin salir de Gutenberg</td>
+        <td>Cuando usamos Astra y queremos más recursos visuales</td>
+      </tr>
+      <tr>
+        <th scope="row">Elementor</th>
+        <td>Constructor visual independiente</td>
+        <td>Muy visual, rápido para layouts complejos</td>
+        <td>Cuando el proyecto o el cliente lo exige</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
     </div>
+    <details className="dd">
+  <summary>¿Qué papel juega Spectra si usamos Astra?</summary>
+  <div className="dd-body">
+    <p>
+      <strong>Spectra no es un creador distinto</strong>. Es un conjunto de bloques adicionales
+      que amplían Gutenberg cuando trabajamos con temas como Astra.
+    </p>
+
+    <ul>
+      <li>
+        <strong>Seguimos usando Gutenberg:</strong> mismos conceptos, misma estructura.
+      </li>
+      <li>
+        <strong>Más bloques visuales:</strong> grids, iconos, cards, sliders, llamadas a la acción.
+      </li>
+      <li>
+        <strong>Aprendizaje progresivo:</strong> primero bloques nativos, luego Spectra.
+      </li>
+    </ul>
+
+    <div className="callout tip">
+      Spectra es ideal para aprender diseño sin abandonar el editor estándar de WordPress.
+    </div>
+  </div>
+</details>
+<details className="dd">
+  <summary>Otros constructores que existen (para que te suenen)</summary>
+  <div className="dd-body">
+    <p>
+      En el ecosistema WordPress existen otros constructores que puedes encontrar
+      en proyectos reales, aunque no los usemos en el curso.
+    </p>
+
+    <ul>
+      <li>
+        <strong>Divi:</strong> tema + constructor todo en uno. Muy usado durante años,
+        aún presente en muchos proyectos.
+      </li>
+      <li>
+        <strong>Bricks:</strong> tema con constructor integrado, orientado a perfiles más técnicos
+        y agencias. HTML y CSS muy limpios.
+      </li>
+    </ul>
+
+    <div className="callout info">
+      No necesitas dominarlos todos. Lo importante es <strong>reconocerlos</strong>
+      cuando te encuentres un proyecto hecho con ellos.
+    </div>
+  </div>
+</details>
+
 
     <div className="callout tip">
       <strong>Conclusión del curso:</strong> empezamos con Gutenberg porque es la base y te hace entender
@@ -644,31 +726,105 @@ export default function RutaWordPressDesdeCero() {
           </details>
         </section>
 
-        {/* 9) BRIZY */}
-        <section id="brizy" className="doc-section">
-          <h2>9) Ajuste importante: activar el creador de elementos/plantillas en Brizy</h2>
+       {/* 9) ELEMENTOR */}
+<section id="elementor" className="doc-section">
+  <h2>9) Elementor: uno de los constructores más usados en WordPress</h2>
 
-          <details className="dd">
-            <summary>Viene desactivado: por eso el alumnado “no lo encuentra”</summary>
-            <div className="dd-body">
-              <p>
-                En algunos constructores (como Brizy) existe un “constructor de plantillas”
-                (headers, footers, etc.) que puede venir desactivado.
-              </p>
+  <details className="dd" open>
+    <summary>Por qué debes conocer Elementor (aunque no lo usemos ahora)</summary>
+    <div className="dd-body">
+      <p>
+        <strong>Elementor</strong> es uno de los creadores de páginas más utilizados en el ecosistema
+        WordPress. Aunque en este curso trabajamos principalmente con <strong>Gutenberg</strong>,
+        es muy probable que te encuentres proyectos hechos con Elementor en prácticas, trabajos reales
+        o clientes.
+      </p>
 
-              <ol>
-                <li>Entra en los ajustes del plugin (Brizy).</li>
-                <li>Busca una opción similar a <strong>“Template Builder / Theme Builder”</strong>.</li>
-                <li>Actívala si el proyecto requiere crear cabecera/pie desde el constructor.</li>
-              </ol>
+      <p>
+        Por eso es importante <strong>entender qué es, qué aporta y cuándo se suele usar</strong>,
+        aunque no sea nuestra herramienta principal de aprendizaje.
+      </p>
 
-              <div className="callout warn">
-                <strong>Ojo:</strong> si Astra ya controla la cabecera, no necesitamos duplicar
-                esa responsabilidad en Brizy. Elegimos “un jefe” para cada parte.
-              </div>
-            </div>
-          </details>
-        </section>
+      <div className="table-wrap" tabIndex={0}>
+        <table className="table table-zebra">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Elementor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Tipo</th>
+              <td>Constructor visual independiente (plugin)</td>
+            </tr>
+            <tr>
+              <th scope="row">Forma de trabajar</th>
+              <td>Drag & drop, edición visual en tiempo real</td>
+            </tr>
+            <tr>
+              <th scope="row">Uso habitual</th>
+              <td>Landings, webs de marketing, proyectos con mucho diseño</td>
+            </tr>
+            <tr>
+              <th scope="row">Relación con el tema</th>
+              <td>Funciona sobre cualquier tema (Astra, Hello, etc.)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className="callout info">
+        <strong>Idea clave:</strong> Elementor no sustituye a WordPress ni al tema.
+        Es una herramienta para construir el contenido visual de las páginas.
+      </div>
+    </div>
+  </details>
+
+  <details className="dd">
+    <summary>Cuándo tiene sentido usar Elementor</summary>
+    <div className="dd-body">
+      <ul>
+        <li>
+          Cuando el proyecto exige <strong>diseños muy visuales o de marketing</strong>.
+        </li>
+        <li>
+          Cuando el cliente ya tiene la web montada con Elementor.
+        </li>
+        <li>
+          Cuando se necesita montar una landing compleja en muy poco tiempo.
+        </li>
+        <li>
+          Cuando se trabaja con un equipo que ya domina Elementor.
+        </li>
+      </ul>
+
+      <div className="callout warn">
+        <strong>Advertencia docente:</strong> Elementor facilita mucho el diseño,
+        pero si no se entiende antes la estructura (bloques, jerarquía, layout),
+        puede llevar a “arrastrar sin comprender”.
+      </div>
+    </div>
+  </details>
+
+  <details className="dd">
+    <summary>Relación con lo que estamos aprendiendo en el curso</summary>
+    <div className="dd-body">
+      <p>
+        Todo lo que aprendes con <strong>Gutenberg</strong> (estructura, secciones,
+        columnas, jerarquía de contenidos, responsive) es conocimiento que se aplica
+        también en Elementor.
+      </p>
+
+      <div className="callout tip">
+        <strong>Regla del curso:</strong><br />
+        Primero aprender a <strong>construir</strong> con Gutenberg.<br />
+        Después, si el proyecto lo requiere, aprender a <strong>producir más rápido</strong>
+        con Elementor.
+      </div>
+    </div>
+  </details>
+</section>
 
         {/* 10) PÁGINAS + PORTADA */}
         <section id="paginas" className="doc-section">

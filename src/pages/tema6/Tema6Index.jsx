@@ -333,8 +333,8 @@ export default function Tema6Index() {
             <div className="dd-body">
               <p>
                 Los bloques reutilizables te permiten guardar configuraciones específicas de 
-                bloques para usarlas en múltiples páginas y entradas. Cuando actualizas un 
-                bloque reutilizable, el cambio se aplica automáticamente en todos los lugares donde se usa.
+                bloques para usarlas en múltiples páginas y entradas.<strong> Cuando actualizas un 
+                bloque reutilizable, el cambio se aplica automáticamente en todos los lugares donde se usa.</strong>
               </p>
 
           <h3>Crear Bloques Reutilizables</h3>
@@ -354,20 +354,26 @@ export default function Tema6Index() {
             <li>Selecciona el bloque que quieres insertar</li>
             <li>El bloque mantendrá su configuración original</li>
           </ol>
+<WarningBox>
+  <p>
+    <strong>Cuidado:</strong> Un bloque reutilizable muestra <strong>el mismo texto, la misma imagen y el mismo CTA</strong>
+    en todos los lugares donde se use. Si modificas uno, se modifican todos.
+    <br />
+    Si lo conviertes en <strong>bloque regular</strong>, se crea <strong>una copia independiente solo para esta página</strong>:
+    puedes editarla libremente y <strong>el bloque reutilizable original no se pierde ni se modifica</strong>.
+  </p>
+</WarningBox>
 
-          <WarningBox>
-            <p>
-              <strong>Cuidado:</strong> Los cambios en bloques reutilizables afectan a todas 
-              las instancias. Si necesitas una versión única, primero convierte a bloque regular 
-              usando la opción "Convertir a bloques regulares".
-            </p>
-          </WarningBox>
 
           <h3>Gestionar Bloques Reutilizables</h3>
-          <p>
-            Puedes gestionar todos tus bloques reutilizables desde 
-            <em>Administración → Apariencia → Editor del Sitio → Patrones → Mis patrones</em>:
-          </p>
+        <h3>Gestionar Bloques Reutilizables</h3>
+<p>
+  Puedes gestionar todos tus bloques reutilizables desde 
+  <em>Administración → Apariencia → Editor del Sitio → Patrones → Mis patrones</em>.
+  Aunque aparezcan dentro de “Patrones”, los bloques reutilizables siguen siendo 
+  contenido sincronizado que se comparte entre páginas.
+</p>
+
           <ul>
             <li>Ver todos los bloques reutilizables</li>
             <li>Editar bloques existentes</li>

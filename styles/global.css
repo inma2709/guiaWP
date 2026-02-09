@@ -45,17 +45,29 @@
 html,body{ height:100%; }
 
 body{
-  margin:0;
+  margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
   background: var(--bg);
   color: var(--text);
-  /* Espacio automático después de negritas y cursivas */
-strong::after,
-em::after {
+}
+
+/* Espacio automático antes y después de negritas y cursivas */
+strong::before,
+b::before,
+em::before,
+i::before {
   content: " ";
 }
 
+strong::after,
+b::after,
+em::after,
+i::after {
+  content: " ";
 }
+/* Evitar márgenes dobles en listas */      
+
+
 
 a{ color:inherit; text-decoration:none; }
 img{ max-width:100%; display:block; }
@@ -1734,5 +1746,31 @@ img{ max-width:100%; display:block; }
 /* Ajuste del main cuando el sidebar está colapsado */
 .main-grid.is-collapsed .main{
   grid-template-columns: auto 1fr; /* sidebar más estrecho */
+}
+
+/* ===============================
+   TWO-COLUMNS LAYOUT
+   =============================== */
+.two-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.two-columns .column{
+  min-width: 0; /* Evita overflow en contenido largo */
+}
+
+.two-columns .column h4{
+  margin-top: 0;
+}
+
+/* Responsive para móvil */
+@media (max-width: 900px){
+  .two-columns{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 /* ===============================

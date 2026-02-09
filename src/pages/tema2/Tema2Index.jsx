@@ -10,11 +10,23 @@ export default function Tema2Index() {
       <div className="doc">
         <div className="doc-hero">
           <div className="doc-kicker">Módulo 2</div>
-          <h1>Entorno de desarrollo local</h1>
-          <p className="doc-lead">
-            En este curso vamos a trabajar en local para aprender WordPress de forma segura y profesional.
-            <strong> Usaremos LocalWP</strong> (no XAMPP) para crear y gestionar nuestros sitios sin dolores de cabeza.
-          </p>
+<h1>Entorno de desarrollo local</h1>
+<p className="doc-lead">
+  En este curso vamos a trabajar en local para aprender WordPress de forma segura y profesional.
+  <strong> Usaremos LocalWP</strong> (no XAMPP) para crear y gestionar nuestros sitios sin dolores de cabeza.
+</p>
+
+<p className="doc-lead">
+  Es importante entender desde el principio que <strong>WordPress siempre necesita un tema activo para funcionar</strong>.
+  No es posible trabajar en WordPress “sin tema”, ya que el tema es el encargado de mostrar la estructura básica
+  de la web (cabecera, contenido y pie).
+</p>
+
+<p className="doc-lead">
+  Aun así, <strong>tener un tema no significa depender de sus diseños o plantillas</strong>.
+  En este curso aprenderemos a usar el tema únicamente como base técnica,
+  construyendo el diseño paso a paso con bloques y estilos propios.
+</p>
         </div>
 
         <div className="doc-index">
@@ -42,8 +54,8 @@ export default function Tema2Index() {
 
               <p>
                 En este curso vamos a usar <strong>LocalWP</strong> porque está diseñado específicamente para WordPress.
-                El objetivo no es “hacerte perder nivel técnico”, sino <strong>quitar fricción</strong> y centrarte en
-                lo que importa: <strong>WordPress + proyectos reales</strong>.
+                El objetivo no es centrarnos en la configuración del servidor, sino en lo que importa: <strong>WordPress + proyectos reales</strong>. No obstante, es importante que entiendas las diferencias entre ambos enfoques para que puedas elegir el que mejor se adapte a tus necesidades en el futuro.
+
               </p>
 
               <div className="table-wrap" tabIndex="0" aria-label="Comparativa LocalWP vs XAMPP">
@@ -120,11 +132,12 @@ export default function Tema2Index() {
           <h2>2.2 Cómo comenzar: crear tu primer sitio en LocalWP</h2>
 
           <details className="dd" open>
-            <summary>Ver pasos (sin complicaciones)</summary>
+            <summary>Ver primeros pasos</summary>
             <div className="dd-body">
               <PracticeBox>
                 <p><strong>Objetivo:</strong> crear un sitio WordPress local que funcione y al que puedas acceder desde wp-admin.</p>
                 <ol>
+                  <li>Descarga e instala LocalWP desde su sitio oficial</li>
                   <li>Abre <strong>LocalWP</strong></li>
                   <li>Clic en <strong>“+ Create a new site”</strong></li>
                   <li>

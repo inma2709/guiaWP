@@ -17,6 +17,14 @@ import Tema9Index from "./pages/tema9/Tema9Index";
 import Tema10Index from "./pages/tema10/Tema10Index";
 import Tema11Index from "./pages/tema11/Tema11Index";
 import Tema12Index from "./pages/tema12/Tema12Index";
+import Tema13Index from "./pages/tema13/Tema13Index";
+import Tema14Index from "./pages/tema14/Tema14Index";
+import Tema15Index from "./pages/tema15/Tema15Index";
+import Tema16Index from "./pages/tema16/tema16";
+
+// Ejercicios
+import EjerciciosIndex from "./pages/Ejercicios/EjerciciosIndex";
+import ContenedoresEjercicio from "./pages/Ejercicios/Contenedores";
 
 export default function App() {
   return (
@@ -37,6 +45,14 @@ export default function App() {
       <Route path="/tema10" element={<Tema10Index />} />
       <Route path="/tema11" element={<Tema11Index />} />
       <Route path="/tema12" element={<Tema12Index />} />
+      <Route path="/tema13" element={<Tema13Index />} />
+      <Route path="/tema14" element={<Tema14Index />} />
+      <Route path="/tema15" element={<Tema15Index />} />
+      <Route path="/tema16" element={<Tema16Index />} />
+
+      {/* Ejercicios */}
+      <Route path="/ejercicios" element={<EjerciciosIndex />} />
+      <Route path="/ejercicios/contenedores" element={<ContenedoresEjercicio />} />
     </Routes>
   );
 }

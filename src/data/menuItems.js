@@ -162,4 +162,68 @@ export const menuItems = [
       { title: "12.7 Preparación mundo laboral", path: "/tema12#mundo-laboral" },
     ],
   },
+
+  {
+    title: "M13 · CSS avanzado: sombras, capas y efectos",
+    path: "/tema13",
+    children: [
+      { title: "13.1 Objetivo y resultado final", path: "/tema13#objetivo" },
+      { title: "13.2 Chuleta de propiedades", path: "/tema13#chuleta" },
+      { title: "13.3 Estructura de la tarjeta", path: "/tema13#estructura" },
+      { title: "13.4 Capas: imagen + píldora encima", path: "/tema13#capas" },
+      { title: "13.5 Metadatos pequeños con iconos", path: "/tema13#metadatos" },
+      { title: "13.6 Sombra, relieve y efecto hover", path: "/tema13#efectos" },
+      { title: "13.7 Ejercicio guiado", path: "/tema13#ejercicio" },
+      { title: "13.8 Repaso y checklist", path: "/tema13#repaso" },
+    ],
+  },
+
+  {
+    title: "M14 · Contenedores: fundamentos y diseño profesional",
+    path: "/tema16",
+    children: [
+      { title: "14.1 Objetivo + regla de oro", path: "/tema16#objetivo" },
+      { title: "14.2 Fundamentos (submenú)", path: "/tema16#fundamentos" },
+      { title: "14.3 Propiedades del contenedor", path: "/tema16#propiedades" },
+      { title: "14.4 Patrones: guardar y reutilizar contenedores", path: "/tema16#patrones" },
+      { title: "14.5 Ejemplo final: Tarjeta PRO", path: "/tema16#tarjeta-pro" },
+    ],
+  },
+
+  {
+    title: "M15 · Gutenberg (Editor de bloques)",
+    path: "/tema15",
+    children: [
+      { title: "15.1 Qué es Gutenberg", path: "/tema15#que-es-gutenberg" },
+      { title: "15.2 Bloques, estructura y jerarquía", path: "/tema15#bloques-y-estructura" },
+      { title: "15.3 Dónde se usa: entradas, páginas y plantillas", path: "/tema15#donde-se-usa" },
+      { title: "15.4 ¿Se puede usar Gutenberg 'sin tema'?", path: "/tema15#sin-tema" },
+      { title: "15.5 Primeros pasos guiados", path: "/tema15#primeros-pasos" },
+      { title: "15.6 Buenas prácticas (pro)", path: "/tema15#buenas-practicas" },
+      { title: "15.7 Ejercicio práctico", path: "/tema15#ejercicio" },
+      { title: "15.8 Repaso final", path: "/tema15#repaso" },
+    ],
+  },
+
+  {
+    title: "M16 · Sección 'Consejos rápidos'",
+    path: "/tema14",
+    children: [
+      { title: "16.1 Resultado final y objetivos", path: "/tema14#resultado" },
+      { title: "16.2 Esquema de contenedores", path: "/tema14#esquema" },
+      { title: "16.3 Construcción paso a paso", path: "/tema14#paso-a-paso" },
+      { title: "16.4 Propiedades que entrenamos", path: "/tema14#propiedades" },
+      { title: "16.5 Ejercicio guiado", path: "/tema14#ejercicio" },
+      { title: "16.6 Checklist final", path: "/tema14#checklist" },
+    ],
+  },
+
+  // Sección de Ejercicios
+  {
+    title: "📚 Ejercicios Prácticos",
+    path: "/ejercicios",
+    children: [
+      { title: "Ejercicio 1: Contenedores", path: "/ejercicios/contenedores" },
+    ],
+  },
 ];

@@ -91,7 +91,7 @@ export default function Tema4Index() {
 
               <TipBox title="Traducción rápida para clase">
                 <p>
-                  <strong>Tema = la base de tu casa.</strong> <br />
+                  <strong>Tema = la base de tu casa.De hecho cuando inicias un proyecto wp te pone un tema por defecto. Sin tema no funciona wp.</strong> <br />
                   <strong>Plantilla = la distribución y decoración de una habitación.</strong>
                 </p>
               </TipBox>
@@ -122,6 +122,7 @@ export default function Tema4Index() {
               <div className="card">
                 <h3 className="badge">¿Cuándo descargar un TEMA?</h3>
                 <ul style={{ paddingLeft: "20px" }}>
+                  <li>Recuerda que tu sitio por defecto ya tiene un tema activo (actualmente Twenty Twenty-Five).</li>
                   <li>Cuando quieres definir la base visual y técnica del sitio</li>
                   <li>Cuando necesitas compatibilidad con plugins (por ejemplo, WooCommerce)</li>
                   <li>Cuando buscas rendimiento y buena estructura</li>
