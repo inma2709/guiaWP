@@ -21,6 +21,7 @@ import Tema13Index from "./pages/tema13/Tema13Index";
 import Tema14Index from "./pages/tema14/Tema14Index";
 import Tema15Index from "./pages/tema15/Tema15Index";
 import Tema16Index from "./pages/tema16/tema16";
+import Tema17 from "./pages/tema17/tema17";
 
 // Ejercicios
 import EjerciciosIndex from "./pages/Ejercicios/EjerciciosIndex";
@@ -49,6 +50,7 @@ export default function App() {
       <Route path="/tema14" element={<Tema14Index />} />
       <Route path="/tema15" element={<Tema15Index />} />
       <Route path="/tema16" element={<Tema16Index />} />
+      <Route path="/tema17" element={<Tema17 />} />
 
       {/* Ejercicios */}
       <Route path="/ejercicios" element={<EjerciciosIndex />} />

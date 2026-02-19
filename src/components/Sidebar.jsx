@@ -9,7 +9,7 @@ function getModuleLabel(title) {
 }
 
 function getIcon(title) {
-  if (title?.startsWith("🏠")) return "🏠";
+  if (title?.startsWith("🏠")) return "";
   if (title?.startsWith("M")) return title.split("·")[0].trim(); // "M1"
   return "•";
 }
@@ -121,7 +121,12 @@ export default function Sidebar({ collapsed, onToggle }) {
                   `nav-item ${isActive || isActiveGroup ? "active" : ""}`
                 }
                 title={item.title}
-                onClick={() => collapsed && setIsVisible(false)}
+                onClick={() => {
+                  // En móviles, al seleccionar un tema cerramos el panel lateral
+                  if (window.innerWidth <= 900) {
+                    setIsVisible(false);
+                  }
+                }}
               >
                 <span aria-hidden="true">{getIcon(item.title)}</span>
                 <span className="label">{item.title}</span>

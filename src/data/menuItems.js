@@ -218,6 +218,11 @@ export const menuItems = [
     ],
   },
 
+  {
+    title: "M17 · Nuestra primera tienda",
+    path: "/tema17",
+  },
+
   // Sección de Ejercicios
   {
     title: "📚 Ejercicios Prácticos",
