@@ -4,14 +4,14 @@ import { TipBox, PracticeBox, WarningBox, ActivityBox } from "../components/Cont
 export default function Home() {
   return (
     <TopicLayout
-      title="WordPress en 10 días "
+      title="WordPress Práctico"
       subtitle="De cero a publicar: 2 proyectos reales (Portfolio + Tienda) trabajando en LocalWP"
     >
       <div className="doc-hero">
-        <div className="doc-kicker">10 días · práctica guiada · resultados visibles</div>
+        <div className="doc-kicker">Práctica guiada · resultados visibles</div>
         <p className="doc-lead">
-          Este manual está diseñado para aprender WordPress de forma rápida y práctica. En solo <strong>10 días</strong>
-          vas a entender cómo se construye una web, cómo se organiza el contenido y cómo se publica un proyecto
+          Este manual está diseñado para aprender WordPress de forma rápida y práctica. Vas a
+          entender cómo se construye una web, cómo se organiza el contenido y cómo se publica un proyecto
           profesional. Empezamos desde una base real: <strong>ya creaste una web en Google Sites</strong> para comprender
           estructura y diseño. Ahora vamos a llevar esa misma idea a WordPress.
         </p>
@@ -57,7 +57,7 @@ export default function Home() {
       </WarningBox>
 
      <div className="card">
-  <h3 className="badge">Plan intensivo (10 días) · Módulos del menú</h3>
+  <h3 className="badge">Módulos del curso</h3>
 
   <ol style={{ paddingLeft: "20px" }}>
     <li>
@@ -155,7 +155,7 @@ export default function Home() {
     <p className="resource-section__lead">
       Antes de empezar a construir nuestra web en WordPress, es importante
       tener una visión clara de qué es WordPress, para qué se utiliza y
-      por qué es la herramienta que vamos a aprender durante este curso intensivo.
+      por qué es la herramienta que vamos a aprender durante este curso.
     </p>
   </div>
 
@@ -183,7 +183,7 @@ export default function Home() {
           las piezas (páginas, menús, bloques).
         </p>
         <div style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
-          👉 Haz clic en “Día 1 · Fundamentos” en el menú lateral para comenzar
+          👉 Haz clic en "M1 · Fundamentos" en el menú lateral para comenzar
         </div>
       </div>
 

@@ -5,67 +5,41 @@ export default function Tema1Index() {
   return (
     <TopicLayout
       title="M1 · Fundamentos de WordPress"
-      subtitle="Todo lo que necesitas saber sobre WordPress antes de comenzar tu carrera profesional"
+      subtitle="Profundización técnica: CMS, metodología profesional y herramientas de desarrollo"
     >
       <div className="doc">
         <div className="doc-hero">
           <div className="doc-kicker">Módulo 1</div>
           <h1>Fundamentos de WordPress</h1>
           <p className="doc-lead">
-            Todo lo que necesitas saber sobre WordPress antes de comenzar tu carrera profesional
+            Profundización técnica en WordPress como CMS profesional y las herramientas que necesitas dominar
           </p>
         </div>
 
         <div className="doc-index">
           <h2>Contenido del módulo</h2>
           <ol>
-            <li><a href="#que-es-wordpress">¿Qué es WordPress y por qué dominarlo?</a></li>
             <li><a href="#cms">¿Qué es un CMS y para qué sirve?</a></li>
-            <li><a href="#otros-cms">¿Existen más CMS además de WordPress?</a></li>
-            <li><a href="#comparativa-dev">Comparativa: HTML/CSS vs WordPress (visión de programador)</a></li>
-            <li><a href="#com-vs-org">WordPress.com vs WordPress.org</a></li>
-            <li><a href="#mercado-laboral">El mercado laboral y WordPress</a></li>
+            <li><a href="#arquitectura">🏗️ Arquitectura técnica: PHP + MySQL + WordPress</a></li>
+            <li><a href="#otros-cms">Ecosistema de CMS: WordPress vs alternatives</a></li>
+            <li><a href="#comparativa-dev">WordPress vs desarrollo tradicional</a></li>
+            <li><a href="#mercado-laboral">Mercado laboral y oportunidades</a></li>
             <li><a href="#metodologia">Metodología de trabajo profesional</a></li>
             <li><a href="#herramientas">Herramientas que necesitarás</a></li>
           </ol>
         </div>
 
-        <TipBox title="Bienvenido al mundo WordPress">
+        <TipBox title="Profundización técnica">
           <p>
-            WordPress impulsa más del 40% de todos los sitios web del mundo. Dominar esta
-            plataforma te abrirá muchas oportunidades laborales en desarrollo web,
-            marketing digital y gestión de contenidos.
+            En este módulo profundizaremos en los aspectos técnicos de WordPress. 
+            Ya conoces qué es WordPress y has visto ejemplos reales (Módulo 0). 
+            Ahora veremos cómo funciona internamente y cómo se posiciona frente a otras opciones.
           </p>
         </TipBox>
 
         {/* 1.1 */}
-        <section className="doc-section" id="que-es-wordpress">
-          <h2>1.1 ¿Qué es WordPress y por qué dominarlo?</h2>
-
-          <details className="dd" open>
-            <summary>Leer explicación y ventajas profesionales</summary>
-            <div className="dd-body">
-              <p>
-                WordPress es un sistema de gestión de contenidos (CMS) que permite crear
-                sitios web sin necesidad de programar desde cero. Es la herramienta más
-                popular del mundo para crear páginas web.
-              </p>
-
-              <p><strong>Ventajas profesionales de WordPress:</strong></p>
-              <ul>
-                <li>Alta demanda laboral (millones de sitios lo usan)</li>
-                <li>Flexibilidad total: desde blogs hasta tiendas online</li>
-                <li>Comunidad enorme y recursos infinitos</li>
-                <li>Curva de aprendizaje progresiva</li>
-                <li>Oportunidades freelance y empleos estables</li>
-              </ul>
-            </div>
-          </details>
-        </section>
-
-        {/* 1.2 */}
         <section className="doc-section" id="cms">
-          <h2>1.2 ¿Qué es un CMS y para qué sirve?</h2>
+          <h2>1.1 ¿Qué es un CMS y para qué sirve?</h2>
 
           <details className="dd">
             <summary>Ver qué es un CMS (explicación completa)</summary>
@@ -110,9 +84,295 @@ export default function Tema1Index() {
           </details>
         </section>
 
+        {/* 1.2 NUEVA SECCIÓN: Arquitectura técnica */}
+        <section className="doc-section" id="arquitectura">
+          <h2>1.2 🏗️ Arquitectura técnica de WordPress: PHP + MySQL + Servidor</h2>
+
+          <WarningBox title="🧠 ¿Qué está viendo el alumno aquí?">
+            <p>
+              Estás viendo la <strong>infraestructura técnica</strong> que permite que WordPress funcione.
+              No es la web. No es el tema. No es un plugin. Es <strong>el entorno del servidor</strong> que hace que todo funcione.
+            </p>
+          </WarningBox>
+
+          <details className="dd" open>
+            <summary>🔍 WordPress no funciona solo: necesita un "equipo técnico"</summary>
+            <div className="dd-body">
+              <p>
+                WordPress no es un programa que se ejecute directamente como Word o Photoshop.
+                Es un <strong>sistema web dinámico</strong> que necesita varios componentes trabajando juntos:
+              </p>
+
+              <div className="callout">
+                <h3>🏗️ Esquema conceptual (dibújalo en tu mente)</h3>
+                <div style={{ backgroundColor: '#f8f9fa', padding: '15px', fontFamily: 'monospace', fontSize: '14px', border: '1px solid #ddd', borderRadius: '5px' }}>
+                  <div>👤 <strong>Usuario en navegador</strong></div>
+                  <div style={{ marginLeft: '20px' }}>⬇️ Petición: "Quiero ver la página de inicio"</div>
+                  <div>🌐 <strong>Servidor Web</strong> (Apache/Nginx)</div>
+                  <div style={{ marginLeft: '20px' }}>⬇️ Pasa la petición a...</div>
+                  <div>🐘 <strong>PHP</strong></div>
+                  <div style={{ marginLeft: '20px' }}>⬇️ Ejecuta el código WordPress</div>
+                  <div>🗃️ <strong>WordPress</strong> (el CMS)</div>
+                  <div style={{ marginLeft: '20px' }}>⬇️ Busca contenido en...</div>
+                  <div>🗄️ <strong>Base de datos MySQL</strong></div>
+                  <div style={{ marginLeft: '20px' }}>⬆️ Devuelve datos</div>
+                  <div>🎨 <strong>HTML/CSS generado</strong></div>
+                  <div style={{ marginLeft: '20px' }}>⬆️ Vuelve al navegador</div>
+                </div>
+              </div>
+
+              <p><strong>👉 Concepto clave:</strong> WordPress <strong>genera</strong> las páginas en tiempo real. No existen como archivos HTML estáticos.</p>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>🐘 PHP: el "motor" de WordPress</summary>
+            <div className="dd-body">
+              <h4>¿Qué es PHP y por qué WordPress lo usa?</h4>
+              <p>
+                <strong>PHP</strong> es un lenguaje de programación diseñado específicamente para web.
+                WordPress está <strong>100% construido en PHP</strong>.
+              </p>
+
+              <div className="table-wrap" tabIndex="0" aria-label="Comparativa sitio estático vs dinámico">
+                <table className="table table-zebra">
+                  <caption>Diferencia entre sitio estático y dinámico</caption>
+                  <thead>
+                    <tr>
+                      <th>Aspecto</th>
+                      <th>Sitio estático (HTML)</th>
+                      <th>Sitio dinámico (PHP/WordPress)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Páginas</th>
+                      <td>Archivos .html ya creados</td>
+                      <td>Se generan cuando las pides</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Contenido</th>
+                      <td>Fijo, hay que editar archivos</td>
+                      <td>Editable desde panel de administración</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Velocidad inicial</th>
+                      <td>Muy rápida</td>
+                      <td>Requiere procesamiento</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mantenimiento</th>
+                      <td>Manual, editando código</td>
+                      <td>Automático, desde WordPress</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Usuarios</th>
+                      <td>No hay sistema de usuarios</td>
+                      <td>Registro, login, roles, permisos</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="callout tip">
+                <h4>💡 Ejemplo práctico:</h4>
+                <p>
+                  Cuando visitas <code>senderossevilla.local/contacto</code>:
+                </p>
+                <ol>
+                  <li>El servidor <strong>no busca un archivo contacto.html</strong></li>
+                  <li>Ejecuta <strong>código PHP</strong> que dice "muestra la página de contacto"</li>
+                  <li>PHP busca en la <strong>base de datos</strong> el contenido de esa página</li>  
+                  <li>Combina el contenido con el <strong>tema activo</strong></li>
+                  <li>Genera HTML y lo envía al navegador</li>
+                </ol>
+              </div>
+
+              <div className="callout">
+                <p><strong>📝 Para programadores:</strong> PHP en WordPress maneja:</p>
+                <ul>
+                  <li><strong>Lógica de templates:</strong> qué mostrar y cómo</li>
+                  <li><strong>Conexión con base de datos:</strong> consultas, filtros, ordenación</li>
+                  <li><strong>Hooks y filtros:</strong> sistema de extensibilidad</li>
+                  <li><strong>Funciones del core:</strong> +2000 funciones disponibles</li>
+                  <li><strong>APIs internas:</strong> Settings, Custom Posts, Taxonomías, etc.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>🗄️ MySQL: la "memoria" de WordPress</summary>
+            <div className="dd-body">
+              <h4>¿Qué es MySQL y qué guarda?</h4>
+              <p>
+                <strong>MySQL</strong> es el sistema de base de datos que utiliza WordPress para guardar
+                <strong> absolutamente todo</strong>. Sin MySQL, WordPress no podría funcionar.
+              </p>
+
+              <div className="callout warning">
+                <p>
+                  <strong>⚠️ Concepto crucial:</strong> WordPress NO guarda las páginas como archivos HTML.
+                  Todo el contenido vive en <strong>tablas de la base de datos</strong>.
+                </p>
+              </div>
+
+              <h4>🗃️ ¿Qué se guarda en la base de datos?</h4>
+              <div className="table-wrap" tabIndex="0" aria-label="Contenido guardado en base de datos WordPress">
+                <table className="table table-zebra">
+                  <caption>Contenido almacenado en MySQL</caption>
+                  <thead>
+                    <tr>
+                      <th>Tipo de datos</th>
+                      <th>Ejemplos</th>
+                      <th>Tabla principal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">📝 Contenido</th>
+                      <td>Páginas, entradas del blog, texto, HTML</td>
+                      <td>wp_posts</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">👥 Usuarios</th>
+                      <td>Administradores, editores, autores, suscriptores</td>
+                      <td>wp_users</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">💬 Interacciones</th>
+                      <td>Comentarios, valoraciones</td>
+                      <td>wp_comments</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">🏷️ Organización</th>
+                      <td>Categorías, etiquetas, menús</td>
+                      <td>wp_terms</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">⚙️ Configuración</th>
+                      <td>Ajustes do sitio, tema activo, plugins</td>
+                      <td>wp_options</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">📎 Medios</th>
+                      <td>Fotos, PDFs, vídeos (rutas y metadatos)</td>
+                      <td>wp_posts + filesystem</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <ActivityBox title="🧪 Ejemplo didáctico: ¿Dónde está mi página de inicio?">
+                <p><strong>Situación:</strong> Tienes una página de inicio con el título "Bienvenidos a Senderos Sevilla"</p>
+                
+                <p><strong>❌ Lo que NO hay:</strong></p>
+                <ul>
+                  <li>No hay un archivo <code>index.html</code></li>
+                  <li>No hay un archivo <code>inicio.html</code></li>
+                  <li>No hay carpetas con contenido estático</li>
+                </ul>
+
+                <p><strong>✅ Lo que SÍ hay:</strong></p>
+                <ul>
+                  <li>Un registro en <code>wp_posts</code> con <code>post_title = "Bienvenidos a Senderos Sevilla"</code></li>
+                  <li>El contenido en <code>post_content</code></li>
+                  <li>El estado en <code>post_status = "publish"</code></li>
+                  <li>Una configuración en <code>wp_options</code> que dice "esta página es la de inicio"</li>
+                </ul>
+
+                <p><strong>🔄 ¿Cómo se muestra?</strong></p>
+                <p>
+                  Cada vez que alguien visita tu web, PHP pregunta a MySQL: 
+                  "¿Cuál es la página de inicio?" → MySQL responde con los datos → PHP genera el HTML.
+                </p>
+              </ActivityBox>
+
+              <div className="callout">
+                <p><strong>🔍 Para entender mejor:</strong></p>
+                <p>
+                  Cuando editas una página en WordPress, <strong>no estás editando un archivo</strong>.
+                  Estás editando un <strong>registro en la base de datos</strong>. 
+                  Por eso puedes tener borradores, revisiones, programar publicaciones, etc.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>🌐 El servidor web: el "recepcionista"</summary>
+            <div className="dd-body">
+              <h4>Nginx/Apache: conectando navegador con WordPress</h4>
+              <p>
+                El <strong>servidor web</strong> (Nginx, Apache) es el "recepcionista" que:
+              </p>
+
+              <ul>
+                <li>🔗 <strong>Recibe peticiones</strong> del navegador</li>
+                <li>📋 <strong>Decide qué hacer:</strong> ¿es un archivo CSS? ¿Una imagen? ¿Una página dinámicsa?</li>
+                <li>🐘 <strong>Pasa a PHP</strong> las peticiones que requieren WordPress</li>
+                <li>📤 <strong>Devuelve la respuesta</strong> al navegador</li>
+              </ul>
+
+              <div className="callout tip">
+                <h4>🏷️ Analizando la configuración local</h4>
+                <p>En tu captura se ve:</p>
+                <ul>
+                  <li><strong>🏷️ Proyecto:</strong> <code>senderosSevilla</code></li>
+                  <li><strong>🌍 Dominio local:</strong> <code>senderossevilla.local</code></li>
+                  <li><strong>🌐 Servidor:</strong> nginx</li>
+                  <li><strong>🐘 PHP:</strong> versión 8.2.27</li>
+                  <li><strong>🗄️ MySQL:</strong> versión 8.0.35</li>
+                  <li><strong>🏗️ WordPress:</strong> versión 6.9.1</li>
+                </ul>
+
+                <p>
+                  <strong>👉 Esto significa:</strong> Tienes un entorno completo funcional en tu ordenador.
+                  Puedes desarrollar <strong>sin internet</strong> y luego subir a un hosting real.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>🎯 Implicaciones prácticas para desarrolladores</summary>
+            <div className="dd-body">
+              <div className="callout success">
+                <h4>✅ Lo que esto te permite hacer:</h4>
+                <ul>
+                  <li><strong>Desarrollar offline:</strong> tu WordPress funciona sin internet</li>
+                  <li><strong>Probar cambios sin riesgo:</strong> es tu copia local, no afecta al sitio real</li>
+                  <li><strong>Entender errores:</strong> logs de PHP, MySQL y servidor</li>
+                  <li><strong>Optimizar rendimiento:</strong> consultas de base de datos, cache, etc.</li>
+                  <li><strong>Crear funcionalidades custom:</strong> PHP + MySQL = poder total</li>
+                </ul>
+              </div>
+
+              <div className="callout warning">
+                <h4>⚠️ Errores comunes por no entender la arquitectura:</h4>
+                <ul>
+                  <li><strong>"El sitio no funciona":</strong> suele ser problema de PHP o MySQL</li>
+                  <li><strong>"Se perdieron mis cambios":</strong> no hiciste backup de la base de datos</li>
+                  <li><strong>"Es muy lento":</strong> consultas mal optimizadas o servidor insuficiente</li>
+                  <li><strong>"Error 500":</strong> error de PHP, hay que mirar logs</li>
+                </ul>
+              </div>
+
+              <TipBox title="💡 Para programadores avanzados">
+                <p>
+                  Conocer esta arquitectura te permite:
+                  <strong> Crear custom post types, optimizar queries, usar WP-CLI, 
+                  configurar staging/production, debugear efectivamente</strong>, y entender
+                  por qué WordPress puede manejar sitios con millones de páginas.
+                </p>
+              </TipBox>
+            </div>
+          </details>
+        </section>
+
         {/* 1.3 */}
         <section className="doc-section" id="otros-cms">
-          <h2>1.3 ¿Existen más CMS además de WordPress?</h2>
+          <h2>1.3 Ecosistema de CMS: WordPress vs alternativas</h2>
 
           <details className="dd">
             <summary>Ver otros CMS y cuándo elegirlos</summary>
@@ -162,9 +422,9 @@ export default function Tema1Index() {
           </details>
         </section>
 
-        {/* ✅ NUEVO: Comparativa para alumnado de programación */}
+        {/* 1.4 NUEVO: Comparativa para alumnado de programación */}
         <section className="doc-section" id="comparativa-dev">
-          <h2>1.4 Comparativa: HTML/CSS vs WordPress </h2>
+          <h2>1.4 WordPress vs desarrollo tradicional</h2>
 
           <details className="dd" open>
             <summary>¿WordPress es “menos” que programar? </summary>
@@ -295,119 +555,8 @@ export default function Tema1Index() {
         </section>
 
         {/* 1.5 */}
-        <section className="doc-section" id="com-vs-org">
-  <h2>1.5 WordPress.com vs WordPress.org</h2>
-
-  <details className="dd">
-    <summary>Ver la diferencia crítica (muy importante)</summary>
-    <div className="dd-body">
-      <WarningBox>
-        <p>
-          <strong>Diferencia crítica:</strong> WordPress.com es un servicio alojado con
-          limitaciones. WordPress.org es el software libre que instalarás en un servidor.
-          Nosotros trabajamos con WordPress.org (la versión profesional).
-        </p>
-      </WarningBox>
-
-      <p>
-        Aunque comparten nombre, <strong>WordPress.com y WordPress.org NO son lo mismo</strong>.
-        De hecho, confundirlos es uno de los errores más comunes cuando se empieza.
-      </p>
-
-      <h3>🧩 WordPress.com (servicio alojado)</h3>
-      <p>
-        WordPress.com es una plataforma que te ofrece <strong>WordPress como servicio</strong>.
-        No instalas nada: creas una cuenta y ellos se encargan del servidor, las actualizaciones
-        y la seguridad.
-      </p>
-
-      <ul>
-        <li>No tienes acceso real al servidor</li>
-        <li>Personalización limitada (especialmente en planes gratuitos)</li>
-        <li>No puedes usar cualquier plugin o tema</li>
-        <li>No tienes control total del código</li>
-        <li>Ideal para proyectos personales muy simples</li>
-      </ul>
-
-      <h3>🧩 WordPress.org (software libre – versión profesional)</h3>
-      <p>
-        WordPress.org es el <strong>software WordPress real</strong>. Tú descargas el sistema
-        e <strong>instalas WordPress en un servidor</strong> (local o remoto).
-      </p>
-
-      <ul>
-        <li>Control total del código y la base de datos</li>
-        <li>Instalación libre de temas y plugins</li>
-        <li>Posibilidad de crear temas hijo y modificar plantillas</li>
-        <li>Acceso a PHP, CSS, hooks, funciones y personalización avanzada</li>
-        <li>Escalable: de portfolio a tienda online o proyecto complejo</li>
-      </ul>
-
-      <div className="table-wrap" tabIndex="0">
-        <table className="table table-zebra">
-          <caption>Diferencias clave WordPress.com vs WordPress.org</caption>
-          <thead>
-            <tr>
-              <th>Aspecto</th>
-              <th>WordPress.com</th>
-              <th>WordPress.org</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Instalación</th>
-              <td>No instalas nada</td>
-              <td>Instalas WordPress tú</td>
-            </tr>
-            <tr>
-              <th scope="row">Acceso al código</th>
-              <td>Muy limitado</td>
-              <td>Total (PHP, CSS, JS)</td>
-            </tr>
-            <tr>
-              <th scope="row">Plugins y temas</th>
-              <td>Limitados o de pago</td>
-              <td>Libres (miles disponibles)</td>
-            </tr>
-            <tr>
-              <th scope="row">Uso profesional</th>
-              <td>No recomendado</td>
-              <td>Sí, estándar profesional</td>
-            </tr>
-            <tr>
-              <th scope="row">Escalabilidad</th>
-              <td>Baja</td>
-              <td>Muy alta</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div className="callout tip">
-        <p>
-          <strong>Mensaje claro para programadores:</strong>  
-          Si sabes HTML, CSS o PHP, <strong>WordPress.com te limita</strong>.
-          WordPress.org, en cambio, te permite aplicar tus conocimientos y
-          construir soluciones profesionales sobre una base sólida.
-        </p>
-      </div>
-
-      <ActivityBox title="Actividad de comprensión">
-        <p>
-          Responde con tus palabras:
-        </p>
-        <ul>
-          <li>¿Por qué WordPress.com no es adecuado para un proyecto profesional?</li>
-          <li>¿Qué ventajas te ofrece WordPress.org si sabes CSS o PHP?</li>
-        </ul>
-      </ActivityBox>
-    </div>
-  </details>
-</section>
-
-
         <section className="doc-section" id="mercado-laboral">
-  <h2>1.6 El mercado laboral y la hegemonía de WordPress</h2>
+          <h2>1.5 El mercado laboral y oportunidades profesionales</h2>
 
   <div className="stats-highlight" style={{ backgroundColor: '#f0f7ff', padding: '20px', borderRadius: '8px', marginBottom: '20px', borderLeft: '5px solid #2271b1' }}>
     <p><strong>¿Por qué especializarse en WordPress hoy?</strong></p>
@@ -486,9 +635,9 @@ export default function Tema1Index() {
 </details>
 
 </section>
-        {/* 1.7 */}
+        {/* 1.6 */}
         <section className="doc-section" id="metodologia">
-          <h2>1.7 Metodología de trabajo profesional</h2>
+          <h2>1.6 Metodología de trabajo profesional</h2>
 
           <details className="dd">
             <summary>Ver metodología (local → testing → staging → producción)</summary>
@@ -506,9 +655,9 @@ export default function Tema1Index() {
           </details>
         </section>
 
-        {/* 1.8 */}
+        {/* 1.7 */}
         <section className="doc-section" id="herramientas">
-          <h2>1.8 Herramientas que necesitarás</h2>
+          <h2>1.7 Herramientas que necesitarás</h2>
 
           <details className="dd">
             <summary>Ver herramientas necesarias + actividad</summary>

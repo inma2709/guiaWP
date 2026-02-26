@@ -2,6 +2,16 @@ export const menuItems = [
   { title: "🏠 Inicio del curso", path: "/" },
 
   {
+    title: "M0 · Introducción a WordPress",
+    path: "/tema0",
+    children: [
+      { title: "0.1 ¿Qué es WordPress?", path: "/tema0#que-es-wordpress" },
+      { title: "0.2 ¿Por qué elegir WordPress?", path: "/tema0#por-que-elegir" },
+      { title: "0.3 WordPress.org vs WordPress.com", path: "/tema0#tipos-wordpress" },
+    ],
+  },
+
+  {
     title: "M1 · Fundamentos de WordPress",
     path: "/tema1",
     children: [

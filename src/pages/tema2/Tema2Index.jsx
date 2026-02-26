@@ -174,12 +174,482 @@ export default function Tema2Index() {
           </details>
         </section>
 
+        {/* =========================
+           TEMA X — INSTALACIÓN EN LOCAL CON LOCAL WP
+           ========================= */}
+        <section className="doc-section" id="instalar-wp-local-localwp">
+          <h2>Instalación profesional de WordPress en local con Local WP</h2>
+
+          <p>
+            En clase vamos a montar WordPress en nuestro ordenador usando{" "}
+            <strong>Local WP (Local by Flywheel)</strong>. Esto nos permite trabajar
+            rápido, sin pagar hosting y sin tocar FTP ni bases de datos manualmente.
+          </p>
+
+          <div className="callout tip">
+            <strong>Idea clave:</strong> con Local <strong>NO</strong> necesitas descargar
+            WordPress desde WordPress.org antes. Local lo descarga e instala por ti.
+          </div>
+
+          <details className="dd" open>
+            <summary>1) ¿Qué estás instalando realmente cuando instalas "Local"?</summary>
+            <div className="dd-body">
+              <p>
+                Local crea un entorno igual que un hosting real, pero en tu ordenador.
+                Por dentro incluye:
+              </p>
+              <ul>
+                <li><strong>Servidor web</strong> (Apache o Nginx)</li>
+                <li><strong>PHP</strong> (para ejecutar WordPress)</li>
+                <li><strong>Base de datos</strong> (MySQL)</li>
+                <li><strong>WordPress</strong> (se instala automáticamente)</li>
+              </ul>
+
+              <div className="callout">
+                Piensa en Local como un <strong>simulador de hosting</strong>: todo ocurre
+                en tu PC, pero igual que si estuviera en Internet.
+              </div>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>2) Paso a paso: descarga e instalación de Local WP</summary>
+            <div className="dd-body">
+              <ol>
+                <li>
+                  En Google busca <strong>Local WP</strong> o entra a la web oficial de Local.
+                </li>
+                <li>
+                  Pulsa <strong>Download / Install Local</strong>.
+                </li>
+                <li>
+                  Descarga la versión de tu sistema (<strong>Windows / macOS</strong>).
+                </li>
+                <li>
+                  Instala como cualquier programa: <strong>Siguiente → Siguiente → Instalar</strong>.
+                </li>
+                <li>
+                  Abre Local y comprueba que ves el panel principal (la lista de sitios).
+                </li>
+              </ol>
+
+              <div className="callout warn">
+                Si tu antivirus pregunta si permites que Local use red o puertos,
+                responde <strong>Permitir</strong> (Local necesita levantar un servidor local).
+              </div>
+            </div>
+          </details>
+
+          <details className="dd" open>
+            <summary>3) Paso a paso: crear un WordPress nuevo con Local</summary>
+            <div className="dd-body">
+              <p>
+                Ahora vamos a crear un sitio WordPress listo para trabajar con{" "}
+                <strong>Astra + Spectra</strong>.
+              </p>
+
+              <ol>
+                <li>
+                  Pulsa el botón <strong>+ Create a new site</strong>.
+                </li>
+                <li>
+                  En <strong>Site name</strong>, escribe un nombre claro, por ejemplo:
+                  <code> senderos-viajes</code> o <code> agencia-senderismo</code>.
+                </li>
+                <li>
+                  Elige el entorno:
+                  <ul>
+                    <li><strong>Preferred</strong> (recomendado para clase, más rápido)</li>
+                    <li>
+                      <strong>Custom</strong> (solo si quieres elegir versión de PHP o servidor)
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Crea el usuario administrador:
+                  <ul>
+                    <li><strong>Username</strong>: <code>admin</code> (o tu nombre)</li>
+                    <li><strong>Password</strong>: una contraseña segura</li>
+                    <li><strong>Email</strong>: tu correo</li>
+                  </ul>
+                </li>
+                <li>
+                  Pulsa <strong>Add Site</strong> y espera a que termine.
+                </li>
+                <li>
+                  Cuando aparezca el sitio en la lista, pulsa:
+                  <strong> Start site</strong>.
+                </li>
+                <li>
+                  Pulsa <strong>WP Admin</strong> para entrar al panel de WordPress.
+                </li>
+              </ol>
+
+              <div className="callout tip">
+                Si todo va bien, Local te abrirá el navegador con tu WordPress funcionando
+                en una URL tipo <code>http://tusitio.local</code>.
+              </div>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>4) Comprobación rápida: "¿Está bien instalado?"</summary>
+            <div className="dd-body">
+              <p>Antes de seguir, hacemos 3 comprobaciones:</p>
+              <ol>
+                <li>
+                  En el panel de WordPress, ves el menú lateral:
+                  <strong> Entradas, Páginas, Apariencia, Plugins</strong>.
+                </li>
+                <li>
+                  En <strong>Escritorio → Actualizaciones</strong> no aparece ningún error.
+                </li>
+                <li>
+                  Puedes crear una página de prueba en <strong>Páginas → Añadir nueva</strong>.
+                </li>
+              </ol>
+
+              <div className="callout">
+                <strong>Regla de oro:</strong> si puedes entrar a <code>/wp-admin</code> y crear una página,
+                tu WordPress está correctamente instalado.
+              </div>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>5) Errores típicos y soluciones rápidas</summary>
+            <div className="dd-body">
+              <ul>
+                <li>
+                  <strong>El sitio no abre (pantalla en blanco o error):</strong>{" "}
+                  prueba a parar y arrancar el sitio (Stop/Start) desde Local.
+                </li>
+                <li>
+                  <strong>WP Admin no carga:</strong>{" "}
+                  revisa que el sitio esté en estado <strong>Running</strong>.
+                </li>
+                <li>
+                  <strong>Puerto ocupado:</strong>{" "}
+                  cierra programas que usen servidores locales (XAMPP, WAMP, otros).
+                </li>
+                <li>
+                  <strong>Windows pide permisos:</strong>{" "}
+                  permite el acceso en el firewall/antivirus.
+                </li>
+              </ul>
+
+              <div className="callout warn">
+                Importante: no instales Local y XAMPP "para lo mismo" a la vez si no sabes
+                gestionarlo. Para clase, nos quedamos con <strong>Local</strong>.
+              </div>
+            </div>
+          </details>
+
+          <div className="box box--activity">
+            <h3 className="box__title">Actividad (para entregar)</h3>
+            <ol>
+              <li>
+                Crea un sitio nuevo en Local llamado <strong>senderos-viajes</strong>.
+              </li>
+              <li>
+                Entra a <strong>WP Admin</strong> y crea una página llamada{" "}
+                <strong>"Inicio"</strong>.
+              </li>
+              <li>
+                Escribe un texto breve de 3 líneas (lorem o real).
+              </li>
+              <li>
+                Haz una captura donde se vea Local (sitio Running) y otra del WP Admin.
+              </li>
+            </ol>
+          </div>
+
+          <div className="box box--practice">
+            <h3 className="box__title">Mini-repaso (preguntas rápidas)</h3>
+            <ul>
+              <li>¿Por qué no hace falta descargar WordPress.org si usamos Local?</li>
+              <li>¿Qué significa que el sitio esté en estado "Running"?</li>
+              <li>¿Qué URL sueles usar para entrar al panel de administración?</li>
+            </ul>
+          </div>
+        </section>
+
         {/* 2.3 Ajustes iniciales */}
         <section className="doc-section" id="ajustes-iniciales">
           <h2>2.3 Ajustes iniciales imprescindibles (para tu primer sitio)</h2>
 
           <details className="dd">
-            <summary>Ver checklist inicial (lo que SIEMPRE hacemos)</summary>
+            <summary>1) Configuración general del sitio (identidad básica)</summary>
+            <div className="dd-body">
+              <p>
+                Lo primero es configurar la identidad del sitio y aspectos técnicos básicos. 
+                Esto afecta a cómo se muestra tu web y cómo funcionan internamente las URLs.
+              </p>
+
+              <div className="callout">
+                <strong>Ruta:</strong> desde el panel de WordPress → <strong>Ajustes → Generales</strong>
+              </div>
+
+              <h4>Paso a paso:</h4>
+              <ol>
+                <li>
+                  <strong>Título del sitio:</strong> cambia "Mi sitio WordPress" por el nombre real del proyecto.
+                  <br />Ejemplo: <code>Senderos y Viajes</code> o <code>Agencia de Senderismo</code>
+                </li>
+                <li>
+                  <strong>Descripción corta:</strong> escribe en una línea qué hace o vende el negocio.
+                  <br />Ejemplo: <code>Rutas de senderismo por la Sierra de Madrid</code>
+                </li>
+                <li>
+                  <strong>Idioma del sitio:</strong> cambia a <strong>Español</strong> si no está ya configurado.
+                </li>
+                <li>
+                  <strong>Zona horaria:</strong> selecciona tu zona. En España → <strong>Madrid</strong>.
+                </li>
+                <li>
+                  <strong>Formato de fecha y hora:</strong> elige el más natural para tu país.
+                </li>
+              </ol>
+
+              <div className="callout tip">
+                <strong>¿Por qué es importante?</strong> El título aparece en el navegador y buscadores. 
+                La zona horaria afecta a las fechas de publicación. El idioma cambia textos del tema.
+              </div>
+            </div>
+          </details>
+
+          <p>
+            Una vez que tienes WordPress funcionando, <strong>NUNCA empieces a diseñar directamente</strong>. 
+            Primero configuramos la base: idioma, URLs, estructura básica. 
+            Son 10 minutos que evitan dolores de cabeza después.
+          </p>
+
+          <div className="callout tip">
+            <strong>Filosofía del curso:</strong> configurar bien desde el principio es más rápido 
+            que arreglar problemas después. Estos ajustes son <strong>obligatorios</strong>, no opcionales.
+          </div>
+
+          <details className="dd" open>
+            <summary>2) Enlaces permanentes (URLs amigables)</summary>
+            <div className="dd-body">
+              <p>
+                Esta configuración decide <strong>cómo se ven las URLs</strong> de tu web. 
+                Por defecto, WordPress crea URLs feas como <code>/?p=123</code>. 
+                Necesitamos URLs profesionales como <code>/sobre-nosotros/</code>.
+              </p>
+
+              <div className="callout">
+                <strong>Ruta:</strong> <strong>Ajustes → Enlaces permanentes</strong>
+              </div>
+
+              <h4>Configuración obligatoria:</h4>
+              <ol>
+                <li>
+                  Selecciona <strong>"Nombre de la entrada"</strong> (no "Estructura personalizada" ni otros).
+                </li>
+                <li>
+                  Pulsa <strong>Guardar cambios</strong> (¡importante! no lo olvides).
+                </li>
+                <li>
+                  Comprueba que las URLs se ven bien: crea una página de prueba y mira su URL.
+                </li>
+              </ol>
+
+              <div className="callout warn">
+                <strong>Cuidado:</strong> NO cambies esta configuración una vez que el sitio esté en producción 
+                o tengas contenido importante. Cambiar URLs rompe enlaces externos.
+              </div>
+
+              <div className="callout">
+                <strong>URLs antes:</strong> <code>http://tusitio.local/?page_id=5</code><br />
+                <strong>URLs después:</strong> <code>http://tusitio.local/sobre-nosotros/</code>
+              </div>
+            </div>
+          </details>
+
+          <details className="dd" open>
+            <summary>3) Configuración de lectura (página de inicio)</summary>
+            <div className="dd-body">
+              <p>
+                Decides qué ve el usuario cuando llega a tu web: ¿un blog con entradas recientes 
+                o una página estática que tú diseñes?
+              </p>
+
+              <div className="callout">
+                <strong>Ruta:</strong> <strong>Ajustes → Lectura</strong>
+              </div>
+
+              <h4>Para sitios web corporativos (recomendado en este curso):</h4>
+              <ol>
+                <li>
+                  <strong>Tu página de inicio muestra:</strong> selecciona <strong>"Una página estática"</strong>.
+                </li>
+                <li>
+                  <strong>Página de inicio:</strong> crea primero una página llamada "Inicio" y selecciónala aquí.
+                </li>
+                <li>
+                  <strong>Página de entradas:</strong> si planeas tener blog, crea una página "Blog" y asígnala.
+                </li>
+                <li>
+                  Guarda cambios y comprueba que el sitio muestra la página que elegiste.
+                </li>
+              </ol>
+
+              <div className="callout tip">
+                <strong>¿Blog o web estática?</strong> En este curso haremos webs estáticas (como una empresa). 
+                Si fuera solo blog, dejarías "Tus últimas entradas".
+              </div>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>4) Limpieza de contenido de ejemplo</summary>
+            <div className="dd-body">
+              <p>
+                WordPress instala contenido de ejemplo que sobra: artículos, páginas y comentarios de prueba. 
+                Mejor eliminarlo antes de empezar con contenido real.
+              </p>
+
+              <h4>Qué eliminar:</h4>
+              <ol>
+                <li>
+                  <strong>Entradas de ejemplo:</strong> ve a <strong>Entradas → Todas las entradas</strong> y borra "¡Hola, mundo!".
+                </li>
+                <li>
+                  <strong>Páginas de ejemplo:</strong> ve a <strong>Páginas → Todas las páginas</strong> y borra "Página de ejemplo".
+                </li>
+                <li>
+                  <strong>Comentarios de ejemplo:</strong> ve a <strong>Comentarios</strong> y borra comentarios de prueba.
+                </li>
+                <li>
+                  <strong>Plugins innecesarios:</strong> en <strong>Plugins → Plugins instalados</strong>, desactiva "Akismet" y "Hello Dolly" si no los necesitas.
+                </li>
+              </ol>
+
+              <div className="callout tip">
+                <strong>Tip profesional:</strong> antes de crear contenido real, siempre limpia. 
+                Es más fácil empezar desde cero que borrar después mezclado con contenido bueno.
+              </div>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>5) Seguridad básica del usuario administrador</summary>
+            <div className="dd-body">
+              <p>
+                Si usaste "admin" como usuario en Local, está bien para desarrollo. 
+                Pero es bueno crear un usuario con nombre personalizado para practicar seguridad.
+              </p>
+
+              <h4>Crear usuario administrador personalizado:</h4>
+              <ol>
+                <li>
+                  Ve a <strong>Usuarios → Añadir nuevo</strong>.
+                </li>
+                <li>
+                  <strong>Nombre de usuario:</strong> tu nombre o iniciales (ejemplo: <code>ivan_martinez</code>).
+                </li>
+                <li>
+                  <strong>Correo electrónico:</strong> tu email real.
+                </li>
+                <li>
+                  <strong>Rol:</strong> <strong>Administrador</strong>.
+                </li>
+                <li>
+                  <strong>Generar contraseña:</strong> usa una segura (WordPress sugiere una).
+                </li>
+                <li>
+                  Pulsa <strong>Añadir nuevo usuario</strong>.
+                </li>
+                <li>
+                  Cierra sesión y entra con el usuario nuevo para comprobar que funciona.
+                </li>
+              </ol>
+
+              <div className="callout warn">
+                <strong>Solo en local:</strong> no te preocupes demasiado por la seguridad ahora. 
+                En un sitio real, nunca uses "admin" y siempre contraseñas muy seguras.
+              </div>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>6) Configuración de comentarios y discusión</summary>
+            <div className="dd-body">
+              <p>
+                Para webs corporativas normalmente no queremos comentarios abiertos en todas las páginas. 
+                Mejor configurarlo desde el principio.
+              </p>
+
+              <div className="callout">
+                <strong>Ruta:</strong> <strong>Ajustes → Comentarios</strong>
+              </div>
+
+              <h4>Para sitios corporativos típicos:</h4>
+              <ul>
+                <li>
+                  <strong>Desactiva:</strong> "Permitir que otros dejen comentarios en los artículos nuevos"
+                </li>
+                <li>
+                  <strong>Desactiva:</strong> "Intentar notificar a cualquier blog enlazado desde el artículo"
+                </li>
+                <li>
+                  El resto puedes dejarlo como está de momento.
+                </li>
+              </ul>
+
+              <div className="callout">
+                <strong>Nota:</strong> si planeas un blog activo con comunidad, deja los comentarios activados. 
+                Para webs de empresa, mejor desactivados.
+              </div>
+            </div>
+          </details>
+
+          <div className="box box--activity">
+            <h3 className="box__title">Checklist de comprobación (antes de seguir)</h3>
+            <p>Marca cada punto cuando lo hayas completado:</p>
+            <ul>
+              <li>✅ Título del sitio cambiado (no "Mi sitio WordPress")</li>
+              <li>✅ Zona horaria configurada correctamente</li>
+              <li>✅ Enlaces permanentes en "Nombre de la entrada"</li>
+              <li>✅ Página estática como inicio (no blog de entradas)</li>
+              <li>✅ Contenido de ejemplo eliminado</li>
+              <li>✅ Usuario administrador personalizado creado (opcional pero recomendado)</li>
+            </ul>
+            <p>
+              <strong>Comprobación final:</strong> navega por el sitio desde la página de inicio 
+              y verifica que las URLs se ven profesionales.
+            </p>
+          </div>
+
+          <div className="box box--practice">
+            <h3 className="box__title">Errores típicos y cómo evitarlos</h3>
+            <ul>
+              <li>
+                <strong>Olvidar guardar cambios:</strong> WordPress NO guarda automáticamente en ajustes. 
+                Siempre pulsa "Guardar cambios".
+              </li>
+              <li>
+                <strong>No crear página de inicio antes:</strong> si eliges "página estática" pero no existe la página, verás errores.
+              </li>
+              <li>
+                <strong>Cambiar permalinks con contenido:</strong> hazlo solo al principio. 
+                Después rompes enlaces existentes.
+              </li>
+              <li>
+                <strong>No comprobar el frontend:</strong> después de cada cambio, mira cómo se ve el sitio público.
+              </li>
+            </ul>
+          </div>
+
+          <TipBox title="Regla de oro para este curso">
+            <p>
+              Primero <strong>configuración</strong> (estos ajustes). Después <strong>estructura</strong> (páginas, menú). 
+              Luego <strong>contenido</strong>. Y solo al final <strong>diseño y optimización</strong>. Nunca al revés.
+            </p>
+          </TipBox>
+
+          <details className="dd" open>
             <div className="dd-body">
               <p>
                 Antes de empezar a diseñar páginas, hay una serie de ajustes básicos que conviene configurar desde el
