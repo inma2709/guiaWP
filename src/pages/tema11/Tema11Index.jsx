@@ -1173,12 +1173,7 @@ export default function RutaWordPressDesdeCero() {
 
 
         {/* CIERRE */}
-        <footer className="doc-footer">
-          <div className="callout tip">
-            <strong>Siguiente paso (Tema 2):</strong> elegir tema (Astra) y montar el header:
-            logo, menú y botón CTA. Después empezamos con la primera landing en Gutenberg.
-          </div>
-        </footer>
+   
       </div>
     </TopicLayout>
   );

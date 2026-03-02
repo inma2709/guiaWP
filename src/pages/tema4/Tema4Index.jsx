@@ -359,34 +359,166 @@ export default function Tema4Index() {
         </section>
 
         <section className="doc-section" id="instalacion">
-          <h2>4.8 Instalación y activación</h2>
+          <h2>4.8 Instalación, activación y gestión de temas</h2>
 
           <p>
-            Hay varias formas de instalar temas. Cada método tiene su momento apropiado según
-            el origen del tema y las circunstancias del proyecto.
+            Gestionar temas profesionalmente incluye saber instalar, activar, cambiar y <strong>eliminar</strong>
+            temas de forma segura. Cada acción tiene sus momentos apropiados y consideraciones técnicas.
           </p>
 
-          <ActivityBox title="🚀 Práctica: Instalar tu primer tema profesional">
-            <h4>Método 1: Desde el repositorio de WordPress (temas gratuitos)</h4>
-            <ol>
-              <li>Ve a <strong>Apariencia → Temas</strong></li>
-              <li>Clic en <strong>"Añadir nuevo"</strong></li>
-              <li>
-                Explora o busca: <code>"Kadence"</code>, <code>"Astra"</code> o <code>"GeneratePress"</code>
-              </li>
-              <li>Clic en <strong>"Instalar"</strong> y luego <strong>"Activar"</strong></li>
-              <li><strong>¡Listo!</strong> Tu sitio ya tiene un tema instalado</li>
-            </ol>
+          <details className="dd" open>
+            <summary>1) Instalar temas (métodos profesionales)</summary>
+            <div className="dd-body">
+              <h4>Método 1: Desde el repositorio de WordPress (temas gratuitos verificados)</h4>
+              <ol>
+                <li>Ve a <strong>Apariencia → Temas</strong></li>
+                <li>Clic en <strong>"Añadir nuevo"</strong></li>
+                <li>
+                  Explora o busca: <code>"Astra"</code>, <code>"Kadence"</code> o <code>"GeneratePress"</code>
+                </li>
+                <li>Clic en <strong>"Instalar"</strong> → <strong>"Activar"</strong></li>
+                <li><strong>¡Listo!</strong> El tema controla ya el diseño del sitio</li>
+              </ol>
 
-            <h4>Método 2: Subir archivo ZIP (temas premium)</h4>
+              <div className="callout tip">
+                <strong>Ventaja:</strong> Los temas del repositorio oficial están revisados por seguridad 
+                y se actualizan automáticamente.
+              </div>
+
+              <h4>Método 2: Subir archivo ZIP (temas premium o personalizados)</h4>
+              <ol>
+                <li>Ve a <strong>Apariencia → Temas</strong></li>
+                <li>Clic en <strong>"Añadir nuevo"</strong> → <strong>"Subir tema"</strong></li>
+                <li>Selecciona el archivo .zip del tema (sin descomprimir)</li>
+                <li>Clic en <strong>"Instalar ahora"</strong></li>
+                <li>Una vez instalado, <strong>"Activar"</strong></li>
+              </ol>
+
+              <div className="callout warn">
+                <strong>Importante:</strong> Solo sube temas .zip de fuentes oficiales. 
+                Los temas "nulled" o de sitios no confiables pueden contener malware.
+              </div>
+
+              <h4>Método 3: Por FTP (desarrolladores avanzados)</h4>
+              <p>Subes la carpeta del tema directamente a <code>/wp-content/themes/</code> vía FTP o cPanel. 
+              Útil cuando el archivo es muy grande o tienes restricciones de subida.</p>
+            </div>
+          </details>
+
+          <details className="dd" open>
+            <summary>2) Cambiar entre temas instalados</summary>
+            <div className="dd-body">
+              <p>Puedes cambiar de tema activo en cualquier momento <strong>sin perder contenido</strong>, 
+              pero algunas configuraciones visuales pueden cambiar.</p>
+
+              <h4>Proceso profesional de cambio:</h4>
+              <ol>
+                <li><strong>Documento el estado actual:</strong> haz capturas de las páginas principales</li>
+                <li><strong>Ve a Apariencia → Temas</strong> y selecciona el tema nuevo</li>
+                <li><strong>Clic en "Activar"</strong></li>
+                <li><strong>Revisa inmediatamente:</strong> página de inicio, menús y configuraciones</li>
+                <li><strong>Reconfigura si es necesario:</strong> logos, colores, menús de navegación</li>
+              </ol>
+
+              <div className="callout tip">
+                <strong>Qué se mantiene:</strong> páginas, entradas, menús, usuarios y configuración general.<br/>
+                <strong>Qué puede cambiar:</strong> diseño, posición de elementos, opciones del Customizer.
+              </div>
+            </div>
+          </details>
+
+          <details className="dd" open>
+            <summary>3) Eliminar temas que no usas (buenas prácticas)</summary>
+            <div className="dd-body">
+              <p>Mantener temas innecesarios consumé espacio y puede ser un riesgo de seguridad. 
+              <strong>Es buena práctica eliminar temas que no uses</strong>.</p>
+
+              <h4>Cuándo eliminar un tema:</h4>
+              <ul>
+                <li>✅ <strong>No lo estás usando</strong> y no planeas usarlo</li>
+                <li>✅ <strong>Es muy antiguo</strong> y no recibe actualizaciones</li>
+                <li>✅ <strong>Duplicas funcionalidad</strong> con otro tema mejor</li>
+                <li>✅ <strong>Limpieza de servidor</strong> antes de pasar a producción</li>
+              </ul>
+
+              <div className="callout warn">
+                <strong>NUNCA elimines:</strong> el tema que está actualmente activo o un tema hijo 
+                si tienes tema padre activo.
+              </div>
+
+              <h4>Procedimiento seguro para eliminar:</h4>
+              <ol>
+                <li><strong>Confirma que otro tema está activo:</strong> nunca elimines el tema activo</li>
+                <li><strong>Ve a Apariencia → Temas</strong></li>
+                <li><strong>Localiza el tema a eliminar</strong> (debe aparecer como "inactivo")</li>
+                <li><strong>Clic en "Detalles del tema"</strong> en la esquina del tema</li>
+                <li><strong>Clic en "Eliminar"</strong> (aparece solo si el tema no está activo)</li>
+                <li><strong>Confirma la eliminación</strong></li>
+              </ol>
+
+              <div className="callout tip">
+                <strong>Consejo profesional:</strong> antes de eliminar, haz backup de tu sitio por seguridad. 
+                Aunque es una operación segura, siempre es mejor prevenir.
+              </div>
+
+              <h4>Alternativa por FTP (usuarios avanzados):</h4>
+              <p>Puedes eliminar la carpeta del tema desde <code>/wp-content/themes/nombre-del-tema/</code> 
+              vía FTP o administrador de archivos del hosting.</p>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>4) Gestión de plantillas y starter sites</summary> 
+            <div className="dd-body">
+              <p>Las <strong>plantillas o starter sites</strong> son diferentes a los temas: son diseños completos 
+              importados que incluyen páginas, contenido y configuraciones prediseñadas.</p>
+
+              <h4>¿Qué son las plantillas/demos?</h4>
+              <ul>
+                <li><strong>Starter Sites:</strong> diseños completos con contenido de ejemplo</li>
+                <li><strong>Templates:</strong> páginas individuales prediseñadas</li>
+                <li><strong>Demos:</strong> sitios de muestra que puedes importar</li>
+              </ul>
+
+              <h4>Dónde encontrar plantillas profesionales:</h4>
+              <ul>
+                <li><strong>Biblioteca del tema:</strong> Astra, Kadence y otros incluyen +100 plantillas</li>
+                <li><strong>Elementor/Spectra:</strong> bibliotecas de bloques y páginas prediseñadas</li>
+                <li><strong>WordPress.org/patterns:</strong> patrones de bloques oficiales</li>
+                <li><strong>Templatekits.com:</strong> plantillas premium verificadas</li>
+              </ul>
+
+              <h4>Cómo eliminar/limpiar plantillas importadas:</h4>
+              <ol>
+                <li><strong>Eliminar páginas creadas:</strong> ve a Páginas → Papelera y elimina definitivamente</li>
+                <li><strong>Limpiar biblioteca de medios:</strong> elimina imágenes que no necesites</li>
+                <li><strong>Revisar menús:</strong> elimina elementos de navegación innecesarios</li>
+                <li><strong>Resetear Customizer:</strong> vuelve a colores y tipografías por defecto</li>
+                <li><strong>Limpiar widgets:</strong> elimina widgets generados automáticamente</li>
+              </ol>
+
+              <div className="callout warn">
+                <strong>Importante:</strong> importar plantillas puede instalar plugins dependientes. 
+                Revisa en Plugins → Plugins instalados qué se añadió.
+              </div>
+
+              <h4>Plugin recomendado para limpiezas completas:</h4>
+              <p><strong>"WordPress Reset"</strong> permite volver WordPress a estado inicial 
+              manteniendo archivos y usuarios. Útil para empezar de cero tras experimentar con plantillas.</p>
+            </div>
+          </details>
+
+          <div className="box box--activity">
+            <h3 className="box__title">Práctica: Gestión completa de temas</h3>
             <ol>
-              <li>Ve a <strong>Apariencia → Temas</strong></li>
-              <li>Clic en <strong>"Añadir nuevo"</strong> → <strong>"Subir tema"</strong></li>
-              <li>Selecciona el archivo .zip del tema</li>
-              <li>Clic en <strong>"Instalar ahora"</strong></li>
-              <li>Una vez instalado, <strong>"Activar"</strong></li>
+              <li>Instala <strong>Astra</strong> desde el repositorio oficial</li>
+              <li>Actívalo y comprueba que tu sitio cambia de diseño</li>
+              <li>Vuelve al tema anterior (Twenty Twenty-Five o el que tenías)</li>
+              <li>Elimina <strong>Astra</strong> siguiendo el procedimiento seguro</li>
+              <li>Vuelve a instalar <strong>Astra</strong> y déjalo como tema activo</li>
             </ol>
-          </ActivityBox>
+            <p><em>Esta práctica te da confianza en la gestión de temas sin miedo a "romper" nada.</em></p>
+          </div>
         </section>
 
         <section className="doc-section" id="personalizacion">
@@ -424,17 +556,45 @@ export default function Tema4Index() {
         </section>
 
       <section className="doc-section" id="tema-hijo">
-  <h2>4.10 Temas hijo: modificaciones seguras</h2>
+  <h2>4.10 Temas hijo: el papel de calco del desarrollo WordPress</h2>
 
   <WarningBox>
     <p>
-      <strong>⚠️ Regla de oro:</strong> Nunca modifiques directamente los archivos del tema que has instalado.
-      Si el tema se actualiza, <strong>puedes perder tus cambios</strong>. Para eso existe el <strong>tema hijo</strong>.
+      <strong>⚠️ Regla de oro de WordPress profesional:</strong> Nunca modifiques directamente los archivos del tema que has instalado.
+      Si el tema se actualiza, <strong>pierdes tus cambios para siempre</strong>. Para eso existe el <strong>tema hijo</strong>.
     </p>
   </WarningBox>
 
-  <details className="dd" open>
-    <summary>Qué es un tema hijo (explicado sin líos)</summary>
+  <div className="card">
+    <h3>🏗️ La analogía del Arquitecto: Explicado como un profesional</h3>
+    <p>
+      Esta es una de las dudas más comunes y, a la vez, <strong>la base para ser un desarrollador de WordPress profesional</strong>. 
+      Para entenderlo, olvida por un momento el código y piensa en un <strong>"Papel de Calco"</strong>.
+    </p>
+
+    <details className="dd" open>
+      <summary>El ejemplo que lo explica todo</summary>
+      <div className="dd-body">
+        <p>
+          Imagina que el <strong>Tema Padre</strong> es un plano de una casa de 100 páginas que ha diseñado un arquitecto famoso. 
+          Si tú borras una pared en ese plano original, cuando el arquitecto saque una <strong>"Versión 2.0"</strong> de su plano, 
+          tus cambios desaparecerán porque él te dará un libro nuevo.
+        </p>
+
+        <p>
+          El <strong>Tema Hijo</strong> es una hoja en blanco que pones encima de ese plano. Solo dibujas lo que quieres cambiar. 
+          Si el arquitecto actualiza su libro de 100 páginas, tu hoja de calco sigue arriba, intacta, tapando lo que tú decidiste modificar.
+        </p>
+
+        <TipBox title="Traducción profesional">
+          <p>
+            <strong>Tema padre = la base de tu casa.</strong> De hecho cuando inicias un proyecto WordPress te pone un tema por defecto. Sin tema no funciona WordPress.<br />
+            <strong>Tema hijo = la distribución y decoración de una habitación específica.</strong>
+          </p>
+        </TipBox>
+      </div>
+    </details>
+  </div>
     <div className="dd-body">
       <p>
         Un <strong>tema hijo</strong> es un tema “pequeño” que depende de otro tema, llamado <strong>tema padre</strong>.
@@ -454,7 +614,7 @@ export default function Tema4Index() {
         </p>
       </div>
     </div>
-  </details>
+
 
   <details className="dd">
     <summary>¿Para qué vale un tema hijo?</summary>
@@ -483,7 +643,7 @@ export default function Tema4Index() {
   </details>
 
   <details className="dd">
-    <summary>¿Para quién es un tema hijo? (cuándo lo necesitas de verdad)</summary>
+    <summary>¿Para quién es un tema hijo? (cuándo lo vas a necesitar)</summary>
     <div className="dd-body">
       <p>
         No todo el mundo necesita un tema hijo desde el minuto 1. Depende del tipo de proyecto y del tipo de cambios.
@@ -542,22 +702,52 @@ export default function Tema4Index() {
     <li>✅ <strong>Proyectos cliente:</strong> Siempre que haya personalización real y mantenimiento</li>
   </ul>
 
-  <ActivityBox title="👶 Crear tu primer tema hijo (versión clara)">
+  <ActivityBox title="👶 Crear tu primer tema hijo ">
     <p>
       Vamos a crear una carpeta nueva donde vivan <strong>solo tus cambios</strong>.
       El tema padre seguirá instalado y actualizable.
     </p>
+    
 
-    <h4>Método manual (15 minutos):</h4>
-    <ol>
-      <li>
-        En LocalWP, ve a la carpeta: <code>/app/public/wp-content/themes/</code>
-      </li>
-      <li>
-        Crea una nueva carpeta: <code>astra-child</code> (o el nombre de tu tema + <code>-child</code>)
-      </li>
-      <li>Dentro, crea <strong>style.css</strong> con este contenido:</li>
-    </ol>
+  <h2>4.11 Crear un tema hijo manualmente </h2>
+
+  <details className="dd" open>
+    <summary>¿Por qué aprender a hacerlo manualmente?</summary>
+    <div className="dd-body">
+      <p>
+        Crear un tema hijo manualmente es entender <strong>cómo funciona WordPress por dentro</strong>.
+        No dependes de plugins y sabes exactamente qué está ocurriendo.
+      </p>
+
+      <p>
+        Un tema hijo permite modificar estilos, plantillas y funciones sin tocar el tema padre.
+        Así, cuando Astra se actualice, <strong>no perderás tus cambios</strong>.
+      </p>
+    </div>
+  </details>
+
+ 
+
+    <h4>Paso 1 — Localiza la carpeta de temas</h4>
+    <p>
+      En LocalWP ve a:
+    </p>
+    <pre><code>/app/public/wp-content/themes/</code></pre>
+
+    <h4>Paso 2 — Crea la carpeta del tema hijo</h4>
+    <p>
+      Crea una nueva carpeta con este formato:
+    </p>
+    <pre><code>astra-child</code></pre>
+    <p>
+      (Regla profesional: nombre-del-tema + <code>-child</code>)
+    </p>
+
+    <h4>Paso 3 — Crea el archivo <strong>style.css</strong></h4>
+    <p>
+      Dentro de la carpeta crea un archivo llamado <strong>style.css</strong>
+      y añade este encabezado obligatorio:
+    </p>
 
     <pre>
       <code>{`/*
@@ -567,28 +757,136 @@ Description: Tema hijo de Astra para modificaciones seguras
 Version: 1.0
 */
 
-/* Aquí van tus estilos personalizados */`}</code>
+/* Aquí irán tus estilos personalizados */`}</code>
     </pre>
 
-    <p>4. Crea <strong>functions.php</strong>:</p>
+    <p>
+      🔎 Lo importante aquí es <strong>Template: astra</strong>.  
+      Esa línea le dice a WordPress quién es el tema padre.
+    </p>
+
+    <h4>Paso 4 — Crea el archivo <strong>functions.php</strong></h4>
+
+    <p>
+      Este archivo se encargará de cargar correctamente los estilos.
+      Vamos a usar una versión profesional compatible con Astra:
+    </p>
+
     <pre>
       <code>{`<?php
-function cargar_estilos_tema_hijo() {
-  wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-}
-add_action('wp_enqueue_scripts', 'cargar_estilos_tema_hijo');`}</code>
+// Seguridad básica
+if ( !defined( 'ABSPATH' ) ) exit;
+
+// Cargar estilos del hijo después del padre
+add_action('wp_enqueue_scripts', function () {
+
+  wp_enqueue_style(
+    'astra-child',
+    get_stylesheet_directory_uri() . '/style.css',
+    ['astra-theme-css'], // dependencia del CSS de Astra
+    wp_get_theme()->get('Version')
+  );
+
+}, 10);`}</code>
     </pre>
 
-    <p>5. Ve a <strong>Apariencia → Temas</strong> y activa tu tema hijo</p>
-    <p>6. A partir de ahora, los cambios los harás en el hijo y podrás actualizar el padre sin miedo</p>
+    <p>
+      ✔️ Esto garantiza que el CSS del hijo se cargue después del padre.  
+      ✔️ Evita problemas de caché usando versionado automático.  
+      ✔️ Es el estándar profesional actual.
+    </p>
+
+    <h4>Paso 5 — (Opcional pero recomendable) Añade screenshot</h4>
+    <p>
+      Puedes añadir una imagen llamada <strong>screenshot.png</strong>
+      (1200x900px recomendado) dentro de la carpeta.
+    </p>
+    <p>
+      Esto hará que el tema se vea correctamente en 
+      <strong>Apariencia → Temas</strong>.
+    </p>
+
+    <h4>Paso 6 — Activa el tema hijo</h4>
+    <p>
+      Ve a <strong>Apariencia → Temas</strong> y activa <strong>Astra Child</strong>.
+    </p>
+
+    <p>
+      Desde ahora, todas tus modificaciones deben hacerse en el hijo.
+    </p>
+
   </ActivityBox>
 
-  <TipBox title="🚀 Método rápido: Child Theme Configurator">
+  <details className="dd">
+    <summary>Ventajas del método manual</summary>
+    <div className="dd-body">
+
+      <ul>
+        <li>✔️ No dependes de plugins adicionales</li>
+        <li>✔️ Entiendes cómo funciona WordPress internamente</li>
+        <li>✔️ Código más limpio y controlado</li>
+        <li>✔️ Ideal para entornos profesionales</li>
+        <li>✔️ No hay bloques “auto-generated” difíciles de entender</li>
+      </ul>
+
+    </div>
+  </details>
+
+  <details className="dd">
+    <summary>Inconvenientes del método manual</summary>
+    <div className="dd-body">
+
+      <ul>
+        <li>⚠️ Requiere acceder a archivos del servidor</li>
+        <li>⚠️ Un error en PHP puede dejar la web en blanco</li>
+        <li>⚠️ No incluye configuraciones avanzadas (RTL, etc.) automáticamente</li>
+        <li>⚠️ Puede asustar a principiantes absolutos</li>
+      </ul>
+
+    </div>
+  </details>
+
+  <TipBox title="🚀 Método alternativo: Child Theme Configurator">
     <p>
-      Si prefieres no hacerlo manual, instala el plugin <strong>"Child Theme Configurator"</strong>.
-      Crea el tema hijo automáticamente en 1 clic.
+      Si prefieres automatizar el proceso, puedes usar el plugin
+      <strong>Child Theme Configurator</strong>.
     </p>
+    <p>
+      Genera el tema hijo en 1 clic e incluye soporte RTL y estructura automática.
+    </p>
+   <TipBox title="🧩 Plugin temporal: ¿lo dejamos instalado?">
+
+  <p>
+    Una vez que el tema hijo está creado, el plugin generador ya ha cumplido su función.
+  </p>
+
+  <ul>
+    <li>El tema ya está creado correctamente.</li>
+    <li>No necesitamos volver a generarlo.</li>
+    <li>Menos plugins activos = mejor mantenimiento y rendimiento.</li>
+  </ul>
+
+  <p>
+    <strong>Conclusión profesional:</strong>
+  </p>
+
+  <p>
+    🚀 <strong>El mejor plugin es el que puedes desinstalar cuando ya ha cumplido su función.</strong>
+  </p>
+
+</TipBox>
   </TipBox>
+
+  <PracticeBox title="🎓 Actividad para el alumno">
+    <ol>
+      <li>Crea el tema hijo manualmente.</li>
+      <li>Actívalo y comprueba que la web no cambia visualmente.</li>
+      <li>Añade un estilo simple en <code>style.css</code> (ej: cambiar color de enlaces).</li>
+      <li>Comprueba que el cambio solo existe en el hijo.</li>
+      <li>Actualiza Astra y verifica que tu cambio permanece.</li>
+    </ol>
+  </PracticeBox>
+
 </section>
 <section className="doc-section" id="cambiar-tema">
   <h2>¿Qué pasa si cambio el tema Astra por otro?</h2>
@@ -646,26 +944,7 @@ add_action('wp_enqueue_scripts', 'cargar_estilos_tema_hijo');`}</code>
     </div>
   </details>
 
-  <details className="dd">
-    <summary>Idea clave para el alumnado</summary>
-    <div className="dd-body">
-      <p>
-        Aprender un tema concreto es útil,
-        pero lo importante es aprender los <strong>conceptos</strong>:
-      </p>
-
-      <ul>
-        <li>estructura</li>
-        <li>contenedores</li>
-        <li>estilos globales vs contenido</li>
-        <li>flujo de una landing</li>
-      </ul>
-
-      <div className="callout tip">
-        Si entiendes esto, puedes usar cualquier tema.
-      </div>
-    </div>
-  </details>
+  
 </section>
 
 
@@ -674,6 +953,254 @@ add_action('wp_enqueue_scripts', 'cargar_estilos_tema_hijo');`}</code>
             Siguiente: M5 · Plugins esenciales →
           </a>
         </div>
+
+        {/* Sección ampliada sobre gestión avanzada de temas hijo y eliminación */}
+        <section className="doc-section" id="gestion-avanzada-temas">
+          <h2>Gestión avanzada de temas y temas hijo</h2>
+
+          <details className="dd" open>
+            <summary>Cuándo y cómo eliminar un tema hijo de manera segura</summary>
+            <div className="dd-body">
+              <p>
+                Eliminar un tema hijo requiere más cuidado que eliminar un tema normal, porque 
+                puede contener personalizaciones importantes que quieres conservar.
+              </p>
+
+              <h4>Antes de eliminar un tema hijo:</h4>
+              <ol>
+                <li><strong>Haz backup del tema hijo completo:</strong> copia toda la carpeta</li>
+                <li><strong>Documenta las personalizaciones:</strong> anota qué CSS y funciones añadiste</li>
+                <li><strong>Activa otro tema primero:</strong> nunca elimines el tema activo</li>
+                <li><strong>Confirma que no necesitas las modificaciones</strong></li>
+              </ol>
+
+              <h4>Proceso de eliminación segura:</h4>
+              <ol>
+                <li>Activa el <strong>tema padre</strong> (por ejemplo, Astra) o cualquier otro tema</li>
+                <li>Ve a <strong>Apariencia → Temas</strong></li>
+                <li>Busca tu tema hijo en la lista de temas instalados</li>
+                <li>Clic en <strong>"Detalles del tema"</strong></li>
+                <li>Clic en <strong>"Eliminar"</strong></li>
+                <li>Confirma la eliminación</li>
+              </ol>
+
+              <div className="callout warn">
+                <strong>Importante:</strong> Una vez eliminado, perderás TODOS los cambios personalizados 
+                que estaban en el tema hijo (CSS, funciones PHP, templates modificados).
+              </div>
+
+              <h4>Alternativa: desactivar sin eliminar</h4>
+              <p>Si tienes dudas, simplemente <strong>activa otro tema</strong> sin eliminar el hijo. 
+              Así mantienes tus personalizaciones "dormidas" por si las necesitas en el futuro.</p>
+            </div>
+          </details>
+
+          <details className="dd" open>
+            <summary>Migrar personalizaciones de un tema hijo a otro</summary>
+            <div className="dd-body">
+              <p>
+                Si quieres cambiar de tema padre pero conservar algunas personalizaciones, 
+                puedes migrar partes específicas del tema hijo.
+              </p>
+
+              <h4>Lo que se puede migrar:</h4>
+              <ul>
+                <li>✅ <strong>CSS personalizado:</strong> casi siempre funciona en otros temas</li>
+                <li>✅ <strong>Funciones generales:</strong> hooks que no dependen del tema específico</li>
+                <li>❌ <strong>Templates específicos:</strong> requieren adaptación manual</li>
+                <li>❌ <strong>Configuraciones del Customizer:</strong> cada tema tiene las suyas</li>
+              </ul>
+
+              <h4>Proceso de migración:</h4>
+              <ol>
+                <li>Crea un <strong>nuevo tema hijo</strong> para el tema padre nuevo</li>
+                <li><strong>Copia el CSS reusable</strong> del tema hijo antiguo</li>
+                <li><strong>Adapta el CSS</strong> a las clases del nuevo tema</li>
+                <li><strong>Prueba las funciones PHP</strong> una por una</li>
+                <li><strong>Recrea los templates</strong> si los necesitas</li>
+              </ol>
+            </div>
+          </details>
+
+          <details className="dd">
+            <summary>Anatomía completa de un tema hijo profesional</summary>
+            <div className="dd-body">
+              <p>
+                Un tema hijo profesional puede ser muy sofisticado. Aquí tienes la estructura 
+                completa que usan desarrolladores en proyectos grandes.
+              </p>
+
+              <h4>Estructura expandida profesional:</h4>
+              <pre><code>nombre-tema-child/
+├── style.css                    ← Identificación del tema + CSS base
+├── functions.php                ← Funciones y configuraciones
+├── screenshot.png               ← Preview del tema (1200x900px)
+├── README.md                    ← Documentación del proyecto
+├── 
+├── templates/                   ← Templates personalizados  
+│   ├── single-producto.php      ← Template para productos
+│   ├── page-landing.php         ← Template para landings
+│   └── archive-eventos.php      ← Template para archivo eventos
+│
+├── template-parts/              ← Partes reutilizables
+│   ├── header-custom.php        ← Cabecera personalizada
+│   └── footer-custom.php        ← Pie personalizado
+│
+├── assets/                      ← Recursos del tema
+│   ├── css/
+│   │   ├── custom-styles.css    ← CSS adicional
+│   │   └── responsive.css       ← Ajustes responsive
+│   ├── js/
+│   │   ├── custom-scripts.js    ← JavaScript personalizado
+│   │   └── animations.js        ← Animaciones custom
+│   └── images/
+│       ├── logo-custom.png      ← Recursos gráficos
+│       └── backgrounds/
+│
+├── languages/                   ← Traducciones
+│   ├── es_ES.po                 ← Español
+│   └── en_US.po                 ← Inglés
+│
+└── includes/                    ← Funcionalidades modulares
+    ├── customizer.php           ← Opciones del Customizer
+    ├── post-types.php           ← Custom Post Types
+    └── shortcodes.php           ← Shortcodes personalizados</code></pre>
+
+              <h4>functions.php expandido (ejemplo profesional):</h4>
+              <pre><code>{`<?php
+/**
+ * Funciones del tema hijo - Proyecto [NOMBRE]
+ * Version: 1.0.0
+ * Author: [TU NOMBRE]
+ */
+
+// Evitar acceso directo
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+/* ====================================
+   CARGA DE ESTILOS Y SCRIPTS
+   ==================================== */
+
+function proyecto_enqueue_assets() {
+    $version = wp_get_theme()->get('Version');
+    
+    // CSS del tema padre
+    wp_enqueue_style(
+        'parent-style', 
+        get_template_directory_uri() . '/style.css',
+        [],
+        $version
+    );
+    
+    // CSS personalizado
+    wp_enqueue_style(
+        'child-style',
+        get_stylesheet_directory_uri() . '/style.css',
+        ['parent-style'],
+        $version
+    );
+    
+    // CSS responsive adicional
+    wp_enqueue_style(
+        'child-responsive',
+        get_stylesheet_directory_uri() . '/assets/css/responsive.css',
+        ['child-style'],
+        $version
+    );
+    
+    // JavaScript personalizado
+    wp_enqueue_script(
+        'child-scripts',
+        get_stylesheet_directory_uri() . '/assets/js/custom-scripts.js',
+        ['jquery'],
+        $version,
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'proyecto_enqueue_assets');
+
+/* ====================================
+   CONFIGURACIÓN DEL TEMA
+   ==================================== */
+
+// Soporte adicional para el tema
+function proyecto_theme_support() {
+    // Imágenes destacadas
+    add_theme_support('post-thumbnails');
+    
+    // Tamaños de imagen personalizados
+    add_image_size('proyecto-hero', 1920, 800, true);
+    add_image_size('proyecto-card', 400, 300, true);
+    add_image_size('proyecto-thumb', 150, 150, true);
+    
+    // Soporte para logo personalizable
+    add_theme_support('custom-logo', [
+        'height' => 100,
+        'width' => 300,
+        'flex-height' => true,
+        'flex-width' => true
+    ]);
+    
+    // Menús personalizados
+    register_nav_menus([
+        'footer-menu' => __('Menú Footer', 'textdomain'),
+        'legal-menu' => __('Menú Legal', 'textdomain')
+    ]);
+}
+add_action('after_setup_theme', 'proyecto_theme_support');
+
+/* ====================================
+   FUNCIONES PERSONALIZADAS
+   ==================================== */
+
+// Shortcode personalizado para botones
+function proyecto_boton_shortcode($atts) {
+    $atts = shortcode_atts([
+        'texto' => 'Leer más',
+        'url' => '#',
+        'estilo' => 'primario'
+    ], $atts);
+    
+    return sprintf(
+        '<a href="%s" class="btn btn-%s">%s</a>',
+        esc_url($atts['url']),
+        esc_attr($atts['estilo']),
+        esc_html($atts['texto'])
+    );
+}
+add_shortcode('boton', 'proyecto_boton_shortcode');
+
+// Incluir archivos modulares
+$includes = [
+    'includes/customizer.php',
+    'includes/post-types.php',
+    'includes/shortcodes.php'
+];
+
+foreach ($includes as $file) {
+    $filepath = get_stylesheet_directory() . '/' . $file;
+    if (file_exists($filepath)) {
+        require_once $filepath;
+    }
+}`}</code></pre>
+            </div>
+          </details>
+
+          <div className="box box--activity">
+            <h3 className="box__title">Práctica avanzada: Tema hijo profesional completo</h3>
+            <ol>
+              <li><strong>Crea la estructura expandida:</strong> carpetas assets, includes, templates</li>
+              <li><strong>Implementa un shortcode personalizado</strong> usando el ejemplo de arriba</li>
+              <li><strong>Añade CSS responsive</strong> en archivo separado</li>
+              <li><strong>Crea un template personalizado</strong> para una página específica</li>
+              <li><strong>Documenta todo</strong> en un README.md</li>
+              <li><strong>Haz backup completo</strong> de tu tema hijo</li>
+            </ol>
+            <p><strong>Objetivo:</strong> Tener un sistema de personalización escalable y profesional.</p>
+          </div>
+        </section>
       </div>
     </TopicLayout>
   );

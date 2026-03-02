@@ -19,11 +19,17 @@ export default function Tema5Index() {
         <div className="doc-index">
           <h2>Contenido del módulo</h2>
           <ol>
-            <li><a href="#que-son-plugins">Qué son los plugins y cómo funcionan</a></li>
-            <li><a href="#instalacion">Instalación y gestión</a></li>
-            <li><a href="#plugins-esenciales">Plugins esenciales para todo sitio</a></li>
-            <li><a href="#seguridad-plugins">Seguridad y mantenimiento</a></li>
-            <li><a href="#problemas-comunes">Problemas comunes y solución</a></li>
+            <li><a href="#que-son-plugins">5.1 Qué son los plugins y cómo funcionan</a></li>
+            <li><a href="#plugins-imprescindibles">5.2 Plugins imprescindibles para cualquier web</a></li>
+            <li><a href="#plugins-hosting">5.3 ¿Siempre hay que instalar plugins?</a></li>
+            <li><a href="#plugins-por-proyecto">5.4 Plugins por tipo de proyecto</a></li>
+            <li><a href="#instalacion">5.5 Instalación y gestión de plugins</a></li>
+            <li><a href="#seguridad-plugins">5.6 Seguridad: qué plugins evitar</a></li>
+            <li><a href="#woocommerce">5.7 WooCommerce: la tienda online</a></li>
+            <li><a href="#formularios">5.8 Plugins de formularios</a></li>
+            <li><a href="#reservas">5.9 Plugins de reservas</a></li>
+            <li><a href="#plugins-estructurales-temporales">5.10 Plugins estructurales vs plugins temporales</a></li>
+            <li><a href="#rendimiento">5.11 Rendimiento y optimización</a></li>
           </ol>
         </div>
 
@@ -84,7 +90,7 @@ Página se muestra`}</code>
     </div>
   </details>
 </section>
-<section className="doc-section" id="que-son-plugins">
+<section className="doc-section" id="plugins-imprescindibles">
   <h2>5.2 Plugins imprescindibles para cualquier web</h2>
 
           <details className="dd" open>
@@ -243,7 +249,7 @@ Página se muestra`}</code>
 </section>
 
 
-<section className="doc-section" id="tema-vs-plantilla">
+<section className="doc-section" id="plugins-por-proyecto">
           <h2>5.4 Plugins por tipo de proyecto</h2>
 
           <details className="dd" open>
@@ -503,6 +509,7 @@ Página se muestra`}</code>
         Los formularios son esenciales para cualquier web profesional:
         <strong> sin formularios no hay contactos, leads ni negocio</strong>.
         Son el principal punto de entrada de usuarios hacia el cliente.
+        De hecho le dedicaremos un tema propio (tema20) para que te familiarices con ellos. 
       </p>
 
       <h4>📌 Usos habituales de los formularios</h4>
@@ -730,11 +737,121 @@ Página se muestra`}</code>
   </details>
 </section>
 
-      
+     <section className="doc-section" id="plugins-estructurales-temporales">
+
+  <h2>5.10 Plugins estructurales vs plugins temporales</h2>
+
+  <p>
+    No todos los plugins cumplen la misma función dentro de un proyecto WordPress.
+    Un error muy común en alumnos es instalar plugins sin criterio.
+  </p>
+
+  <p>
+    Como profesionales, debemos distinguir entre <strong>plugins estructurales</strong> y 
+    <strong> plugins temporales</strong>.
+  </p>
+
+  <details className="dd" open>
+    <summary>¿Qué es un plugin estructural?</summary>
+    <div className="dd-body">
+
+      <p>
+        Es un plugin que forma parte de la arquitectura permanente del proyecto.
+        Sin él, la web perdería funcionalidad esencial.
+      </p>
+
+      <h4>Ejemplos reales en vuestro proyecto:</h4>
+
+      <ul>
+        <li><strong>Spectra</strong> → Maquetación con bloques avanzados.</li>
+        <li><strong>Amelia</strong> → Sistema de reservas.</li>
+        <li><strong>SEO Plugin</strong> → Optimización buscadores.</li>
+      </ul>
+
+      <p>
+        Estos plugins trabajan constantemente:
+      </p>
+
+      <ul>
+        <li>Se ejecutan en cada carga de página.</li>
+        <li>Añaden scripts o estilos.</li>
+        <li>Interactúan con base de datos.</li>
+        <li>Forman parte del modelo de negocio.</li>
+      </ul>
+
+    </div>
+  </details>
+
+  <details className="dd">
+    <summary>¿Qué es un plugin temporal?</summary>
+    <div className="dd-body">
+
+      <p>
+        Es un plugin que usamos para realizar una acción puntual.
+        Una vez completada, deja de ser necesario.
+      </p>
+
+      <h4>Ejemplo claro:</h4>
+
+      <ul>
+        <li><strong>Child Theme Configurator</strong> → Genera el tema hijo.</li>
+      </ul>
+
+      <p>
+        Después de crear el tema hijo:
+      </p>
+
+      <ul>
+        <li>Los archivos ya están generados.</li>
+        <li>No necesitamos volver a usar el plugin.</li>
+        <li>Podemos desinstalarlo sin afectar la web.</li>
+      </ul>
+
+    </div>
+  </details>
+
+  <WarningBox>
+    <p>
+      ⚠️ Tener plugins innecesarios activos aumenta superficie de ataque,
+      posibles incompatibilidades y mantenimiento futuro.
+    </p>
+  </WarningBox>
+
+  <TipBox title="🚀 Mentalidad profesional">
+    <p>
+      Un desarrollador WordPress no acumula plugins.
+      Evalúa si cada plugin:
+    </p>
+
+    <ul>
+      <li>Es imprescindible para el funcionamiento.</li>
+      <li>Aporta valor real al proyecto.</li>
+      <li>Se puede sustituir por código propio.</li>
+    </ul>
+
+    <p>
+      <strong>Regla de oro:</strong>
+    </p>
+
+    <p>
+      🚀 <strong>El mejor plugin es el que puedes desinstalar cuando ya ha cumplido su función.</strong>
+    </p>
+  </TipBox>
+
+  <PracticeBox title="🎓 Actividad para el alumno">
+    <ol>
+      <li>Revisa los plugins instalados en tu proyecto.</li>
+      <li>Clasifícalos en estructurales o temporales.</li>
+      <li>Identifica si alguno puede eliminarse.</li>
+      <li>Justifica tu decisión técnicamente.</li>
+    </ol>
+  </PracticeBox>
+
+</section> 
      
 
 <section className="doc-section" id="rendimiento">
-  <h2>5.10 Rendimiento y optimización</h2>
+  <h2>5.11 Rendimiento y optimización</h2>
 
   <details className="dd" open>
     <summary>Optimizar el uso de plugins</summary>
@@ -794,7 +911,7 @@ Página se muestra`}</code>
 
       <div
         style={{
-          background: "linear-gradient(135deg, #16a66d, #147a57)",
+          background: "linear-gradient(135deg, #f4f8f7, #675add)",
           color: "white",
           padding: "20px",
           borderRadius: "16px",
@@ -806,9 +923,7 @@ Página se muestra`}</code>
           Ya sabes seleccionar, instalar y gestionar plugins como un profesional. Tu sitio tiene
           las funcionalidades esenciales y está optimizado para rendimiento y seguridad.
         </p>
-        <p style={{ margin: "0", fontWeight: "bold" }}>
-          📚 Siguiente paso: M6 · Editor de bloques (crear contenido como un pro)
-        </p>
+       
       </div>
 
       <TipBox title="📝 Arsenal de plugins profesionales">

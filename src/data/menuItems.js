@@ -233,6 +233,58 @@ export const menuItems = [
     path: "/tema17",
   },
 
+  {
+    title: "M18 · Custom Post Types desde cero",
+    path: "/tema18",
+    children: [
+      { title: "18.1 Fundamentos: ¿Qué es un Custom Post Type?", path: "/tema18#fundamentos" },
+      { title: "18.2 Tema hijo: Base profesional obligatoria", path: "/tema18#child-theme" },
+      { title: "18.3 Cuándo usar CPT vs páginas normales", path: "/tema18#cuando-usar" },
+      { title: "18.4 Planificación del proyecto: Caso 'Rutas turísticas'", path: "/tema18#planificacion" },
+      { title: "18.5 Plugin necesario: Custom Post Type UI", path: "/tema18#instalacion-plugins" },
+      { title: "18.6 Crear el Custom Post Type paso a paso", path: "/tema18#crear-cpt" },
+      { title: "18.7 Estructura de archivos y convenciones", path: "/tema18#estructura-archivos" },
+      { title: "18.8 Crear la plantilla single-rutas.php", path: "/tema18#plantilla-single" },
+      { title: "18.9 Testing y depuración", path: "/tema18#testing" },
+      { title: "18.10 Mejores prácticas profesionales", path: "/tema18#mejores-practicas" },
+    ],
+  },
+
+  {
+    title: "M19 · Advanced Custom Fields (ACF)",
+    path: "/tema19",
+    children: [
+      { title: "19.1 Fundamentos: ¿Qué es ACF y por qué es revolucionario?", path: "/tema19#fundamentos-acf" },
+      { title: "19.2 Instalación y configuración inicial", path: "/tema19#instalacion" },
+      { title: "19.3 Tipos de campos: Del básico al avanzado", path: "/tema19#tipos-campos" },
+      { title: "19.4 Crear tu primer grupo de campos para rutas", path: "/tema19#crear-grupo" },
+      { title: "19.5 Integrar ACF en single-rutas.php", path: "/tema19#plantilla-acf" },
+      { title: "19.6 Campos avanzados: Repetidores, mapas y galerías", path: "/tema19#campos-avanzados" },
+      { title: "19.7 Crear archive-rutas.php con tarjetas dinámicas", path: "/tema19#archive-template" },
+      { title: "19.8 Filtros y taxonomías personalizadas", path: "/tema19#filtros-taxonomias" },
+      { title: "19.9 Optimización y mejores prácticas", path: "/tema19#optimizacion" },
+      { title: "19.10 Casos de uso profesionales reales", path: "/tema19#casos-reales" },
+    ],
+  },
+
+  {
+    title: "M20 · Formularios Profesionales en WordPress",
+    path: "/tema20",
+    children: [
+      { title: "20.1 Fundamentos estratégicos", path: "/tema20#fundamentos" },
+      { title: "20.2 Objetivos básicos y barrera de conversión", path: "/tema20#objetivos-basicos" },
+      { title: "20.3 Comparativa profesional de plugins", path: "/tema20#comparativa-plugins" },
+      { title: "20.4 SureForms: Implementación profesional", path: "/tema20#sureforms" },
+      { title: "20.5 Contact Form 7: Dominio técnico", path: "/tema20#contact-form-7" },
+      { title: "20.6 Fluent Forms: Configuración avanzada", path: "/tema20#fluent-forms" },
+      { title: "20.7 Integración con email marketing", path: "/tema20#email-marketing" },
+      { title: "20.8 Seguridad en formularios", path: "/tema20#seguridad" },
+      { title: "20.9 UX/UI Optimization", path: "/tema20#ux-optimization" },
+      { title: "20.10 Analítica y métricas de conversión", path: "/tema20#analitica" },
+      { title: "20.11 Casos de éxito profesionales", path: "/tema20#casos-exito" },
+    ],
+  },
+
   // Sección de Ejercicios
   {
     title: "📚 Ejercicios Prácticos",

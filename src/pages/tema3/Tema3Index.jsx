@@ -430,6 +430,216 @@ export default function Tema3Index() {
               <li><strong>Formato de fecha:</strong> El que prefieras</li>
             </ul>
           </PracticeBox>
+
+          <details className="dd" open>
+            <summary>Guía completa: Imágenes libres de derechos para tu web</summary>
+            <div className="dd-body">
+              <p>
+                Una de las tareas más importantes al crear contenido web es conseguir imágenes 
+                <strong> sin problemas legales</strong>. Usar imágenes con copyright puede traerte 
+                multas serias. Esta guía te enseña dónde encontrar imágenes seguras y gratuitas.
+              </p>
+
+              <div className="callout tip">
+                <strong>Regla de oro:</strong> si no estás 100% seguro de que puedes usar una imagen, 
+                <strong>no la uses</strong>. Mejor prevenir que recibir una demanda por copyright.
+              </div>
+
+              <h4>1) ¿Qué significa "libre de derechos" realmente?</h4>
+              <p>No significa "gratis en cualquier sitio de Internet". Significa que:</p>
+              <ul>
+                <li><strong>El creador</strong> te da permiso explícito para usarla</li>
+                <li><strong>Tiene una licencia</strong> que especifica cómo puedes usarla</li>
+                <li><strong>No vas a recibir demandas</strong> si sigues las reglas de esa licencia</li>
+              </ul>
+
+              <div className="callout warn">
+                <strong>Error típico:</strong> "La descargé de Google Imágenes, así que puedo usarla". 
+                ¡FALSO! Google solo indexa, no da permisos. Debes ir a la fuente original.
+              </div>
+
+              <h4>2) Portales seguros para imágenes gratuitas</h4>
+              <p>Estos sitios verifican las licencias y son 100% seguros:</p>
+
+              <div className="table-wrap" tabIndex="0">
+                <table className="table table-zebra">
+                  <caption>Portales recomendados para imágenes libres</caption>
+                  <thead>
+                    <tr>
+                      <th>Sitio web</th>
+                      <th>Tipo de licencia</th>
+                      <th>¿Atribución obligatoria?</th>
+                      <th>Mejor para</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Unsplash</th>
+                      <td>Unsplash License</td>
+                      <td>No (pero recomendable)</td>
+                      <td>Fotos profesionales de alta calidad</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Pexels</th>
+                      <td>Pexels License</td>
+                      <td>No (pero recomendable)</td>
+                      <td>Fotos y vídeos variados</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Pixabay</th>
+                      <td>Pixabay License</td>
+                      <td>No</td>
+                      <td>Ilustraciones, iconos, fotos</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Wikimedia Commons</th>
+                      <td>Creative Commons varias</td>
+                      <td>Depende de la imagen</td>
+                      <td>Contenido educativo y cultural</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Freepik</th>
+                      <td>Freepik License (Free)</td>
+                      <td>Sí, obligatoria</td>
+                      <td>Vectores, iconos, ilustraciones</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h4>3) ¿Las imágenes generadas con IA son libres de derechos?</h4>
+              <p>La respuesta depende de la herramienta y el país, pero la situación actual es:</p>
+
+              <div className="callout">
+                <strong>Imágenes que TÚ generas con IA:</strong>
+                <ul>
+                  <li><strong>Midjourney, DALL-E, Stable Diffusion:</strong> generalmente SÍ puedes usarlas comercialmente si pagas la suscripción</li>
+                  <li><strong>Versiones gratuitas:</strong> revisa siempre los términos de uso</li>
+                  <li><strong>Tu responsabilidad:</strong> que no copie una imagen con copyright existente</li>
+                </ul>
+              </div>
+
+              <div className="callout warn">
+                <strong>Imágenes de IA encontradas online:</strong> NO asumas que puedes usarlas. 
+                El que las subió puede no tener permisos para distribuirlas.
+              </div>
+
+              <h4>4) Creative Commons: entendiendo las licencias</h4>
+              <p>Muchas imágenes usan licencias Creative Commons. Los símbolos importantes:</p>
+              <ul>
+                <li><strong>CC0:</strong> dominio público, puedes hacer lo que quieras (¡ideal!)</li>
+                <li><strong>CC BY:</strong> úsala, pero menciona al autor</li>
+                <li><strong>CC BY-SA:</strong> úsala, menciona autor, comparte igual</li>
+                <li><strong>CC BY-NC:</strong> solo uso NO comercial (¡cuidado si vendes!)</li>
+                <li><strong>CC BY-ND:</strong> no puedes modificar la imagen</li>
+              </ul>
+
+              <h4>5) Workflow seguro: paso a paso</h4>
+              <ol>
+                <li>
+                  <strong>Busca en portales seguros:</strong> Unsplash, Pexels o Pixabay primero.
+                </li>
+                <li>
+                  <strong>Descarga y guarda info:</strong> URL original y tipo de licencia.
+                </li>
+                <li>
+                  <strong>Atribución si es necesaria:</strong> "Foto por [Autor] en [Sitio]".
+                </li>
+                <li>
+                  <strong>Optimize antes de subir:</strong> reduce tamaño sin perder calidad.
+                </li>
+                <li>
+                  <strong>Sube a WordPress:</strong> MediaLibrary con nombre descriptivo.
+                </li>
+              </ol>
+
+              <h4>6) Herramientas adicionales profesionales</h4>
+              <div className="table-wrap" tabIndex="0">
+                <table className="table table-zebra">
+                  <caption>Recursos adicionales para imágenes</caption>
+                  <thead>
+                    <tr>
+                      <th>Herramienta</th>
+                      <th>Qué es</th>
+                      <th>Cuándo usarla</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Lorem Picsum</th>
+                      <td>Placeholder aleatorio</td>
+                      <td>Prototipos y mockups</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Canva</th>
+                      <td>Editor + banco gratuito</td>
+                      <td>Crear gráficos personalizados</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Remove.bg</th>
+                      <td>Quitar fondo automático</td>
+                      <td>Productos con fondo transparente</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">TinyPNG</th>
+                      <td>Compresor de imágenes</td>
+                      <td>Optimizar antes de subir a WP</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="callout tip">
+                <strong>Tip profesional:</strong> crea una carpeta en tu ordenador llamada "Recursos" donde 
+                guardes imágenes descargadas con un documento de texto que indique de dónde vienen y qué licencia tienen.
+              </div>
+
+              <h4>7) Casos problemáticos que debes evitar</h4>
+              <ul>
+                <li><strong>Pinterest, Instagram, TikTok:</strong> NO son bancos de imágenes libres</li>
+                <li><strong>Capturas de Google Street View:</strong> pueden tener copyright</li>
+                <li><strong>Logos de marcas:</strong> nunca los uses sin permiso explícito</li>
+                <li><strong>Fotos con personas:</strong> verifica que tengan model release</li>
+                <li><strong>Edificios famosos:</strong> algunos están protegidos por copyright</li>
+              </ul>
+
+              <div className="callout warn">
+                <strong>Advertencia legal:</strong> esta información es orientativa. Para proyectos comerciales 
+                importantes, consulta siempre con un abogado especializado en propiedad intelectual.
+              </div>
+            </div>
+          </details>
+
+          <div className="box box--activity">
+            <h3 className="box__title">Actividad práctica: Busca tu primera imagen libre</h3>
+            <ol>
+              <li>
+                Ve a <strong>Unsplash.com</strong> y busca "business meeting"
+              </li>
+              <li>
+                Elige una foto que te guste y descárgala en tamaño <strong>Regular</strong>
+              </li>
+              <li>
+                Anota en un documento: <strong>URL de la foto, nombre del fotógrafo, fecha de descarga</strong>
+              </li>
+              <li>
+                Sube la imagen a tu WordPress: <strong>Medios → Biblioteca → Subir archivo</strong>
+              </li>
+              <li>
+                Usa la imagen en una página de prueba y comprueba que se ve correctamente
+              </li>
+            </ol>
+          </div>
+
+          <div className="box box--practice">
+            <h3 className="box__title">Mini-repaso: preguntas de comprobación</h3>
+            <ul>
+              <li>¿Puedo usar cualquier imagen que encuentre en Google Imágenes?</li>
+              <li>¿Qué significa "CC BY" en una licencia Creative Commons?</li>
+              <li>Si genero una imagen con IA, ¿automáticamente puedo usarla comercialmente?</li>
+              <li>¿Dónde buscarías una ilustración vectorial libre para el logo de una empresa?</li>
+            </ul>
+          </div>
         </section>
 
         <section className="doc-section" id="permalinks">

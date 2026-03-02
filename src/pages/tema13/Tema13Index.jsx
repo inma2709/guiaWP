@@ -1614,7 +1614,7 @@ export default function TemaContenedoresSpectraIndex() {
         {/* CIERRE */}
         <div
           className="doc-hero"
-          style={{ marginTop: "3rem", background: "linear-gradient(135deg, #13aa52, #16c264)" }}
+          style={{ marginTop: "3rem", background: "linear-gradient(135deg, #d5e6dc, #6d78f4)" }}
         >
           <h3>🏁 Si dominas contenedores, dominas Spectra</h3>
           <p>
