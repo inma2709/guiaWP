@@ -1708,10 +1708,7 @@ img{ max-width:100%; display:block; }
   background: rgba(255,255,255,.15);
 }
 
-/*actualizaciones*/
-/* ===============================
-   SIDEBAR — MODO COLAPSADO REAL
-   =============================== */
+/* ESTILOS PARA SIDEBAR COLAPSADO */
 
 .main-grid.is-collapsed .sidebar{
   padding: .6rem;          /* menos aire */
