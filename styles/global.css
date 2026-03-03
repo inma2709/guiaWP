@@ -183,6 +183,37 @@ img{ max-width:100%; display:block; }
   color: var(--nav-text);
   border-right: 1px solid rgba(255,255,255,.18);
   padding: 1rem;
+  
+  /* Sticky en desktop - se mantiene fijo durante scroll */
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  
+  /* Transición suave para colapsar/expandir */
+  transition: padding 0.3s ease, width 0.3s ease;
+  
+  /* Scroll personalizado para el menu */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,.3) transparent;
+}
+
+/* Webkit scrollbar para el sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.3);
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,.5);
 }
 
 .sidebar .menu{
@@ -190,6 +221,10 @@ img{ max-width:100%; display:block; }
   flex-direction:column;
   gap:.5rem;
   margin-top: 1rem;
+  
+  /* Mejora para sticky: asegura que el contenido no se corte */
+  flex-shrink: 0;
+  min-height: 0; /* Permite que el flex child se comprima si es necesario */
 }
 
 /* ===============================
@@ -352,7 +387,19 @@ img{ max-width:100%; display:block; }
 /* 13) RESPONSIVE */
 @media (max-width: 900px){
   .main-grid{ grid-template-columns: 1fr; }
-  .sidebar{ position: sticky; top: 64px; }
+  .sidebar{ 
+    position: sticky; 
+    top: 64px; /* Debajo del topbar en móvil */
+    height: calc(100vh - 64px); /* Altura disponible */
+    overflow-y: auto;
+    /* En móvil mantenemos la transición más rápida */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  
+  /* Mejora para dispositivos táctiles */
+  .sidebar::-webkit-scrollbar {
+    width: 8px; /* Scrollbar más ancha en móvil */
+  }
 }
 /* =====================================================
    DETAILS / SUMMARY — Manual didáctico
@@ -1712,6 +1759,11 @@ img{ max-width:100%; display:block; }
 
 .main-grid.is-collapsed .sidebar{
   padding: .6rem;          /* menos aire */
+  /* Mantiene sticky properties cuando está colapsado */
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
 }
 .main-grid.is-collapsed .nav-item{
   justify-content: center; /* centra icono */

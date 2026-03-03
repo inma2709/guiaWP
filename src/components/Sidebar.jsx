@@ -2,12 +2,6 @@ import { useMemo, useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { menuItems } from "../data/menuItems";
 
-function getModuleLabel(title) {
-  if (title?.startsWith("M")) return title.split("·")[0].trim(); // "M1"
-  if (title?.startsWith("🏠")) return "HOME";
-  return "•";
-}
-
 function getIcon(title) {
   if (title?.startsWith("🏠")) return "";
   if (title?.startsWith("M")) return title.split("·")[0].trim(); // "M1"
@@ -19,17 +13,18 @@ export default function Sidebar({ collapsed, onToggle }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const isGroupActive = useMemo(() => {
-    return (groupPath) =>
-      groupPath === "/"
-        ? location.pathname === "/"
-        : location.pathname.startsWith(groupPath);
+    return (groupPath) => {
+      if (groupPath === "/") {
+        return location.pathname === "/";
+      }
+      // Mejorar matching para rutas como /tema18, /tema21, etc.
+      const currentPath = location.pathname.toLowerCase();
+      const targetPath = groupPath.toLowerCase();
+      
+      // Match exacto o que la ruta actual empiece con la ruta del grupo
+      return currentPath === targetPath || currentPath.startsWith(targetPath + "/") || currentPath.startsWith(targetPath);
+    };
   }, [location.pathname]);
-
-  const activeModule = useMemo(() => {
-    const found = menuItems.find((it) => isGroupActive(it.path));
-    if (!found) return "";
-    return found.title.startsWith("M") ? getModuleLabel(found.title) : "";
-  }, [isGroupActive]);
 
   const handleToggle = () => {
     // Desktop: colapsa/expande (ancho)
@@ -79,35 +74,47 @@ export default function Sidebar({ collapsed, onToggle }) {
 
       {/* 👇 AQUÍ estaba el fallo: ahora sí usamos sidebarClasses */}
       <aside className={sidebarClasses} aria-label="Navegación del manual">
-        {/* Botón principal */}
-        <button
-          className="icon-btn"
-          onClick={handleToggle}
-          aria-label={collapsed ? "Abrir menú" : "Colapsar menú"}
-          title={collapsed ? "Abrir menú" : "Colapsar menú"}
-        >
-          {collapsed ? "☰" : "⟨"}
-        </button>
-
-        {/* Botón extra cuando está colapsado: expandir ancho (modo escritorio) */}
-        {collapsed ? (
+        {/* Encabezado con controles */}
+        <div style={{ display: 'flex', alignItems: 'center', padding: '0.5rem', borderBottom: '1px solid #eee' }}>
+          {/* Botón principal de toggle */}
           <button
             className="icon-btn"
-            onClick={handleExpandFromCollapsed}
-            aria-label="Expandir menú"
-            title="Expandir menú"
-            style={{ marginLeft: ".5rem" }}
+            onClick={handleToggle}
+            aria-label={collapsed ? "Abrir menú" : "Colapsar menú"}
+            title={collapsed ? "Abrir menú" : "Colapsar menú"}
+            style={{ 
+              fontSize: '1.2rem',
+              minWidth: '2rem',
+              height: '2rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
           >
-            ⟩
+            {collapsed ? "☰" : "⟨"}
           </button>
-        ) : null}
 
-        {/* Mini indicador del módulo activo (opcional, útil docente) */}
-        {activeModule ? (
-          <div style={{ marginTop: ".6rem", fontWeight: 800, opacity: 0.9 }}>
-            Estás en: {activeModule}
-          </div>
-        ) : null}
+          {/* Botón expandir (solo visible cuando está colapsado) */}
+          {collapsed && (
+            <button
+              className="icon-btn"
+              onClick={handleExpandFromCollapsed}
+              aria-label="Expandir menú permanentemente"
+              title="Expandir menú permanentemente"
+              style={{ 
+                fontSize: '1.2rem',
+                minWidth: '2rem',
+                height: '2rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginLeft: '0.25rem'
+              }}
+            >
+              ⟩
+            </button>
+          )}
+        </div>
 
         <nav className="menu" aria-label="Menú principal">
           {menuItems.map((item) => {

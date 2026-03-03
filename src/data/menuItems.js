@@ -285,6 +285,22 @@ export const menuItems = [
     ],
   },
 
+  {
+    title: "M21 · Bloque HTML Personalizado",
+    path: "/tema21",
+    children: [
+      { title: "21.1 ¿Qué es el bloque HTML personalizado?", path: "/tema21#introduccion" },
+      { title: "21.2 Cuándo usar HTML personalizado vs otros bloques", path: "/tema21#cuando-usar" },
+      { title: "21.3 Cómo agregar un bloque HTML personalizado", path: "/tema21#como-agregar" },
+      { title: "21.4 Sintaxis HTML básica en WordPress", path: "/tema21#sintaxis-basica" },
+      { title: "21.4.1 🎨 ¿Dónde poner el CSS? Tres enfoques", path: "/tema21#css-en-html" },
+      { title: "21.5 Ejemplos prácticos y casos de uso", path: "/tema21#ejemplos-practicos" },
+      { title: "21.6 HTML avanzado: formularios, tablas y multimedia", path: "/tema21#html-avanzado" },
+      { title: "21.7 Mejores prácticas y consideraciones de seguridad", path: "/tema21#buenas-practicas" },
+      { title: "21.8 Ejercicios prácticos", path: "/tema21#ejercicios" },
+    ],
+  },
+
   // Sección de Ejercicios
   {
     title: "📚 Ejercicios Prácticos",
