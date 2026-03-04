@@ -330,6 +330,42 @@ export const menuItems = [
     ],
   },
 
+  {
+    title: "M24 · Elementor: El Page Builder",
+    path: "/tema24",
+    children: [
+      { title: "24.1 ¿Qué es Elementor y por qué existe?", path: "/tema24#que-es-elementor" },
+      { title: "24.2 Comparativa detallada: Elementor vs Astra/Spectra", path: "/tema24#comparativa-detallada" },
+    ],
+  },
+
+  {
+    title: "M25 · Proyecto E-Commerce: WooCommerce + GeneratePress + Elementor",
+    path: "/tema25",
+    children: [
+      { title: "25.1 Principios básicos de un e-commerce", path: "/tema25#principios-ecommerce" },
+      { title: "25.2 Cómo funciona WooCommerce", path: "/tema25#como-funciona-woocommerce" },
+      { title: "25.3 GeneratePress: el theme base ideal", path: "/tema25#generatepress-ecommerce" },
+      { title: "25.4 El rol de Elementor en un e-commerce", path: "/tema25#elementor-ecommerce" },
+      { title: "25.5 Primera instalación con WPZip", path: "/tema25#wpzip-primera-instalacion" },
+      { title: "25.6 Arquitectura completa del stack", path: "/tema25#arquitectura-stack" },
+      { title: "25.7 Actividades prácticas", path: "/tema25#actividades" },
+    ],
+  },
+
+  {
+    title: "M26 · Diseñando la Home de tu Tienda con Elementor",
+    path: "/tema26",
+    children: [
+      { title: "26.1 Diagnóstico post-WPZip", path: "/tema26#diagnostico-wpzip" },
+      { title: "26.2 Menú de navegación profesional", path: "/tema26#menu-navegacion" },
+      { title: "26.3 Los 9 bloques irrenunciables", path: "/tema26#bloques-irrenunciables" },
+      { title: "26.4 SEO on-page en la home", path: "/tema26#seo-home" },
+      { title: "26.5 Workflow en Elementor", path: "/tema26#workflow-elementor" },
+      { title: "26.6 Actividades prácticas", path: "/tema26#actividades" },
+    ],
+  },
+
   // Sección de Ejercicios
   {
     title: "📚 Ejercicios Prácticos",
