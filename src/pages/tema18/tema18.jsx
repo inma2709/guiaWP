@@ -68,7 +68,7 @@ export default function WP_CPT_Manual_Completo() {
       <section className="doc doc-section" id="fundamentos">
         <h2>1) Fundamentos: ¿Qué es un Custom Post Type?</h2>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>🆚 WordPress por defecto vs. Necesidades reales</summary>
           <div className="dd-body">
             <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem', margin: '1rem 0'}}>
@@ -104,7 +104,7 @@ export default function WP_CPT_Manual_Completo() {
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>🎯 Custom Post Type: Tu propio tipo de contenido</summary>
           <div className="dd-body">
             <p>
@@ -210,7 +210,7 @@ export default function WP_CPT_Manual_Completo() {
           </details>
         </ActivityBox>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Ventajas profesionales de los CPT</summary>
           <div className="dd-body">
             <ol>
@@ -235,7 +235,7 @@ export default function WP_CPT_Manual_Completo() {
           </p>
         </WarningBox>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>¿Por qué es obligatorio un tema hijo?</summary>
           <div className="dd-body">
             <p>
@@ -257,7 +257,7 @@ export default function WP_CPT_Manual_Completo() {
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Verificar que tienes tema hijo activo</summary>
           <div className="dd-body">
             <p>Ve a <strong>Apariencia &rarr; Temas</strong> y confirma que tienes activo algo como:</p>
@@ -291,7 +291,7 @@ export default function WP_CPT_Manual_Completo() {
       <section className="doc doc-section" id="cuando-usar">
         <h2>3) Cuándo usar CPT vs páginas normales</h2>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>✅ USA Custom Post Type cuando...</summary>
           <div className="dd-body">
             <ul>
@@ -305,7 +305,7 @@ export default function WP_CPT_Manual_Completo() {
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>❌ NO uses CPT para...</summary>
           <div className="dd-body">
             <ul>
@@ -317,7 +317,7 @@ export default function WP_CPT_Manual_Completo() {
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Casos de uso profesionales reales</summary>
           <div className="dd-body">
             <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', margin: '1rem 0'}}>
@@ -362,7 +362,7 @@ export default function WP_CPT_Manual_Completo() {
       <section className="doc doc-section" id="planificacion">  
         <h2>4) Planificación del proyecto: Caso "paseo turísticas"</h2>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Análisis de requisitos</summary>
           <div className="dd-body">
             <p>Antes de crear nada, necesitamos definir:</p>
@@ -400,7 +400,7 @@ export default function WP_CPT_Manual_Completo() {
       <section className="doc doc-section" id="instalacion-plugins">
         <h2>5) Plugin necesario: Custom Post Type UI</h2>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>¿Qué es Custom Post Type UI?</summary>
           <div className="dd-body">
             <h4>¿Qué hace?</h4>
@@ -427,7 +427,7 @@ export default function WP_CPT_Manual_Completo() {
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Verificación de instalación</summary>
           <div className="dd-body">
             <p>Después de instalarlo, debes ver en el menú de administración:</p>
@@ -452,7 +452,7 @@ export default function WP_CPT_Manual_Completo() {
           </p>
         </WarningBox>
       </section>
-<details className="dd" open>
+<details className="dd" >
   <summary>Convenciones básicas cuando usamos CPT UI (versión sencilla)</summary>
   <div className="dd-body">
     <p>
@@ -568,7 +568,7 @@ export default function WP_CPT_Manual_Completo() {
       <section className="doc doc-section" id="crear-cpt">
         <h2>6) Crear el Custom Post Type paso a paso</h2>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Paso 1: Acceder a CPT UI</summary>
           <div className="dd-body">
             <ol>
@@ -579,7 +579,7 @@ export default function WP_CPT_Manual_Completo() {
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Paso 2: Configuración básica (obligatoria)</summary>
           <div className="dd-body">
             <div style={{background: '#fff3cd', padding: '1rem', borderRadius: '8px', margin: '1rem 0'}}>
@@ -659,7 +659,7 @@ export default function WP_CPT_Manual_Completo() {
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Paso 3: Configuración avanzada (recomendada)</summary>
           <div className="dd-body">
             <p>En la sección "Advanced Options", configura:</p>
@@ -690,7 +690,7 @@ export default function WP_CPT_Manual_Completo() {
             <TipBox>
               <p>
                 <strong>Menu Icon:</strong> Busca iconos en 
-                <a href="https://developer.wordpress.org/resource/dashicons/" target="_blank" rel="noopener">
+                <a href="https://developer.wordpress.org/resource/dashicons/" target="_blank" rel="noer">
                   Dashicons
                 </a> para personalizar el icono del menú.
               </p>
@@ -698,7 +698,7 @@ export default function WP_CPT_Manual_Completo() {
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Configuración completa recomendada</summary>
           <div className="dd-body">
             <pre style={{background: '#121212', padding: '1rem', borderRadius: '8px', overflowX: 'auto'}}>
@@ -732,7 +732,7 @@ export default function WP_CPT_Manual_Completo() {
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Paso 4: Guardar y verificar</summary>
           <div className="dd-body">
             <ol>
@@ -769,7 +769,7 @@ export default function WP_CPT_Manual_Completo() {
           </div>
         </div>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>📐 Jerarquía de plantillas de WordPress (Template Hierarchy)</summary>
           <div className="dd-body">
             <p>WordPress busca automáticamente archivos de plantilla en este orden:</p>
@@ -821,7 +821,7 @@ export default function WP_CPT_Manual_Completo() {
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Estructura recomendada del tema hijo</summary>
           <div className="dd-body">
             <pre style={{background: '#0b0b0b', padding: '1rem', borderRadius: '8px'}}>
@@ -879,7 +879,7 @@ export default function WP_CPT_Manual_Completo() {
           </p>
         </div>
 </section>
-        <details className="dd" open>
+        <details className="dd" >
           <summary>📁 Crear el archivo base (ubicación exacta)</summary>
           <div className="dd-body">
             
@@ -929,7 +929,7 @@ export default function WP_CPT_Manual_Completo() {
           Una plantilla bien diseñada puede reutilizarse para múltiples paseos manteniendo coherencia visual.
         </div>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>🧩 Plantilla Single Paseo sin ACF (solo CPT)</summary>
           <div className="dd-body">
             <p>Esta versión de <code>single-paseo.php</code> utiliza únicamente:</p>
@@ -1103,7 +1103,7 @@ $noincluye_items = ps_extract_section_list_items($content_html, 'No incluye');
     </div>
   </details>
 
-  <details className="dd" open>
+  <details className="dd" >
     <summary>✍️ Estructura recomendada del contenido</summary>
 
     <div className="dd-body">
@@ -1150,7 +1150,7 @@ $noincluye_items = ps_extract_section_list_items($content_html, 'No incluye');
     crear una nueva entrada dentro de ese tipo de contenido.
   </div>
 
-  <details className="dd" open>
+  <details className="dd" >
     <summary>1️⃣ Crear el paseo en WordPress</summary>
     <div className="dd-body">
 
@@ -1180,7 +1180,7 @@ $noincluye_items = ps_extract_section_list_items($content_html, 'No incluye');
     </div>
   </details>
 
-  <details className="dd" open>
+  <details className="dd" >
     <summary>2️⃣ Estructura del contenido (sin ACF)</summary>
     <div className="dd-body">
 
@@ -1234,7 +1234,7 @@ No incluye
     </div>
   </details>
 
-  <details className="dd" open>
+  <details className="dd" >
     <summary>3️⃣ Si “Paseos” no aparece en el menú</summary>
     <div className="dd-body">
 
@@ -1271,7 +1271,7 @@ No incluye
     Separar estructura (PHP) y diseño (CSS) es una práctica profesional.
   </div>
 
-  <details className="dd" open>
+  <details className="dd" >
     <summary>1️⃣ Archivo de plantilla: single-paseo.php</summary>
     <div className="dd-body">
 
@@ -1295,7 +1295,7 @@ No incluye
     </div>
   </details>
 
-  <details className="dd" open>
+  <details className="dd" >
     <summary>2️⃣ Crear hoja de estilos dedicada al CPT</summary>
     <div className="dd-body">
 
@@ -1771,7 +1771,7 @@ ps-meta`}</code></pre>
 
     </div>
   </details>
-<details className="dd" open>
+<details className="dd" >
   <summary>3️⃣ Encolar correctamente el archivo CSS</summary>
   <div className="dd-body">
 
@@ -1843,20 +1843,23 @@ add_action('wp_enqueue_scripts', 'ps_enqueue_paseos_styles');`}</code></pre>
 
  
 <section className="doc-section" id="listado-automatico-cpt">
-  <summary>🗂️ Listado automático de paseos (el gran potencial de un CPT)</summary>
-
-  <div className="dd-body">
-    <p>
+  <h3>🗂️ Listado automático de paseos (el gran potencial de un CPT)</h3>
+  
+  <details className="dd">
+    <summary>Ver contenido completo</summary>
+    <div className="dd-body">
+      <p>
       El mayor valor de un <strong>Custom Post Type</strong> no es solo crear “entradas especiales”.
       Es que WordPress puede generar <strong>un listado automático</strong> con todas las entradas creadas,
       sin duplicar páginas ni maquetar a mano.
-    </p></div>
-    <div className="callout tip">
-      <strong>Enfoque profesional:</strong> el contenido se crea una vez (paseos) y la web se actualiza sola:
-      el listado <code>/paseo/</code> se rellena automáticamente conforme se publican nuevos paseos.
-    </div>
+      </p>
+      
+      <div className="callout tip">
+        <strong>Enfoque profesional:</strong> el contenido se crea una vez (paseos) y la web se actualiza sola:
+        el listado <code>/paseo/</code> se rellena automáticamente conforme se publican nuevos paseos.
+      </div>
 
-    <h3>✅ Objetivo</h3>
+      <h3>✅ Objetivo</h3>
     <ul>
       <li>Crear una página visitable tipo <code>/paseo/</code> que muestre tarjetas de todos los paseos.</li>
       <li>Que cada tarjeta enlace a su detalle (que ya controla <code>single-paseo.php</code>).</li>
@@ -1869,16 +1872,16 @@ add_action('wp_enqueue_scripts', 'ps_enqueue_paseos_styles');`}</code></pre>
     <p>
       El archivo del CPT se renderiza en la URL definida por el <strong>slug</strong> del post type.
       Normalmente será:
-    </p>
+      </p>
 
-    <pre><code>{`/paseo/`}</code></pre>
+      <pre><code>{`/paseo/`}</code></pre>
 
-    <div className="callout warn">
-      Si has cambiado el CPT hace poco (o el slug), es obligatorio refrescar reglas:
-      <strong>Ajustes → Enlaces permanentes → Guardar cambios</strong> (sin tocar nada).
-    </div>
+      <div className="callout warn">
+        Si has cambiado el CPT hace poco (o el slug), es obligatorio refrescar reglas:
+        <strong>Ajustes → Enlaces permanentes → Guardar cambios</strong> (sin tocar nada).
+      </div>
 
-    <hr />
+      <hr />
 
     <h3>2️⃣ Crear la plantilla del listado: archive-paseo.php</h3>
 
@@ -2231,9 +2234,11 @@ get_header();
 
 }
 add_action('wp_enqueue_scripts', 'ps_enqueue_paseos_archive_styles');`}</code></pre>
+    </div>
+  </details>
+</section>
 
-
-    <section className="doc-section" id="archive-paseo-listado">
+<section className="doc-section" id="archive-paseo-listado">
   <h2>Listado automático de Paseos: que la web se actualice sola</h2>
 
   <div className="callout tip">
@@ -2241,7 +2246,7 @@ add_action('wp_enqueue_scripts', 'ps_enqueue_paseos_archive_styles');`}</code></
     de mostrarlo automáticamente en un listado. Publicar un nuevo paseo = aparece en la página de Paseos sin tocar diseño.
   </div>
 
-  <details className="dd" open>
+  <details className="dd" >
     <summary>✅ Qué vamos a construir</summary>
     <div className="dd-body">
       <ul>
@@ -2257,7 +2262,7 @@ add_action('wp_enqueue_scripts', 'ps_enqueue_paseos_archive_styles');`}</code></
     </div>
   </details>
 
-  <details className="dd" open>
+  <details className="dd" >
     <summary>1️⃣ Confirmar la URL del archivo del CPT</summary>
     <div className="dd-body">
       <p>
@@ -2280,134 +2285,13 @@ add_action('wp_enqueue_scripts', 'ps_enqueue_paseos_archive_styles');`}</code></
     </div>
   </details>
 
-  <details className="dd" open>
-    <summary>2️⃣ Crear la plantilla del listado: archive-paseo.php</summary>
-    <div className="dd-body">
-      <p>
-        WordPress utiliza la jerarquía de plantillas. Para el archivo del CPT <code>paseo</code>, buscará:
-      </p>
-
-      <ul>
-        <li><code>archive-paseo.php</code> (plantilla específica del CPT)</li>
-        <li>si no existe, usará <code>archive.php</code> (genérica)</li>
-      </ul>
-
-      <h4>📁 Ruta exacta</h4>
-      <pre><code>{`/wp-content/themes/tu-tema-hijo/archive-paseo.php`}</code></pre>
-
-      <h4>📌 Plantilla completa (copia y pega)</h4>
-      <pre><code>{`<?php
-/**
- * Archive Paseo (CPT: paseo)
- * Archivo: archive-paseo.php
- */
-if ( ! defined('ABSPATH') ) exit;
-
-get_header();
-?>
-
-<main class="ps-wrap ps-archive">
-
-  <!-- HERO DEL LISTADO -->
-  <header class="ps-archive-hero" aria-label="Listado de paseos">
-    <div class="ps-archive-hero__inner">
-      <h1 class="ps-archive-title">Paseos</h1>
-      <p class="ps-archive-lead">Descubre los paseos disponibles y accede al detalle para reservar.</p>
-    </div>
-  </header>
-
-  <!-- GRID TARJETAS -->
-  <section class="ps-grid-archive" aria-label="Tarjetas de paseos">
-
-    <?php if ( have_posts() ) : ?>
-
-      <?php while ( have_posts() ) : the_post(); ?>
-
-        <?php
-          $permalink = get_permalink();
-          $title = get_the_title();
-
-          // Imagen destacada
-          $img_url = has_post_thumbnail()
-            ? get_the_post_thumbnail_url(get_the_ID(), 'large')
-            : '';
-
-          // Resumen: extracto > recorte de contenido
-          $excerpt = has_excerpt()
-            ? get_the_excerpt()
-            : wp_trim_words( wp_strip_all_tags( get_the_content() ), 18 );
-        ?>
-
-        <article class="ps-card ps-card--archive">
-          <a class="ps-card__media" href="<?php echo esc_url($permalink); ?>" aria-label="<?php echo esc_attr($title); ?>">
-            <?php if ( $img_url ): ?>
-              <img class="ps-card__img" src="<?php echo esc_url($img_url); ?>" alt="" loading="lazy" />
-            <?php else: ?>
-              <div class="ps-card__placeholder" aria-hidden="true"></div>
-            <?php endif; ?>
-
-            <span class="ps-card__badge">Paseo</span>
-          </a>
-
-          <div class="ps-card__body">
-            <h2 class="ps-card__title">
-              <a href="<?php echo esc_url($permalink); ?>"><?php echo esc_html($title); ?></a>
-            </h2>
-
-            <?php if ( $excerpt ): ?>
-              <p class="ps-card__text"><?php echo esc_html($excerpt); ?></p>
-            <?php endif; ?>
-
-            <div class="ps-card__actions">
-              <a class="ps-btn ps-btn--primary" href="<?php echo esc_url($permalink); ?>">Ver detalle</a>
-              <a class="ps-btn ps-btn--ghost" href="<?php echo esc_url($permalink); ?>#reserva">Reservar</a>
-            </div>
-          </div>
-        </article>
-
-      <?php endwhile; ?>
-
-    <?php else: ?>
-
-      <div class="ps-empty">
-        <h2 class="ps-h2">Aún no hay paseos publicados</h2>
-        <p class="ps-muted">Cuando se publique el primer paseo, aparecerá automáticamente aquí.</p>
-      </div>
-
-    <?php endif; ?>
-
-  </section>
-
-  <!-- PAGINACIÓN -->
-  <nav class="ps-pagination" aria-label="Paginación">
-    <?php
-      the_posts_pagination([
-        'mid_size'  => 1,
-        'prev_text' => '← Anterior',
-        'next_text' => 'Siguiente →',
-      ]);
-    ?>
-  </nav>
-
-</main>
-
-<?php get_footer();`}</code></pre>
-
-      <div className="callout tip">
-        Esta plantilla usa el <strong>Loop</strong> de WordPress.
-        Cada paseo publicado se transforma automáticamente en una tarjeta.
-      </div>
-    </div>
-  </details>
-
-    <div className="callout tip">
-      Esta es la razón por la que un CPT es una herramienta tan potente:
-      convierte una web en un sistema de contenidos dinámico y escalable.
-    </div>
-    </section>
-  
-
-     <details className="dd" open>
+  <div className="callout tip">
+    Esta es la razón por la que un CPT es una herramienta tan potente:
+    convierte una web en un sistema de contenidos dinámico y escalable.
+  </div>
+</section>
+<section className="doc doc-section">
+  <details className="dd" >
     <summary>5️⃣ Hacer la página “Paseos” visitable desde el menú</summary>
     <div className="dd-body">
       <p>
@@ -2490,7 +2374,7 @@ get_header();
   </div>
 
 </PracticeBox>
-      </section>
+</section>
 
       {/* CONFIGURACIÓN AVANZADA CPT */}
       <section className="doc doc-section" id="configuracion-avanzada">
@@ -2551,7 +2435,7 @@ get_header();
           </div>
         </div>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>¿Por qué mi botón no encuentra la paseo? (Solución de errores)</summary>
       <div className="dd-body">
         <p>Si has seguido la tabla anterior y al escribir "Parque" en un botón sigue sin aparecer nada, el problema es la <strong>indexación</strong>. Sigue este protocolo de emergencia:</p>
@@ -2616,194 +2500,13 @@ get_header();
         <li>¿Se carga con tu plantilla personalizada?</li>
       </ol>
     </PracticeBox>
-
-        <details className="dd" open>
-          <summary>🧩 Plantilla Single Paseo sin ACF (solo CPT)</summary>
-          <div className="dd-body">
-            <p>
-              Esta versión de <code>single-paseo.php</code> utiliza únicamente:
-            </p>
-
-            <ul>
-              <li>Título</li>
-              <li>Imagen destacada</li>
-              <li>Extracto (si existe)</li>
-              <li>Contenido del editor</li>
-            </ul>
-
-            <p>
-              No depende de <code>get_field()</code> ni de ningún plugin adicional.
-            </p>
-
-            <div className="callout tip">
-              La estructura visual es fija.
-              El contenido es variable.
-            </div>
-
-            <pre><code>{`<?php
-/**
- * Single Paseo (CPT: paseo) — SIN ACF (solo CPT)
- * Archivo: single-paseo.php
- */
-if ( ! defined('ABSPATH') ) exit;
-
-get_header();
-
-// Astra: opcional
-remove_action( 'astra_entry_header', 'astra_post_meta', 10 );
-
-$titulo = get_the_title();
-
-/* ===== 1) Imagen destacada ===== */
-$img_url = '';
-if ( has_post_thumbnail() ) {
-  $img_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
-}
-
-/* ===== 2) Contenido / Lead ===== */
-$raw_content = get_the_content();
-$content_html = apply_filters('the_content', $raw_content);
-
-if ( has_excerpt() ) {
-  $lead = get_the_excerpt();
-} else {
-  $lead = wp_trim_words( wp_strip_all_tags( $raw_content ), 26 );
-}
-
-/* ===== 3) Helpers: extraer secciones por encabezado ===== */
-function ps_extract_section_text($content, $heading){
-  $heading = preg_quote($heading, '/');
-  $pattern = '/<h[2-4][^>]*>\\s*' . $heading . '\\:?\\s*<\\/h[2-4]>\\s*(.*?)\\s*(?=<h[2-4][^>]*>|$)/is';
-  if ( preg_match($pattern, $content, $m) ) {
-    $text = trim( wp_strip_all_tags( $m[1] ) );
-    return $text;
-  }
-  return '';
-}
-
-function ps_extract_section_list_items($content, $heading){
-  $heading = preg_quote($heading, '/');
-  $pattern = '/<h[2-4][^>]*>\\s*' . $heading . '\\:?\\s*<\\/h[2-4]>\\s*(.*?)\\s*(?=<h[2-4][^>]*>|$)/is';
-  if ( preg_match($pattern, $content, $m) ) {
-    $section_html = $m[1];
-    if ( preg_match('/<ul[^>]*>(.*?)<\\/ul>/is', $section_html, $ul) ) {
-      preg_match_all('/<li[^>]*>(.*?)<\\/li>/is', $ul[0], $lis);
-      $items = [];
-      foreach ($lis[1] as $li){
-        $t = trim( wp_strip_all_tags($li) );
-        if ($t !== '') $items[] = $t;
-      }
-      return $items;
-    }
-  }
-  return [];
-}
-
-/* ===== 4) Datos sacados del contenido (sin ACF) ===== */
-$cpt_duracion  = ps_extract_section_text($content_html, 'Duración');
-$cpt_precio    = ps_extract_section_text($content_html, 'Precio');
-$cpt_idioma    = ps_extract_section_text($content_html, 'Idioma');
-$cpt_encuentro = ps_extract_section_text($content_html, 'Encuentro');
-
-$incluye_items   = ps_extract_section_list_items($content_html, 'Incluye');
-$noincluye_items = ps_extract_section_list_items($content_html, 'No incluye');
-?>
-
-<main class="ps-wrap ps-single">
-
-  <!-- HERO -->
-  <header class="ps-hero" aria-label="Cabecera del paseo">
-    <div class="ps-hero__media" style="<?php echo $img_url ? 'background-image:url(' . esc_url($img_url) . ');' : ''; ?>">
-      <?php if ( ! $img_url ): ?>
-        <div class="ps-hero__placeholder" aria-hidden="true"></div>
-      <?php endif; ?>
-      <span class="ps-hero__badge">Paseo guiado · Sevilla</span>
-    </div>
-
-    <div class="ps-hero__content">
-      <h1 class="ps-title"><?php echo esc_html($titulo); ?></h1>
-
-      <?php if ( ! empty($lead) ): ?>
-        <p class="ps-lead"><?php echo esc_html($lead); ?></p>
-      <?php endif; ?>
-
-      <div class="ps-hero__actions">
-        <a class="ps-btn ps-btn--primary" href="#reserva">Reservar ahora</a>
-        <a class="ps-btn ps-btn--ghost" href="/paseo">Ver todos los paseos</a>
-      </div>
-
-      <ul class="ps-pills" aria-label="Datos clave">
-        <?php if ( ! empty($cpt_duracion) ): ?><li class="ps-pill">⏱ <?php echo esc_html($cpt_duracion); ?></li><?php endif; ?>
-        <?php if ( ! empty($cpt_precio) ): ?><li class="ps-pill">💶 <?php echo esc_html($cpt_precio); ?></li><?php endif; ?>
-        <?php if ( ! empty($cpt_idioma) ): ?><li class="ps-pill">🗣 <?php echo esc_html($cpt_idioma); ?></li><?php endif; ?>
-      </ul>
-    </div>
-  </header>
-
-  <section class="ps-grid" aria-label="Contenido del paseo">
-    <article class="ps-card ps-card--main">
-      <div class="ps-card__body">
-        <h2 class="ps-h2">Descripción</h2>
-
-        <?php if ( trim(wp_strip_all_tags($raw_content)) !== '' ): ?>
-          <div class="ps-prose"><?php echo $content_html; ?></div>
-        <?php else: ?>
-          <p class="ps-muted">Escribe la descripción en el editor del paseo.</p>
-        <?php endif; ?>
-      </div>
-    </article>
-
-    <aside class="ps-card ps-card--aside" aria-label="Ficha rápida">
-      <div class="ps-card__body">
-        <h2 class="ps-h2">Ficha rápida</h2>
-
-        <dl class="ps-meta">
-          <div class="ps-meta__row"><dt>Duración</dt><dd><?php echo $cpt_duracion ? esc_html($cpt_duracion) : '—'; ?></dd></div>
-          <div class="ps-meta__row"><dt>Precio</dt><dd><?php echo $cpt_precio ? esc_html($cpt_precio) : '—'; ?></dd></div>
-          <div class="ps-meta__row"><dt>Idioma</dt><dd><?php echo $cpt_idioma ? esc_html($cpt_idioma) : '—'; ?></dd></div>
-          <div class="ps-meta__row"><dt>Encuentro</dt><dd><?php echo $cpt_encuentro ? esc_html($cpt_encuentro) : '—'; ?></dd></div>
-        </dl>
-
-        <div class="ps-divider" aria-hidden="true"></div>
-
-        <h3 class="ps-h3">Incluye</h3>
-        <?php if ( $incluye_items ): ?>
-          <ul class="ps-list"><?php foreach($incluye_items as $it){ echo '<li>' . esc_html($it) . '</li>'; } ?></ul>
-        <?php else: ?>
-          <p class="ps-muted">En el contenido, crea "Incluye" + una lista.</p>
-        <?php endif; ?>
-
-        <div class="ps-divider" aria-hidden="true"></div>
-
-        <h3 class="ps-h3">No incluye</h3>
-        <?php if ( $noincluye_items ): ?>
-          <ul class="ps-list ps-list--danger"><?php foreach($noincluye_items as $it){ echo '<li>' . esc_html($it) . '</li>'; } ?></ul>
-        <?php else: ?>
-          <p class="ps-muted">En el contenido, crea "No incluye" + una lista.</p>
-        <?php endif; ?>
-
-        <div class="ps-cta" id="reserva">
-          <p class="ps-note">Reserva rápida. Confirmación por email.</p>
-          <a class="ps-btn ps-btn--primary ps-btn--block" href="/reservar">Reservar ahora</a>
-          <p class="ps-micro">¿Dudas? Escríbenos desde Contacto.</p>
-        </div>
-      </div>
-    </aside>
-  </section>
-
-</main>
-
-<?php get_footer();`}</code></pre>
-
-          </div>
-        </details>
   </section>
 
       {/* 9) TESTING */}
       <section className="doc doc-section" id="testing">
         <h2>9) Testing y depuración</h2>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Problemas comunes y soluciones</summary>
           <div className="dd-body">
             <h4>❌ Error 404 al ver una paseo</h4>
@@ -2832,7 +2535,7 @@ $noincluye_items = ps_extract_section_list_items($content_html, 'No incluye');
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>Herramientas de depuración</summary>
           <div className="dd-body">
             <h4>1. Debug en WordPress</h4>
@@ -2881,7 +2584,7 @@ add_action('wp_footer', 'mostrar_plantilla_actual');`}
       <section className="doc doc-section" id="mejores-practicas">
         <h2>10) Mejores prácticas profesionales</h2>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>🗂️ Organización y documentación</summary>
           <div className="dd-body">
             <h4>Documenta todo en functions.php</h4>
@@ -2926,7 +2629,7 @@ add_action('wp_footer', 'mostrar_plantilla_actual');`}
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>🔒 Seguridad y validación</summary>
           <div className="dd-body">
             <h4>Escapar contenido siempre</h4>
@@ -2954,7 +2657,7 @@ add_action('wp_footer', 'mostrar_plantilla_actual');`}
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>⚡ Rendimiento y optimización</summary>
           <div className="dd-body">
             <h4>Lazy loading para imágenes</h4>
@@ -3115,7 +2818,7 @@ add_action('wp_enqueue_scripts', 'enqueue_paseo_styles');`}
           </div>
         </div>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>✅ Checklist de implementación correcta (Verificación paso a paso)</summary>
           <div className="dd-body">
             
@@ -3273,7 +2976,7 @@ add_action('wp_enqueue_scripts', 'enqueue_paseo_styles');`}
           </div>
         </details>
 
-        <details className="dd" open>
+        <details className="dd" >
           <summary>🔗 Preparación para el siguiente tema</summary>
           <div className="dd-body">
             <p>
@@ -3302,19 +3005,8 @@ add_action('wp_enqueue_scripts', 'enqueue_paseo_styles');`}
           </p>
         </TipBox>
 
-        <div className="doc doc-next">
-          <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem', background: '#f8f9fa', borderRadius: '8px'}}>
-            <a className="btn" href="#fundamentos">
-              ↑ Volver arriba
-            </a>
-            <strong style={{color: '#6c757d'}}>
-              Siguiente: Tema 19 - Advanced Custom Fields
-            </strong>
-            <a className="btn btn-primary" href="/tema19/">
-              Continuar &rarr;
-            </a>
-          </div>
-        </div>
+        
+       
       </section>
     </TopicLayout>
   );

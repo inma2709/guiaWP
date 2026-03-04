@@ -301,6 +301,35 @@ export const menuItems = [
     ],
   },
 
+  {
+    title: "M22 · Sistema de Login de Cliente",
+    path: "/tema22",
+    children: [
+      { title: "22.1 Fundamentos: ¿Por qué necesitas login de cliente?", path: "/tema22#fundamentos" },
+      { title: "22.2 Herramientas: Plugins que resuelven login de cliente", path: "/tema22#herramientas" },
+      { title: "22.3 Ultimate Member: Nuestra elección", path: "/tema22#ultimate-member" },
+      { title: "22.4 Implementación paso a paso", path: "/tema22#instalacion" },
+      { title: "22.5 Saludo en el menú + enlace Login/Logout", path: "/tema22#menu-saludo" },
+      { title: "22.6 Perfil 'Rutas reservadas' (placeholder)", path: "/tema22#perfil-rutas" },
+      { title: "22.7 Práctica final", path: "/tema22#practica" },
+    ],
+  },
+
+  {
+    title: "M23 · Plugins de Reservas en WordPress",
+    path: "/tema23",
+    children: [
+      { title: "23.1 Fundamentos: ¿Por qué automatizar reservas?", path: "/tema23#fundamentos" },
+      { title: "23.2 Panorama de plugins disponibles", path: "/tema23#panorama-plugins" },
+      { title: "23.3 Simply Schedule Appointments: análisis completo", path: "/tema23#analisis-detallado" },
+      { title: "23.4 Instalación y configuración paso a paso", path: "/tema23#instalacion" },
+      { title: "23.5 Uso práctico: primeras reservas", path: "/tema23#uso-practico" },
+      { title: "23.6 Casos prácticos por sector", path: "/tema23#casos-practicos" },
+      { title: "23.7 Optimización y mejores prácticas", path: "/tema23#optimizacion" },
+      { title: "23.8 Resolución de problemas", path: "/tema23#problemas-comunes" },
+    ],
+  },
+
   // Sección de Ejercicios
   {
     title: "📚 Ejercicios Prácticos",

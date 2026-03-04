@@ -74,7 +74,7 @@ export default function Tema22LoginClienteWordPress() {
         <section className="doc-section" id="fundamentos">
           <h2>1) Fundamentos: ¿Por qué necesitas login de cliente?</h2>
 
-          <details className="dd" open>
+          <details className="dd" >
             <summary>🤔 Escenarios donde necesitas área de cliente</summary>
             <div className="dd-body">
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem", margin: "1rem 0" }}>
@@ -121,7 +121,7 @@ export default function Tema22LoginClienteWordPress() {
             </div>
           </details>
 
-          <details className="dd" open>
+          <details className="dd" >
             <summary>⚖️ WordPress básico vs Sistema de login cliente</summary>
             <div className="dd-body">
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem", margin: "1.5rem 0" }}>
@@ -257,7 +257,7 @@ export default function Tema22LoginClienteWordPress() {
         <section className="doc-section" id="herramientas">
           <h2>2) Herramientas: Plugins que resuelven login de cliente</h2>
 
-          <details className="dd" open>
+          <details className="dd" >
             <summary>🧭 Mapa de soluciones disponibles</summary>
             <div className="dd-body">
               <div
@@ -429,7 +429,7 @@ export default function Tema22LoginClienteWordPress() {
         <section className="doc-section" id="ultimate-member">
           <h2>3) Ultimate Member: Nuestra elección y justificación</h2>
 
-          <details className="dd" open>
+          <details className="dd" >
             <summary>🎯 ¿Por qué Ultimate Member es perfecto para empezar?</summary>
             <div className="dd-body">
               <div style={{ background: "#f8fff9", border: "3px solid #28a745", borderRadius: "10px", padding: "1.5rem", margin: "1rem 0" }}>
@@ -485,7 +485,7 @@ export default function Tema22LoginClienteWordPress() {
             </div>
           </details>
 
-          <details className="dd" open>
+          <details className="dd" >
             <summary>🔧 Así se integra en tu sitio web</summary>
             <div className="dd-body">
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem", margin: "1rem 0" }}>
@@ -613,7 +613,7 @@ export default function Tema22LoginClienteWordPress() {
         <section className="doc-section" id="instalacion">
           <h2>4. Implementación paso a paso</h2>
 
-          <details className="dd" open>
+          <details className="dd" >
             <summary>4.1 Instalar y activar</summary>
             <div className="dd-body">
               <ol>
@@ -632,7 +632,7 @@ export default function Tema22LoginClienteWordPress() {
             </div>
           </details>
 
-          <details className="dd" open>
+          <details className="dd" >
             <summary>4.2 Crear páginas del área cliente (login, registro, perfil)</summary>
             <div className="dd-body">
               <p>Crea estas páginas (Páginas → Añadir nueva). Los nombres son orientativos, lo importante es la función:</p>
@@ -692,7 +692,7 @@ export default function Tema22LoginClienteWordPress() {
             <p>Esto eleva mucho la sensación de “área cliente”: el menú cambia según si hay sesión iniciada.</p>
           </TipBox>
 
-          <details className="dd" open>
+          <details className="dd" >
             <summary>5.1 Añadir enlaces al menú (sin código)</summary>
             <div className="dd-body">
               <ol>
@@ -709,7 +709,7 @@ export default function Tema22LoginClienteWordPress() {
             </div>
           </details>
 
-          <details className="dd" open>
+          <details className="dd" >
             <summary>5.2 Saludo “Hola, Nombre” con un snippet (tema hijo)</summary>
             <div className="dd-body">
               <p>
@@ -779,7 +779,7 @@ add_filter('wp_nav_menu_items', function($items, $args){
             Para preparar el área cliente, crea una sección visible “Rutas reservadas”. De momento estará vacía, pero el contenedor/estructura existe.
           </p>
 
-          <details className="dd" open>
+          <details className="dd" >
             <summary>Opción simple: sección fija dentro de “Mi Perfil”</summary>
             <div className="dd-body">
               <p>
@@ -793,7 +793,19 @@ add_filter('wp_nav_menu_items', function($items, $args){
               </pre>
 
               <div className="callout tip">
-                Más adelante, esta sección se conectará con el sistema de reservas (por ejemplo Amelia) para listar reservas por usuario. Ahora se deja preparada la UX y la arquitectura.
+                Más adelante, esta sección se conectará con el sistema de reservas <strong>Simply Schedule Appointments</strong> 
+                para listar reservas por usuario. SSA permite mostrar las citas de un cliente específico usando shortcodes 
+                como <code>[ssa_customer_panel]</code> o mediante integración con Ultimate Member. 
+                Ahora se deja preparada la UX y la arquitectura.
+              </div>
+              
+              <div className="callout info">
+                <p><strong>Implementación futura con Simply Schedule Appointments:</strong></p>
+                <ul>
+                  <li><strong>Shortcode directo:</strong> <code>[ssa_customer_panel]</code> muestra las citas del usuario logueado</li>
+                  <li><strong>Integración UM + SSA:</strong> Los datos se sincronizan automáticamente por ID de usuario</li>
+                  <li><strong>Personalización:</strong> Se puede filtrar por estado (próximas, pasadas, canceladas)</li>
+                </ul>
               </div>
             </div>
           </details>
