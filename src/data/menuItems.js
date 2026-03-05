@@ -331,7 +331,25 @@ export const menuItems = [
   },
 
   {
-    title: "M24 · Elementor: El Page Builder",
+    title: "M24 · Hooks en WordPress: Actions y Filters",
+    path: "/tema28",
+    children: [
+      { title: "24.1 Ya los has usado sin saberlo", path: "/tema28#ya-los-usaste" },
+      { title: "24.2 \u00bfQu\u00e9 es un hook?", path: "/tema28#que-es-un-hook" },
+      { title: "24.3 C\u00f3mo funciona por dentro", path: "/tema28#como-funciona" },
+      { title: "24.4 Action Hooks: ejecutar c\u00f3digo", path: "/tema28#actions" },
+      { title: "24.5 Filter Hooks: modificar datos", path: "/tema28#filters" },
+      { title: "24.6 Diferencia entre Action y Filter", path: "/tema28#diferencia" },
+      { title: "24.7 Crea tu primer hook (paso a paso)", path: "/tema28#primer-hook" },
+      { title: "24.8 Hooks m\u00e1s usados en WordPress", path: "/tema28#hooks-comunes" },
+      { title: "24.9 Ejemplo real: encolado condicional", path: "/tema28#ejemplo-proyecto" },
+      { title: "24.10 Hooks del tema Astra", path: "/tema28#hooks-astra" },
+      { title: "24.11 Pr\u00e1ctica evaluable", path: "/tema28#practica" },
+    ],
+  },
+
+  {
+    title: "M25 · Elementor: El Page Builder",
     path: "/tema24",
     children: [
       { title: "24.1 ¿Qué es Elementor y por qué existe?", path: "/tema24#que-es-elementor" },
@@ -340,7 +358,7 @@ export const menuItems = [
   },
 
   {
-    title: "M25 · Proyecto E-Commerce: WooCommerce + GeneratePress + Elementor",
+    title: "M26 · Proyecto E-Commerce: WooCommerce + GeneratePress + Elementor",
     path: "/tema25",
     children: [
       { title: "25.1 Principios básicos de un e-commerce", path: "/tema25#principios-ecommerce" },
@@ -354,7 +372,7 @@ export const menuItems = [
   },
 
   {
-    title: "M26 · Diseñando la Home de tu Tienda con Elementor",
+    title: "M27 · Dise\u00f1ando la Home de tu Tienda con Elementor",
     path: "/tema26",
     children: [
       { title: "26.1 Diagnóstico post-WPZip", path: "/tema26#diagnostico-wpzip" },
@@ -363,6 +381,38 @@ export const menuItems = [
       { title: "26.4 SEO on-page en la home", path: "/tema26#seo-home" },
       { title: "26.5 Workflow en Elementor", path: "/tema26#workflow-elementor" },
       { title: "26.6 Actividades prácticas", path: "/tema26#actividades" },
+    ],
+  },
+
+  {
+    title: "M28 · Subir tu proyecto WordPress a GitHub",
+    path: "/tema27",
+    children: [
+      { title: "27.1 Qué es Git y qué aporta a WordPress", path: "/tema27#que-es-git" },
+      { title: "27.2 Qué se sube a GitHub y qué NO", path: "/tema27#que-subir" },
+      { title: "27.3 Estructura recomendada del repositorio", path: "/tema27#estructura-repo" },
+      { title: "27.4 Crear el .gitignore (WordPress + seguridad)", path: "/tema27#gitignore" },
+      { title: "27.5 Crear un README profesional", path: "/tema27#readme" },
+      { title: "27.6 Dónde guardar pantallazos para el README", path: "/tema27#pantallazos" },
+      { title: "27.7 Cómo subirlo a GitHub (paso a paso)", path: "/tema27#subir-a-github" },
+      { title: "27.8 Checklist final + errores típicos", path: "/tema27#checklist" },
+      { title: "27.9 Práctica evaluable", path: "/tema27#practica" },
+    ],
+  },
+
+  {
+    title: "M29 · Exportar tu proyecto WordPress con LocalWP",
+    path: "/tema29",
+    children: [
+      { title: "29.1 ¿Qué hay que exportar exactamente?", path: "/tema29#que-se-exporta" },
+      { title: "29.2 Exportar el sitio desde LocalWP", path: "/tema29#localwp-export" },
+      { title: "29.3 ¿Qué contiene el archivo exportado?", path: "/tema29#que-contiene-el-zip" },
+      { title: "29.4 Llevarte el archivo a casa", path: "/tema29#llevar-archivo" },
+      { title: "29.5 Instalar LocalWP en casa", path: "/tema29#instalar-localwp" },
+      { title: "29.6 Importar el sitio en LocalWP", path: "/tema29#importar" },
+      { title: "29.7 Primeros pasos después de importar", path: "/tema29#primeros-pasos" },
+      { title: "29.8 Problemas comunes y soluciones", path: "/tema29#problemas-comunes" },
+      { title: "29.9 Práctica evaluable", path: "/tema29#practica" },
     ],
   },
 

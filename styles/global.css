@@ -105,6 +105,9 @@ img{ max-width:100%; display:block; }
 /* 04) ROOT (quita el centrado/limitación de Vite) */
 #root{
   min-height:100vh;
+  max-width: 100%;
+  padding: 0;
+  text-align: left;
 }
 
 /* 05) ESTRUCTURA GENERAL (SHELL) */
@@ -303,6 +306,8 @@ img{ max-width:100%; display:block; }
 /* 09) CONTENIDO PRINCIPAL */
 .content{
   padding: 1.2rem;
+  min-width: 0;          /* evita que la columna de grid se expanda */
+  overflow-x: hidden;    /* elimina scroll horizontal de la página  */
 }
 
 .module-page .topics-grid{
@@ -672,14 +677,19 @@ img{ max-width:100%; display:block; }
 }
 
 /* Bloques de código */
-.doc-section pre{
+.doc-section pre,
+.callout pre,
+.practice-box pre{
   margin: .9rem 0;
   padding: 1rem;
   border-radius: 14px;
-  overflow: auto;
+  overflow-x: auto;      /* scroll interno horizontal solo en el pre */
+  overflow-y: visible;
+  max-width: 100%;       /* no sobrepasa el contenedor */
   background: #0b1220;
   color: rgba(255,255,255,.92);
   border: 1px solid rgba(255,255,255,.10);
+  white-space: pre;      /* conserva indentación sin forzar wrap */
 }
 
 .doc-section pre code{

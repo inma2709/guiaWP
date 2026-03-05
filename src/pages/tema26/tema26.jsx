@@ -78,10 +78,11 @@ export default function Tema26_HomeEcommerce() {
         <p className="kicker">UF1841 · Proyecto E-Commerce · Fase 1</p>
         <h1>Diseñando la Home de tu Tienda con Elementor</h1>
         <p className="lead">
-          Partimos de la instalación generada por WPZip (WooCommerce + GeneratePress + Elementor).
-          En este tema analizamos con mentalidad de <em>conversion designer</em> y especialista SEO
-          cada bloque que debe tener tu home, por qué existe, cómo construirlo en Elementor y qué
-          errores de principiante debes evitar desde el primer día.
+          Partimos de la instalación que montamos paso a paso en el tema anterior (WooCommerce +
+          GeneratePress + Elementor). En este tema analizamos con mentalidad de{" "}
+          <em>conversion designer</em> y especialista SEO cada bloque que debe tener tu home, por
+          qué existe, cómo construirlo en Elementor y qué errores de principiante debes evitar
+          desde el primer día.
         </p>
 
         <TipBox title="🎯 Objetivos del tema">
@@ -95,14 +96,14 @@ export default function Tema26_HomeEcommerce() {
           <p>
             <strong>Tiempo estimado:</strong> 3,5 horas ·{" "}
             <strong>Nivel:</strong> Intermedio ·{" "}
-            <strong>Requisito:</strong> Instalación WPZip del tema 25 operativa
+            <strong>Requisito:</strong> Stack completo del tema 25 instalado y operativo (LocalWP + GeneratePress + WooCommerce + Elementor)
           </p>
         </TipBox>
       </header>
 
-      {/* ══════════════ S1: DIAGNÓSTICO WPZIP ══════════════ */}
-      <section className="doc doc-section" id="diagnostico-wpzip">
-        <h2>1. Qué nos entrega WPZip y qué nos falta</h2>
+      {/* ══════════════ S1: DIAGNÓSTICO BASE ══════════════ */}
+      <section className="doc doc-section" id="diagnostico-base">
+        <h2>1. De qué punto partimos y qué nos falta</h2>
 
         <div className="doc-content">
           <p>
@@ -113,16 +114,15 @@ export default function Tema26_HomeEcommerce() {
 
           <div className="two-columns">
             <div>
-              <h4 style={{ color: "#16a34a" }}>✅ Lo que WPZip ya ha configurado</h4>
+              <h4 style={{ color: "#16a34a" }}>✅ Lo que ya tenemos configurado (tema 25)</h4>
               <ul style={{ fontSize: "0.9rem" }}>
-                <li>WordPress instalado con idioma español y zona horaria Madrid</li>
-                <li>GeneratePress activo como theme base</li>
+                <li>WordPress en español, zona horaria Madrid y permalinks correctos</li>
+                <li>GeneratePress activo con paleta de colores y tipografía definidas</li>
                 <li>WooCommerce con asistente completado (moneda €, país España)</li>
-                <li>Elementor instalado y activado</li>
+                <li>Elementor instalado con colores y fuentes globales sincronizados</li>
                 <li>Páginas especiales de WooCommerce creadas (Tienda, Carrito, Pago, Mi cuenta)</li>
-                <li>Yoast SEO instalado con configuración básica</li>
-                <li>Productos de muestra (habitualmente 8-12)</li>
-                <li>Categorías base creadas</li>
+                <li>Al menos 6 productos en 3 categorías con imagen y precio</li>
+                <li>Un pedido de prueba verificado en WooCommerce → Pedidos</li>
               </ul>
             </div>
             <div>
@@ -1077,7 +1077,7 @@ export default function Tema26_HomeEcommerce() {
           <PracticeBox title="🧪 Práctica 1 — Configurar el menú de navegación">
             <ol>
               <li>
-                En tu instalación WPZip, ve a <em>Apariencia → Menús</em> y crea el menú principal
+                Ve a <em>Apariencia → Menús</em> y crea el menú principal
                 con la estructura recomendada en este tema.
               </li>
               <li>
@@ -1160,13 +1160,13 @@ export default function Tema26_HomeEcommerce() {
       <section className="doc doc-section" id="conclusion">
         <div
           style={{
-            background: "linear-gradient(135deg, #0f172a 0%, #1e1b4b 60%, #2d1b69 100%)",
+            background: "linear-gradient(135deg, #d3d5da 0%, #f5f5f6 60%, #cccbcf 100%)",
             color: "white",
             padding: "2.5rem",
             borderRadius: "16px",
           }}
         >
-          <h2 style={{ margin: "0 0 1.5rem 0", color: "white", textAlign: "center" }}>
+          <h2 style={{ margin: "0 0 1.5rem 0", color: "blue", textAlign: "center" }}>
             🎓 Conclusiones del tema
           </h2>
           <div

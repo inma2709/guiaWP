@@ -15,9 +15,10 @@ export default function WooCommerce_Inicio() {
         <p className="kicker">UF1841 · WordPress · Proyecto E-Commerce</p>
         <h1>Tu Primera Tienda Online: WooCommerce + GeneratePress + Elementor</h1>
         <p className="lead">
-          Arranca desde cero un proyecto de comercio electrónico profesional. Entiende cómo funciona
-          WooCommerce, por qué GeneratePress es el tema ideal para e-commerce, cómo encaja Elementor
-          en la arquitectura y crea tu primera instalación con un prompt optimizado en WPZip.
+          Arranca desde cero un proyecto de comercio electrónico profesional en LocalWP. Entiende cómo
+          funciona WooCommerce, por qué GeneratePress es el theme ideal para e-commerce, cómo encaja
+          Elementor en la arquitectura y sigue el proceso paso a paso para tener tu primera tienda
+          funcionando en menos de una hora.
         </p>
 
         <TipBox title="🎯 Objetivos de este tema">
@@ -26,10 +27,11 @@ export default function WooCommerce_Inicio() {
             <li>Entender <strong>cómo funciona WooCommerce</strong> y su integración con WordPress</li>
             <li>Conocer <strong>GeneratePress</strong> como base de rendimiento para tiendas</li>
             <li>Entender el rol de <strong>Elementor</strong> dentro de un stack de e-commerce</li>
-            <li>Crear tu <strong>primera instalación completa con WPZip</strong> usando un prompt profesional</li>
+            <li>Instalar y configurar el <strong>stack completo desde cero en LocalWP</strong>, paso a paso</li>
+            <li>Crear tus <strong>primeros productos de WooCommerce</strong> y verificar que la tienda funciona</li>
           </ul>
           <p><strong>Tiempo estimado:</strong> 3 horas · <strong>Nivel:</strong> Intermedio-Avanzado</p>
-          <p><strong>Requisitos:</strong> Haber completado temas anteriores de WordPress, Elementor y GeneratePress básico</p>
+          <p><strong>Requisitos:</strong> Tener LocalWP instalado y haber completado temas anteriores de WordPress, Elementor y GeneratePress básico</p>
         </TipBox>
       </header>
 
@@ -706,235 +708,70 @@ export default function WooCommerce_Inicio() {
         </div>
       </section>
 
-      {/* ──────────────────────────────────────────── SECCIÓN 5: WPZIP PROMPT */}
-      <section className="doc doc-section" id="wpzip-primera-instalacion">
-        <h2>5. Tu primera instalación: WPZip con prompt profesional</h2>
+      {/* ──────────────────────────────────────────── SECCIÓN 5: INSTALACIÓN DESDE CERO */}
+      <section className="doc doc-section" id="instalacion-desde-cero">
+        <h2>5. Tu primera instalación desde cero: paso a paso en LocalWP</h2>
 
         <div className="doc-content">
-          <TipBox title="¿Qué es WPZip?">
+          <TipBox title="🗺️ Visión general del proceso">
             <p>
-              <strong>WPZip</strong> (también conocido como servicio de auto-instalación con
-              blueprint) es una herramienta que te permite definir mediante un{" "}
-              <strong>prompt o configuración</strong> exactamente qué plugins, themes, páginas demo y
-              ajustes quieres en tu WordPress, y genera una instalación lista para trabajar en
-              minutos. Elimina horas de setup manual.
+              Vamos a construir la base de la tienda en <strong>6 bloques</strong> que hay que
+              completar en orden. Cada bloque depende del anterior, igual que en un proyecto real.
             </p>
+            <ol>
+              <li><strong>Crear el sitio en LocalWP</strong> — el entorno de trabajo</li>
+              <li><strong>Ajustes iniciales de WordPress</strong> — idioma, permalinks, limpieza</li>
+              <li><strong>Instalar y configurar GeneratePress</strong> — la base visual</li>
+              <li><strong>Instalar WooCommerce</strong> — la tienda</li>
+              <li><strong>Instalar Elementor</strong> — el diseñador de páginas</li>
+              <li><strong>Primera prueba</strong> — productos, tienda, verificación</li>
+            </ol>
           </TipBox>
 
-          <h3>Anatomía de un buen prompt para WPZip</h3>
-
-          <p>
-            Un prompt efectivo para crear un e-commerce debe describir:
-          </p>
-
-          <div
+          {/* ── BLOQUE 1: LOCALWP ──────────────────────────────── */}
+          <h3
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-              gap: "1rem",
-              margin: "1.5rem 0",
+              background: "#1a1a2e",
+              color: "#7dd3fc",
+              padding: "0.6rem 1.2rem",
+              borderRadius: "8px",
+              fontSize: "1rem",
+              marginTop: "2rem",
             }}
           >
-            {[
-              { num: "1", title: "Sector y tipo de negocio", example: "Tienda de ropa sostenible (moda ecológica)" },
-              { num: "2", title: "Stack tecnológico deseado", example: "WooCommerce + GeneratePress Premium + Elementor Pro" },
-              { num: "3", title: "Plugins esenciales", example: "Stripe, Yoast SEO, WPML, Mailchimp" },
-              { num: "4", title: "Estructura de páginas", example: "Home, Tienda, Sobre nosotros, Blog, Contacto" },
-              { num: "5", title: "Paleta de colores", example: "Verde bosque #2d5a27, crema #f5f0e8, negro #1a1a1a" },
-              { num: "6", title: "Tipografía", example: "Playfair Display (títulos), Lato (cuerpo)" },
-            ].map((item) => (
-              <div
-                key={item.num}
-                style={{
-                  background: "#faf9ff",
-                  border: "1px solid #c4b5fd",
-                  borderRadius: "8px",
-                  padding: "1rem",
-                }}
-              >
-                <div
-                  style={{
-                    width: "28px",
-                    height: "28px",
-                    borderRadius: "50%",
-                    background: "#7c3aed",
-                    color: "white",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontWeight: "700",
-                    fontSize: "0.85rem",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  {item.num}
-                </div>
-                <h5 style={{ margin: "0 0 0.3rem 0", color: "#4c1d95" }}>{item.title}</h5>
-                <p style={{ margin: 0, fontSize: "0.82rem", color: "#6b7280", fontStyle: "italic" }}>
-                  Ej: {item.example}
-                </p>
-              </div>
-            ))}
-          </div>
+            ① Crear el sitio en LocalWP
+          </h3>
 
-          <h3>Prompt modelo para un e-commerce de moda ecológica</h3>
-
-          <div
-            style={{
-              background: "#0f172a",
-              color: "#e2e8f0",
-              borderRadius: "12px",
-              padding: "1.8rem",
-              margin: "1.5rem 0",
-              fontFamily: "monospace",
-              fontSize: "0.88rem",
-              lineHeight: "1.8",
-              overflowX: "auto",
-            }}
-          >
-            <div style={{ color: "#94a3b8", marginBottom: "0.8rem", fontFamily: "sans-serif", fontSize: "0.8rem" }}>
-              📋 PROMPT WPZip — E-Commerce Moda Ecológica
-            </div>
-            <p style={{ margin: 0 }}>
-              <span style={{ color: "#7dd3fc" }}>Tipo de proyecto:</span>{" "}
-              <span style={{ color: "#fef08a" }}>
-                Tienda online de ropa sostenible y accesorios ecológicos
-              </span>
-              {"\n"}
-              <br />
-              <span style={{ color: "#7dd3fc" }}>Stack:</span>{" "}
-              <span style={{ color: "#86efac" }}>
-                WordPress latest + WooCommerce + GeneratePress + Elementor
-              </span>
-              {"\n"}
-              <br />
-              <span style={{ color: "#7dd3fc" }}>Plugins obligatorios:</span>
-              <br />
-              <span style={{ color: "#fca5a5" }}>
-                - WooCommerce (tienda)
-                <br />
-                - Elementor (page builder)
-                <br />
-                - GeneratePress (theme)
-                <br />
-                - Yoast SEO (posicionamiento)
-                <br />
-                - WooCommerce Stripe Gateway (pagos)
-                <br />
-                - Mailchimp for WooCommerce (email marketing)
-                <br />
-                - YITH WooCommerce Wishlist (lista de deseos)
-                <br />
-                - Smush (optimización imágenes)
-                <br />
-                - WP Rocket o LiteSpeed Cache (caché y rendimiento)
-              </span>
-              {"\n"}
-              <br />
-              <span style={{ color: "#7dd3fc" }}>Páginas a crear:</span>
-              <br />
-              <span style={{ color: "#c4b5fd" }}>
-                Home (hero section + productos destacados + newsletter)
-                <br />
-                Tienda (catálogo con filtros)
-                <br />
-                Sobre Nosotros (historia + valores de sostenibilidad)
-                <br />
-                Blog (categorías: moda, sostenibilidad, tendencias)
-                <br />
-                Contacto (formulario + mapa + redes sociales)
-                <br />
-                Políticas (privacidad, envíos, devoluciones)
-              </span>
-              {"\n"}
-              <br />
-              <span style={{ color: "#7dd3fc" }}>Categorías de productos:</span>
-              <br />
-              <span style={{ color: "#fdba74" }}>
-                Camisetas, Pantalones, Vestidos, Accesorios, Bolsas ecológicas
-              </span>
-              {"\n"}
-              <br />
-              <span style={{ color: "#7dd3fc" }}>Paleta de colores:</span>
-              <br />
-              <span style={{ color: "#6ee7b7" }}>
-                Primario: #2d5a27 (verde bosque)
-                <br />
-                Secundario: #f5f0e8 (crema orgánica)
-                <br />
-                Acento: #8b7355 (madera natural)
-                <br />
-                Texto: #1a1a1a (negro suave)
-              </span>
-              {"\n"}
-              <br />
-              <span style={{ color: "#7dd3fc" }}>Tipografía:</span>
-              <br />
-              <span style={{ color: "#e0e7ff" }}>
-                Títulos: Playfair Display (serif, elegante)
-                <br />
-                Cuerpo: Lato (sans-serif, legible)
-                <br />
-                Tamaño base: 16px | Interlineado: 1.7
-              </span>
-              {"\n"}
-              <br />
-              <span style={{ color: "#7dd3fc" }}>Ajustes WooCommerce:</span>
-              <br />
-              <span style={{ color: "#fef9c3" }}>
-                Moneda: EUR (€)
-                <br />
-                País base: España
-                <br />
-                Dimensiones: cm / kg
-                <br />
-                Stock management: activado
-                <br />
-                Reviews: activado
-                <br />
-                Checkout: invitado permitido
-              </span>
-              {"\n"}
-              <br />
-              <span style={{ color: "#7dd3fc" }}>Productos de muestra:</span>
-              <span style={{ color: "#a5f3fc" }}>
-                {" "}Sí, 12 productos con variantes de talla y color
-              </span>
-            </p>
-          </div>
-
-          <h3>Cómo usar este prompt en WPZip</h3>
-
-          <div style={{ margin: "1.5rem 0" }}>
+          <div style={{ margin: "1.2rem 0" }}>
             {[
               {
                 step: "1",
-                title: "Accede a WPZip",
-                detail: "Ve a wpzip.io (o la plataforma de tu hosting que soporte blueprints de WordPress). Inicia sesión o crea cuenta gratuita.",
+                title: "Abre LocalWP y crea un nuevo sitio",
+                detail: "Haz clic en el botón «+» de la esquina inferior izquierda. Elige «Create a new site».",
                 color: "#e7f3ff",
               },
               {
                 step: "2",
-                title: "Nuevo proyecto",
-                detail: "Haz clic en «Nuevo sitio» o «Create new». Elige la opción de instalación asistida por IA o por prompt.",
-                color: "#f3e8ff",
+                title: "Ponle nombre al sitio",
+                detail: "Escribe el nombre del proyecto, por ejemplo: «mi-tienda». LocalWP generará automáticamente una URL local como mi-tienda.local.",
+                color: "#f0fdf4",
               },
               {
                 step: "3",
-                title: "Pega el prompt",
-                detail: "Copia el prompt modelo de arriba, adáptalo a tu caso de uso y pégalo en el campo de descripción del proyecto.",
-                color: "#fff3cd",
+                title: "Elige «Preferred» en el entorno",
+                detail: "En la pantalla de configuración de servidor, selecciona «Preferred». Usará PHP 8.1+ y MySQL 8.0, que es lo que necesita WooCommerce moderno.",
+                color: "#fff7ed",
               },
               {
                 step: "4",
-                title: "Revisa la configuración generada",
-                detail: "WPZip mostrará la lista de plugins, pages y settings que creará. Revisa y ajusta antes de confirmar.",
-                color: "#d1ecf1",
+                title: "Configura el usuario admin",
+                detail: "Escribe un nombre de usuario (ej: admin), contraseña y email. Anótalos — los necesitarás para entrar al panel.",
+                color: "#fdf2f8",
               },
               {
                 step: "5",
-                title: "Genera y descarga",
-                detail: "WPZip genera el blueprint (.zip). Importa en Local, en tu hosting o en staging usando el importador de WordPress.",
+                title: "Haz clic en «Add Site»",
+                detail: "LocalWP instalará WordPress automáticamente. En 30-60 segundos el sitio estará listo. Aparecerá en verde con el estado «Running».",
                 color: "#f8fff9",
               },
             ].map((s) => (
@@ -947,8 +784,9 @@ export default function WooCommerce_Inicio() {
                   background: s.color,
                   borderRadius: "10px",
                   padding: "1rem 1.2rem",
-                  marginBottom: "0.8rem",
+                  marginBottom: "0.7rem",
                   alignItems: "start",
+                  border: "1px solid #dee2e6",
                 }}
               >
                 <div
@@ -963,6 +801,7 @@ export default function WooCommerce_Inicio() {
                     justifyContent: "center",
                     fontWeight: "700",
                     fontSize: "1rem",
+                    flexShrink: 0,
                   }}
                 >
                   {s.step}
@@ -977,12 +816,528 @@ export default function WooCommerce_Inicio() {
 
           <WarningBox>
             <p>
-              <strong>Nota importante:</strong> WPZip y servicios similares (wp-blueprints.com,
-              Playground de WordPress.org) están en constante evolución. Si la interfaz ha cambiado,
-              lo fundamental es el <em>prompt en sí mismo</em> — puedes usarlo igualmente para
-              hacer la instalación manual o con cualquier servicio equivalente.
+              <strong>Antes de instalar nada:</strong> haz clic en <strong>«Admin»</strong> en LocalWP
+              para abrir el panel de WordPress (wp-admin). Confirma que accedes correctamente. Si te
+              pide confirmar el certificado SSL, acepta — es normal en entornos locales.
             </p>
           </WarningBox>
+
+          {/* ── BLOQUE 2: AJUSTES INICIALES ─────────────────────── */}
+          <h3
+            style={{
+              background: "#1a1a2e",
+              color: "#7dd3fc",
+              padding: "0.6rem 1.2rem",
+              borderRadius: "8px",
+              fontSize: "1rem",
+              marginTop: "2.5rem",
+            }}
+          >
+            ② Ajustes iniciales de WordPress
+          </h3>
+
+          <p style={{ marginTop: "1rem" }}>
+            Antes de instalar ningún plugin, configura WordPress correctamente. Si omites estos
+            pasos ahora, tendrás problemas de URLs, SEO y caracteres especiales más adelante.
+          </p>
+
+          <div className="table-wrap">
+            <table style={{ width: "100%", borderCollapse: "collapse", margin: "1rem 0", fontSize: "0.9rem" }}>
+              <thead>
+                <tr style={{ background: "#1a1a2e", color: "white" }}>
+                  <th style={{ padding: "10px 12px", border: "1px solid #dee2e6", textAlign: "left" }}>Dónde</th>
+                  <th style={{ padding: "10px 12px", border: "1px solid #dee2e6", textAlign: "left" }}>Qué configurar</th>
+                  <th style={{ padding: "10px 12px", border: "1px solid #dee2e6", textAlign: "left" }}>Valor correcto</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Ajustes → General", "Idioma del sitio", "Español"],
+                  ["Ajustes → General", "Zona horaria", "Madrid"],
+                  ["Ajustes → General", "Formato de fecha", "30 de enero de 2025"],
+                  ["Ajustes → Permalinks", "Estructura de URLs", "Nombre de la entrada (/%postname%/)"],
+                  ["Ajustes → Escritura", "Categoría por defecto", "Sin categoría → renómbrala o crea la tuya"],
+                  ["Ajustes → Lectura", "Motores de búsqueda", "Permitir indexación (desmarca si es entorno de pruebas)"],
+                  ["Plugins", "Plugins instalados por defecto", "Borrar: Hello Dolly, AkismetAD Spam"],
+                  ["Apariencia → Temas", "Theme por defecto (Twenty XX)", "Lo eliminaremos en el bloque siguiente"],
+                ].map(([donde, que, valor], i) => (
+                  <tr key={i} style={{ background: i % 2 === 0 ? "white" : "#f8f9fa" }}>
+                    <td style={{ padding: "8px 12px", border: "1px solid #dee2e6" }}><code>{donde}</code></td>
+                    <td style={{ padding: "8px 12px", border: "1px solid #dee2e6" }}>{que}</td>
+                    <td style={{ padding: "8px 12px", border: "1px solid #dee2e6", color: "#065f46", fontWeight: "500" }}>{valor}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <TipBox title="💡 Por qué los permalinks son lo primero">
+            <p>
+              Cuando WordPress genera las URLs de productos, categorías y páginas de WooCommerce,
+              usa la estructura de permalinks que tenías <em>en el momento de instalarlo</em>. Si
+              cambias los permalinks después de instalar WooCommerce, puedes tener errores 404 en
+              la tienda. <strong>Configúralos antes de instalar cualquier plugin.</strong>
+            </p>
+          </TipBox>
+
+          {/* ── BLOQUE 3: GENERATEPRESS ──────────────────────────── */}
+          <h3
+            style={{
+              background: "#065f46",
+              color: "#6ee7b7",
+              padding: "0.6rem 1.2rem",
+              borderRadius: "8px",
+              fontSize: "1rem",
+              marginTop: "2.5rem",
+            }}
+          >
+            ③ Instalar y configurar GeneratePress
+          </h3>
+
+          <p style={{ marginTop: "1rem" }}>
+            GeneratePress será la base estructural de toda la tienda. Este es el orden correcto
+            de instalación — no saltes pasos.
+          </p>
+
+          <div style={{ margin: "1.2rem 0" }}>
+            {[
+              {
+                step: "1",
+                title: "Instalar el theme GeneratePress",
+                detail: "Ve a Apariencia → Temas → Añadir nuevo. Busca «GeneratePress». Instala y activa. Verás el site con un layout limpio sin estilos llamativos — es lo esperado.",
+                color: "#f0fdf4",
+              },
+              {
+                step: "2",
+                title: "Eliminar los themes por defecto",
+                detail: "Con GeneratePress activo, borra los themes Twenty-Twenty-X que WordPress instala por defecto. Menos peso, menos confusión.",
+                color: "#f0fdf4",
+              },
+              {
+                step: "3",
+                title: "Ir a Apariencia → Personalizar",
+                detail: "Desde aquí controlarás la mayor parte del aspecto visual. Explora las secciones disponibles antes de tocar nada.",
+                color: "#f0fdf4",
+              },
+              {
+                step: "4",
+                title: "Definir la paleta de colores",
+                detail: "Personalizar → Colors. Establece: Color primario (el color principal de botones y enlaces), Color de fondo y Color del texto. Para una tienda genérica de prueba puedes usar: Primario #2563eb, Fondo #ffffff, Texto #1f2937.",
+                color: "#f0fdf4",
+              },
+              {
+                step: "5",
+                title: "Definir tipografía",
+                detail: "Personalizar → Typography. Elige una fuente para el cuerpo (ej: Inter o Lato) y otra para los títulos (ej: Playfair Display o Montserrat). Tamaño base: 16px. Interlineado: 1.65.",
+                color: "#f0fdf4",
+              },
+              {
+                step: "6",
+                title: "Guardar y publicar",
+                detail: "Clic en «Publicar» en la barra superior del Personalizar. Los cambios se aplican al instante en el frontend.",
+                color: "#f0fdf4",
+              },
+            ].map((s) => (
+              <div
+                key={s.step}
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "50px 1fr",
+                  gap: "1rem",
+                  background: s.color,
+                  borderRadius: "10px",
+                  padding: "1rem 1.2rem",
+                  marginBottom: "0.7rem",
+                  alignItems: "start",
+                  border: "1px solid #86efac",
+                }}
+              >
+                <div
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "50%",
+                    background: "#065f46",
+                    color: "#6ee7b7",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontWeight: "700",
+                    fontSize: "1rem",
+                    flexShrink: 0,
+                  }}
+                >
+                  {s.step}
+                </div>
+                <div>
+                  <strong>{s.title}</strong>
+                  <p style={{ margin: "0.3rem 0 0 0", fontSize: "0.9rem" }}>{s.detail}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <details className="dd">
+            <summary>📐 ¿Qué opciones del Personalizar son más importantes para e-commerce?</summary>
+            <div className="dd-body">
+              <div className="table-wrap">
+                <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.88rem" }}>
+                  <thead>
+                    <tr style={{ background: "#f0fdf4" }}>
+                      <th style={{ padding: "8px", border: "1px solid #dee2e6" }}>Sección</th>
+                      <th style={{ padding: "8px", border: "1px solid #dee2e6" }}>Qué ajustar</th>
+                      <th style={{ padding: "8px", border: "1px solid #dee2e6" }}>Motivo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ["Layout → Container", "Ancho máximo: 1200px", "Ideal para tiendas con grids de productos"],
+                      ["Layout → Site Header", "Sticky header: activado", "El menú con carrito siempre visible"],
+                      ["Colors → Buttons", "Color de fondo del botón principal", "CTAs de «Añadir al carrito» usan este color"],
+                      ["Typography → Buttons", "Texto en mayúsculas: desactivado", "Más moderno y legible"],
+                      ["Layout → Blog", "No relevante para tienda", "Lo configuraremos solo si añadimos blog"],
+                    ].map(([sec, que, motivo], i) => (
+                      <tr key={i} style={{ background: i % 2 === 0 ? "white" : "#f8f9fa" }}>
+                        <td style={{ padding: "8px", border: "1px solid #dee2e6" }}><code>{sec}</code></td>
+                        <td style={{ padding: "8px", border: "1px solid #dee2e6" }}>{que}</td>
+                        <td style={{ padding: "8px", border: "1px solid #dee2e6" }}>{motivo}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </details>
+
+          {/* ── BLOQUE 4: WOOCOMMERCE ────────────────────────────── */}
+          <h3
+            style={{
+              background: "#7c2d12",
+              color: "#fed7aa",
+              padding: "0.6rem 1.2rem",
+              borderRadius: "8px",
+              fontSize: "1rem",
+              marginTop: "2.5rem",
+            }}
+          >
+            ④ Instalar WooCommerce y ejecutar el asistente
+          </h3>
+
+          <p style={{ marginTop: "1rem" }}>
+            WooCommerce se instala como cualquier plugin de WordPress, pero tras la activación
+            lanza un <strong>asistente de configuración</strong> que debes completar al 100 %. No lo
+            saltes — configura las opciones fundamentales de tu tienda.
+          </p>
+
+          <div style={{ margin: "1.2rem 0" }}>
+            {[
+              {
+                step: "1",
+                title: "Instalar el plugin WooCommerce",
+                detail: "Plugins → Añadir nuevo → busca «WooCommerce» (autor: Automattic). Instala y activa. Aparecerá un banner azul invitando a ejecutar el asistente — clic en «Empezar».",
+                color: "#fff7ed",
+              },
+              {
+                step: "2",
+                title: "Pantalla: ¿En qué país está tu tienda?",
+                detail: "Selecciona España. Esto configura automáticamente: moneda EUR, zona horaria, formato de dirección y regulación fiscal española. Clic en «Continuar».",
+                color: "#fff7ed",
+              },
+              {
+                step: "3",
+                title: "Pantalla: ¿Qué tipo de productos vendes?",
+                detail: "Selecciona la categoría más cercana a tu proyecto (Moda y accesorios, Comida y bebida, Electrónica…). Esto no es exactamente determinante — puedes cambiar productos después.",
+                color: "#fff7ed",
+              },
+              {
+                step: "4",
+                title: "Pantalla: ¿Sobre el negocio?",
+                detail: "Rellena el número aproximado de productos que planeas tener y si ya vendes en algún sitio. Para un proyecto de clase responde «Solo en esta tienda» y «1-10 productos».",
+                color: "#fff7ed",
+              },
+              {
+                step: "5",
+                title: "Pantalla: Features (características)",
+                detail: "WooCommerce sugerirá instalar plugins adicionales (Jetpack, WooCommerce Payments…). Para esta instalación de aprendizaje, DESMARCA todos. Los instalaremos solo los que necesitemos.",
+                color: "#fff7ed",
+              },
+              {
+                step: "6",
+                title: "Fin del asistente → Panel de WooCommerce",
+                detail: "WooCommerce habrá creado automáticamente las páginas: Tienda, Carrito, Finalizar compra y Mi cuenta. Ve a Páginas y verifica que existen las 4.",
+                color: "#fff7ed",
+              },
+            ].map((s) => (
+              <div
+                key={s.step}
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "50px 1fr",
+                  gap: "1rem",
+                  background: s.color,
+                  borderRadius: "10px",
+                  padding: "1rem 1.2rem",
+                  marginBottom: "0.7rem",
+                  alignItems: "start",
+                  border: "1px solid #fed7aa",
+                }}
+              >
+                <div
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "50%",
+                    background: "#7c2d12",
+                    color: "#fed7aa",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontWeight: "700",
+                    fontSize: "1rem",
+                    flexShrink: 0,
+                  }}
+                >
+                  {s.step}
+                </div>
+                <div>
+                  <strong>{s.title}</strong>
+                  <p style={{ margin: "0.3rem 0 0 0", fontSize: "0.9rem" }}>{s.detail}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <TipBox title="⚙️ Ajustes de WooCommerce que debes revisar después del asistente">
+            <p>El asistente no cubre todo. Ve a <strong>WooCommerce → Ajustes</strong> y completa:</p>
+            <ul>
+              <li><strong>General:</strong> Moneda en EUR, símbolo € a la derecha, 2 decimales, separador decimal como ","</li>
+              <li><strong>Productos:</strong> Dimensiones en cm, peso en kg, activar valoraciones de clientes</li>
+              <li><strong>Cuentas y privacidad:</strong> Permitir pedidos como invitado (sin registro — aumenta conversiones)</li>
+              <li><strong>Correos:</strong> Verifica que el email del administrador es el correcto para recibir notificaciones de pedidos</li>
+              <li><strong>Avanzado → Páginas:</strong> Confirma que las 4 páginas (Tienda, Carrito, Finalizar compra, Mi cuenta) están asignadas</li>
+            </ul>
+          </TipBox>
+
+          <WarningBox>
+            <p>
+              <strong>¡Regenera los permalinks después de instalar WooCommerce!</strong> Ve a
+              Ajustes → Permalinks y haz clic en «Guardar cambios» sin cambiar nada. Esto fuerza a
+              WordPress a registrar las nuevas URLs de WooCommerce. Sin este paso pueden aparecer
+              errores 404 en la tienda.
+            </p>
+          </WarningBox>
+
+          {/* ── BLOQUE 5: ELEMENTOR ──────────────────────────────── */}
+          <h3
+            style={{
+              background: "#7c3aed",
+              color: "#e9d5ff",
+              padding: "0.6rem 1.2rem",
+              borderRadius: "8px",
+              fontSize: "1rem",
+              marginTop: "2.5rem",
+            }}
+          >
+            ⑤ Instalar Elementor y configurar el sistema de diseño
+          </h3>
+
+          <p style={{ marginTop: "1rem" }}>
+            Elementor es lo último en instalarse porque su sistema de diseño (colores y tipografía)
+            debe <em>heredar</em> lo que ya definiste en GeneratePress. Instalarlo antes puede
+            generar conflictos de estilos.
+          </p>
+
+          <div style={{ margin: "1.2rem 0" }}>
+            {[
+              {
+                step: "1",
+                title: "Instalar el plugin Elementor",
+                detail: "Plugins → Añadir nuevo → busca «Elementor Website Builder» (autor: Elementor.com). Instala y activa. Verás un banner de bienvenida — puedes cerrarlo.",
+                color: "#faf5ff",
+              },
+              {
+                step: "2",
+                title: "Ejecutar el wizard de configuración (opcional)",
+                detail: "Elementor puede mostrar un asistente de onboarding. Si aparece, complétalo seleccionando «Sitio de negocios» o «Tienda online». Puedes omitirlo con «Saltar».",
+                color: "#faf5ff",
+              },
+              {
+                step: "3",
+                title: "Ir a Elementor → Ajustes → Estilo",
+                detail: "Aquí controlas el sistema global de diseño de Elementor. Asegúrate de que «Cargar fuentes de Google» esté activado y «Modo mejorado de carga de CSS» activado.",
+                color: "#faf5ff",
+              },
+              {
+                step: "4",
+                title: "Definir el Sistema de Diseño Global",
+                detail: "En el editor de Elementor (cualquier página → Editar con Elementor), haz clic en el icono de hamburguesa → Site Settings (o Configuración del sitio). Aquí defines colores y tipografías globales.",
+                color: "#faf5ff",
+              },
+              {
+                step: "5",
+                title: "Añadir los colores del sistema",
+                detail: "En Site Settings → Global Colors, añade los mismos colores que definiste en GeneratePress: Primario, Secundario, Texto y Fondo. Así ambas herramientas hablan el mismo idioma visual.",
+                color: "#faf5ff",
+              },
+              {
+                step: "6",
+                title: "Añadir las tipografías del sistema",
+                detail: "En Site Settings → Global Fonts, define: Primary (cuerpo de texto) y Secondary (títulos y subtítulos). Vincula las mismas fuentes que usas en GeneratePress.",
+                color: "#faf5ff",
+              },
+            ].map((s) => (
+              <div
+                key={s.step}
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "50px 1fr",
+                  gap: "1rem",
+                  background: s.color,
+                  borderRadius: "10px",
+                  padding: "1rem 1.2rem",
+                  marginBottom: "0.7rem",
+                  alignItems: "start",
+                  border: "1px solid #c4b5fd",
+                }}
+              >
+                <div
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "50%",
+                    background: "#7c3aed",
+                    color: "#e9d5ff",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontWeight: "700",
+                    fontSize: "1rem",
+                    flexShrink: 0,
+                  }}
+                >
+                  {s.step}
+                </div>
+                <div>
+                  <strong>{s.title}</strong>
+                  <p style={{ margin: "0.3rem 0 0 0", fontSize: "0.9rem" }}>{s.detail}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* ── BLOQUE 6: PRIMERA PRUEBA ─────────────────────────── */}
+          <h3
+            style={{
+              background: "#0c4a6e",
+              color: "#bae6fd",
+              padding: "0.6rem 1.2rem",
+              borderRadius: "8px",
+              fontSize: "1rem",
+              marginTop: "2.5rem",
+            }}
+          >
+            ⑥ Primera prueba: crea un producto y verifica la tienda
+          </h3>
+
+          <p style={{ marginTop: "1rem" }}>
+            Antes de diseñar cualquier página, verifica que la mecánica de la tienda funciona
+            correctamente. Crea un producto de prueba y sigue el flujo completo de compra.
+          </p>
+
+          <div style={{ margin: "1.2rem 0" }}>
+            {[
+              {
+                step: "1",
+                title: "Crear una categoría de producto",
+                detail: "Productos → Categorías. Crea al menos una categoría (ej: «Camisetas»). Las categorías clasifican el catálogo y generan páginas de archivo propias.",
+                color: "#f0f9ff",
+              },
+              {
+                step: "2",
+                title: "Crear el primer producto",
+                detail: "Productos → Añadir nuevo. Ponle nombre, descripción corta y larga. Asígnale la categoría. En el panel «Datos del producto» selecciona «Producto simple». Pon un precio regular (ej: 25,00).",
+                color: "#f0f9ff",
+              },
+              {
+                step: "3",
+                title: "Añadir imágenes al producto",
+                detail: "En la columna derecha: «Imagen del producto» (la imagen principal) y «Galería del producto» (fotos adicionales). Sube al menos 2 imágenes. WooCommerce las recortará automáticamente.",
+                color: "#f0f9ff",
+              },
+              {
+                step: "4",
+                title: "Publicar el producto",
+                detail: "Clic en «Publicar». Ve al frontend y navega a la URL de la tienda (ej: mi-tienda.local/tienda). Debe aparecer tu producto en el catálogo.",
+                color: "#f0f9ff",
+              },
+              {
+                step: "5",
+                title: "Simular una compra completa",
+                detail: "Clic en el producto → «Añadir al carrito» → ver carrito → finalizar compra. Rellena los datos con información ficticia. Usa el método de pago «Cheque» (viene activado por defecto para pruebas). Confirma el pedido.",
+                color: "#f0f9ff",
+              },
+              {
+                step: "6",
+                title: "Verificar el pedido en el panel",
+                detail: "Ve a WooCommerce → Pedidos. Debe aparecer el pedido con estado «Pago pendiente» (normal para pago por cheque). Esto confirma que toda la cadena funciona correctamente.",
+                color: "#f0f9ff",
+              },
+            ].map((s) => (
+              <div
+                key={s.step}
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "50px 1fr",
+                  gap: "1rem",
+                  background: s.color,
+                  borderRadius: "10px",
+                  padding: "1rem 1.2rem",
+                  marginBottom: "0.7rem",
+                  alignItems: "start",
+                  border: "1px solid #bae6fd",
+                }}
+              >
+                <div
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "50%",
+                    background: "#0c4a6e",
+                    color: "#bae6fd",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontWeight: "700",
+                    fontSize: "1rem",
+                    flexShrink: 0,
+                  }}
+                >
+                  {s.step}
+                </div>
+                <div>
+                  <strong>{s.title}</strong>
+                  <p style={{ margin: "0.3rem 0 0 0", fontSize: "0.9rem" }}>{s.detail}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <TipBox title="✅ Checklist de verificación — ¿Está todo correcto?">
+            <p>Antes de empezar a diseñar con Elementor, confirma que tienes:</p>
+            <ul>
+              <li>✔ WordPress en español con permalinks configurados</li>
+              <li>✔ GeneratePress activo con colores y tipografía definidos</li>
+              <li>✔ WooCommerce instalado y asistente completado</li>
+              <li>✔ Las 4 páginas de WooCommerce existen y están asignadas en Ajustes → WooCommerce → Avanzado</li>
+              <li>✔ Elementor instalado con colores y fuentes globales definidos</li>
+              <li>✔ Al menos 1 producto publicado y visible en la tienda</li>
+              <li>✔ Simulado un pedido de prueba que aparece en WooCommerce → Pedidos</li>
+            </ul>
+            <p>
+              <strong>Si todo está marcado, la base de la tienda está lista.</strong> A partir de
+              aquí empieza el trabajo de diseño y contenido.
+            </p>
+          </TipBox>
         </div>
       </section>
 
@@ -1171,47 +1526,68 @@ export default function WooCommerce_Inicio() {
             </ol>
           </PracticeBox>
 
-          <PracticeBox title="🧪 Práctica 2 — Primer sitio con WPZip">
+          <PracticeBox title="🧪 Práctica 2 — Instalación completa desde cero">
             <p>
-              <strong>Objetivo:</strong> Crear tu primera instalación WooCommerce + GeneratePress +
-              Elementor usando el prompt modelo.
+              <strong>Objetivo:</strong> Instalar y configurar el stack completo — LocalWP +
+              GeneratePress + WooCommerce + Elementor — siguiendo el orden y los criterios
+              aprendidos en la sección 5.
             </p>
             <h4>Instrucciones:</h4>
             <ol>
-              <li>Elige un sector de negocio diferente al ejemplo del manual (no moda).</li>
               <li>
-                Adapta el prompt modelo de la sección 5 a tu sector:
+                Crea un nuevo sitio en LocalWP con el nombre de tu proyecto. Elige un sector
+                de negocio diferente al de los ejemplos del manual (ej: deportes, libros,
+                alimentación, joyería…).
+              </li>
+              <li>
+                Completa los ajustes iniciales de WordPress antes de instalar ningún plugin:
                 <ul>
-                  <li>Cambia las categorías de producto</li>
-                  <li>Adapta la paleta de colores al sector elegido</li>
-                  <li>Define las páginas que necesitará tu tienda</li>
+                  <li>Idioma en español y zona horaria Madrid</li>
+                  <li>Permalinks en «Nombre de la entrada»</li>
+                  <li>Eliminar plugins por defecto (Hello Dolly, Akismet)</li>
                 </ul>
               </li>
-              <li>Genera la instalación con WPZip (o manualmente si no accedes al servicio).</li>
               <li>
-                Verifica que tienes instalados correctamente:
+                Instala y configura GeneratePress:
                 <ul>
-                  <li>WooCommerce activo y configurado</li>
-                  <li>GeneratePress activo como theme</li>
-                  <li>Elementor instalado</li>
-                  <li>Al menos 4 productos de muestra con imágenes</li>
+                  <li>Define una paleta de colores acorde al sector elegido</li>
+                  <li>Elige tipografías apropiadas (cuerpo + títulos)</li>
+                  <li>Configura el ancho máximo del contenedor en 1200px</li>
                 </ul>
               </li>
-              <li>Toma capturas de: tienda, ficha de producto y panel de WooCommerce.</li>
+              <li>
+                Instala WooCommerce y completa el asistente. Comprueba después que las 4 páginas
+                (Tienda, Carrito, Finalizar compra, Mi cuenta) existen y están asignadas. Regenera
+                los permalinks.
+              </li>
+              <li>
+                Instala Elementor y define los colores y tipografías globales en Site Settings,
+                usando los mismos valores que en GeneratePress.
+              </li>
+              <li>
+                Crea al menos <strong>3 categorías de productos</strong> y <strong>6 productos</strong>
+                (2 por categoría) con nombre, descripción corta, precio e imagen.
+              </li>
+              <li>
+                Simula una compra completa (añadir al carrito → checkout → confirmar). Verifica
+                el pedido en WooCommerce → Pedidos.
+              </li>
+              <li>
+                Toma capturas de pantalla de: frontend de la tienda, ficha de un producto,
+                panel de WooCommerce → Pedidos (con el pedido de prueba) y Site Settings de Elementor.
+              </li>
             </ol>
-
             <details className="dd" style={{ marginTop: "1rem" }}>
-              <summary>💡 Ayuda: cómo instalar manualmente si no funciona WPZip</summary>
+              <summary>✅ Criterios de evaluación</summary>
               <div className="dd-body">
-                <ol>
-                  <li>Instala WordPress fresh en Local (localhost)</li>
-                  <li>Plugins &gt; Añadir nuevo &gt; busca e instala: WooCommerce, Elementor</li>
-                  <li>Apariencia &gt; Temas &gt; Añadir nuevo &gt; busca GeneratePress e instala</li>
-                  <li>Activa GeneratePress como theme activo</li>
-                  <li>Ejecuta el asistente de WooCommerce (aparece automáticamente)</li>
-                  <li>Configura moneda, país y categorías de producto</li>
-                  <li>Crea 3-4 productos de prueba manualmente</li>
-                </ol>
+                <ul>
+                  <li>WordPress configurado correctamente (idioma, permalinks)</li>
+                  <li>GeneratePress con colores y tipografía personalizados al sector</li>
+                  <li>WooCommerce con asistente completado y páginas asignadas</li>
+                  <li>Elementor con sistema de diseño global coherente con GP</li>
+                  <li>Mínimo 6 productos en 3 categorías con imagen y precio</li>
+                  <li>Pedido de prueba visible en el panel de WooCommerce</li>
+                </ul>
               </div>
             </details>
           </PracticeBox>
@@ -1292,9 +1668,9 @@ export default function WooCommerce_Inicio() {
                 color: "#f0fdf4",
                 items: [
                   "Local by Flywheel — entorno desarrollo local",
-                  "WPZip / wp.new — instalación rápida",
-                  "PageSpeed Insights — medir rendimiento",
+                  "PageSpeed Insights — medir rendimiento de la tienda",
                   "BuiltWith — analizar stack de competidores",
+                  "wp.new — WordPress en el navegador (Playground)",
                 ],
               },
             ].map((group) => (
@@ -1400,9 +1776,9 @@ export default function WooCommerce_Inicio() {
                 desc: "Define catálogo, pagos y envíos antes de abrir Elementor. El diseño sirve al negocio, no al revés.",
               },
               {
-                icon: "🚀",
-                titulo: "WPZip acelera el arranque",
-                desc: "Un buen prompt te ahorra horas de configuración manual y garantiza una base consistente para empezar.",
+                icon: "�",
+                titulo: "El orden importa",
+                desc: "Siempre: ajustes de WordPress → GeneratePress → WooCommerce → Elementor. Cambiar este orden genera conflictos de estilos, URLs rotas o configuraciones que hay que rehacer.",
               },
             ].map((c) => (
               <div
