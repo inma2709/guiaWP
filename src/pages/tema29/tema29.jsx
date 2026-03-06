@@ -8,7 +8,7 @@ export default function TemaExportarLocalWP() {
 
       {/* HERO */}
       <header className="doc doc-hero">
-        <p className="doc-kicker">UF1841 · M29 · WordPress · Local WP</p>
+        <p className="doc-kicker">· M29 · WordPress · Local WP</p>
         <h1>Exportar tu proyecto WordPress con LocalWP y llevártelo a casa</h1>
         <p className="doc-lead">
           Has terminado el proyecto <strong>Paseando por Sevilla</strong> en el ordenador del aula.

@@ -385,6 +385,75 @@ export const menuItems = [
   },
 
   {
+    title: "M30 · Configuración de Productos en WooCommerce",
+    path: "/tema30",
+    children: [
+      { title: "30.1 Qué estamos construyendo cuando creamos un producto", path: "/tema30#vision-general" },
+      { title: "30.2 Anatomía completa de una ficha de producto en WooCommerce", path: "/tema30#estructura-ficha" },
+      { title: "30.3 Producto simple: la base de todo", path: "/tema30#producto-simple" },
+      { title: "30.4 Producto variable: tallas, colores y combinaciones", path: "/tema30#producto-variable" },
+      { title: "30.5 Atributos y variaciones", path: "/tema30#atributos-variaciones" },
+      { title: "30.6 Inventario, stock y SKU", path: "/tema30#inventario-stock" },
+      { title: "30.7 Imágenes de producto: coherencia visual del catálogo", path: "/tema30#imagenes-producto" },
+      { title: "30.8 Títulos, descripciones y SEO de producto", path: "/tema30#textos-seo-producto" },
+      { title: "30.9 Categorías, etiquetas y organización del catálogo", path: "/tema30#categorias-etiquetas" },
+      { title: "30.10 Workflow profesional para cargar productos", path: "/tema30#workflow-profesional" },
+      { title: "30.11 Actividades prácticas", path: "/tema30#actividades" },
+    ],
+  },
+
+  {
+    title: "M31 · Carrito, Checkout y Proceso de Compra en WooCommerce",
+    path: "/tema31",
+    children: [
+      { title: "31.1 El flujo completo de compra: de la intención al pedido", path: "/tema31#flujo-compra" },
+      { title: "31.2 La página de carrito: primera gran prueba de confianza", path: "/tema31#pagina-carrito" },
+      { title: "31.3 La página de checkout: donde se gana o se pierde la venta", path: "/tema31#pagina-checkout" },
+      { title: "31.4 Métodos de pago: qué opciones activar", path: "/tema31#metodos-pago" },
+      { title: "31.5 Envíos: zonas, métodos y lógica comercial", path: "/tema31#metodos-envio" },
+      { title: "31.6 Estados del pedido y emails automáticos", path: "/tema31#estados-emails" },
+      { title: "31.7 Abandono de carrito: por qué ocurre y cómo reducirlo", path: "/tema31#abandono-carrito" },
+      { title: "31.8 Plugins útiles para mejorar carrito y checkout", path: "/tema31#plugins-checkout" },
+      { title: "31.9 Workflow profesional: prueba real de compra", path: "/tema31#workflow-prueba" },
+      { title: "31.10 Actividades prácticas", path: "/tema31#actividades" },
+    ],
+  },
+
+  {
+    title: "M32 · Diseño y Optimización de la Ficha de Producto en WooCommerce",
+    path: "/tema32",
+    children: [
+      { title: "32.1 Por qué la ficha de producto es la página más crítica", path: "/tema32#importancia-ficha" },
+      { title: "32.2 Anatomía completa de una ficha de producto profesional", path: "/tema32#anatomia-ficha" },
+      { title: "32.3 Los bloques que más influyen en la conversión", path: "/tema32#bloques-clave" },
+      { title: "32.4 Descripción larga, información adicional y reseñas", path: "/tema32#pestanas-inferiores" },
+      { title: "32.5 Productos relacionados, upselling y cross-selling", path: "/tema32#relacionados-upsell" },
+      { title: "32.6 SEO on-page en la ficha de producto", path: "/tema32#seo-ficha" },
+      { title: "32.7 La ficha en móvil: donde más se rompe el diseño", path: "/tema32#mobile-producto" },
+      { title: "32.8 Workflow profesional para revisar una ficha antes de publicarla", path: "/tema32#workflow-ficha" },
+      { title: "32.9 Actividades prácticas", path: "/tema32#actividades" },
+    ],
+  },
+
+  {
+    title: "M33 · SEO para WooCommerce: Arquitectura, Fichas, Categorías e Imágenes",
+    path: "/tema33",
+    children: [
+      { title: "33.1 Qué significa hacer SEO en WooCommerce", path: "/tema33#seo-ecommerce" },
+      { title: "33.2 Arquitectura SEO: categorías, subcategorías y productos", path: "/tema33#arquitectura-categorias" },
+      { title: "33.3 URLs, títulos SEO y meta descriptions", path: "/tema33#urls-metadatos" },
+      { title: "33.4 SEO de categorías y SEO de fichas: diferencias clave", path: "/tema33#seo-categorias-fichas" },
+      { title: "33.5 Por qué optimizar imágenes es obligatorio en WooCommerce", path: "/tema33#imagenes-seo" },
+      { title: "33.6 Optimización de imágenes de forma externa", path: "/tema33#optimizacion-externa" },
+      { title: "33.7 Optimización de imágenes dentro de WordPress", path: "/tema33#optimizacion-interna" },
+      { title: "33.8 Cómo afecta esto específicamente a WooCommerce", path: "/tema33#imagenes-woocommerce" },
+      { title: "33.9 Nombre de archivo, texto alternativo y contexto semántico", path: "/tema33#nombres-alt" },
+      { title: "33.10 Checklist SEO de rendimiento para una tienda WooCommerce", path: "/tema33#velocidad-checklist" },
+      { title: "33.11 Actividades prácticas", path: "/tema33#actividades" },
+    ],
+  },
+
+  {
     title: "M28 · Subir tu proyecto WordPress a GitHub",
     path: "/tema27",
     children: [
