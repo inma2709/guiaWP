@@ -189,14 +189,15 @@ export const menuItems = [
   },
 
   {
-    title: "M14 · Contenedores: fundamentos y diseño profesional",
-    path: "/tema16",
+    title: "M14 · Sección 'Consejos rápidos'",
+    path: "/tema14",
     children: [
-      { title: "14.1 Objetivo + regla de oro", path: "/tema16#objetivo" },
-      { title: "14.2 Fundamentos (submenú)", path: "/tema16#fundamentos" },
-      { title: "14.3 Propiedades del contenedor", path: "/tema16#propiedades" },
-      { title: "14.4 Patrones: guardar y reutilizar contenedores", path: "/tema16#patrones" },
-      { title: "14.5 Ejemplo final: Tarjeta PRO", path: "/tema16#tarjeta-pro" },
+      { title: "14.1 Resultado final y objetivos", path: "/tema14#resultado" },
+      { title: "14.2 Esquema de contenedores", path: "/tema14#esquema" },
+      { title: "14.3 Construcción paso a paso", path: "/tema14#paso-a-paso" },
+      { title: "14.4 Propiedades que entrenamos", path: "/tema14#propiedades" },
+      { title: "14.5 Ejercicio guiado", path: "/tema14#ejercicio" },
+      { title: "14.6 Checklist final", path: "/tema14#checklist" },
     ],
   },
 
@@ -216,15 +217,14 @@ export const menuItems = [
   },
 
   {
-    title: "M16 · Sección 'Consejos rápidos'",
-    path: "/tema14",
+    title: "M16 · Contenedores: fundamentos y diseño profesional",
+    path: "/tema16",
     children: [
-      { title: "16.1 Resultado final y objetivos", path: "/tema14#resultado" },
-      { title: "16.2 Esquema de contenedores", path: "/tema14#esquema" },
-      { title: "16.3 Construcción paso a paso", path: "/tema14#paso-a-paso" },
-      { title: "16.4 Propiedades que entrenamos", path: "/tema14#propiedades" },
-      { title: "16.5 Ejercicio guiado", path: "/tema14#ejercicio" },
-      { title: "16.6 Checklist final", path: "/tema14#checklist" },
+      { title: "16.1 Objetivo + regla de oro", path: "/tema16#objetivo" },
+      { title: "16.2 Fundamentos (submenú)", path: "/tema16#fundamentos" },
+      { title: "16.3 Propiedades del contenedor", path: "/tema16#propiedades" },
+      { title: "16.4 Patrones: guardar y reutilizar contenedores", path: "/tema16#patrones" },
+      { title: "16.5 Ejemplo final: Tarjeta PRO", path: "/tema16#tarjeta-pro" },
     ],
   },
 
@@ -331,25 +331,7 @@ export const menuItems = [
   },
 
   {
-    title: "M24 · Hooks en WordPress: Actions y Filters",
-    path: "/tema28",
-    children: [
-      { title: "24.1 Ya los has usado sin saberlo", path: "/tema28#ya-los-usaste" },
-      { title: "24.2 \u00bfQu\u00e9 es un hook?", path: "/tema28#que-es-un-hook" },
-      { title: "24.3 C\u00f3mo funciona por dentro", path: "/tema28#como-funciona" },
-      { title: "24.4 Action Hooks: ejecutar c\u00f3digo", path: "/tema28#actions" },
-      { title: "24.5 Filter Hooks: modificar datos", path: "/tema28#filters" },
-      { title: "24.6 Diferencia entre Action y Filter", path: "/tema28#diferencia" },
-      { title: "24.7 Crea tu primer hook (paso a paso)", path: "/tema28#primer-hook" },
-      { title: "24.8 Hooks m\u00e1s usados en WordPress", path: "/tema28#hooks-comunes" },
-      { title: "24.9 Ejemplo real: encolado condicional", path: "/tema28#ejemplo-proyecto" },
-      { title: "24.10 Hooks del tema Astra", path: "/tema28#hooks-astra" },
-      { title: "24.11 Pr\u00e1ctica evaluable", path: "/tema28#practica" },
-    ],
-  },
-
-  {
-    title: "M25 · Elementor: El Page Builder",
+    title: "M24 · Elementor: El Page Builder",
     path: "/tema24",
     children: [
       { title: "24.1 ¿Qué es Elementor y por qué existe?", path: "/tema24#que-es-elementor" },
@@ -358,7 +340,7 @@ export const menuItems = [
   },
 
   {
-    title: "M26 · Proyecto E-Commerce: WooCommerce + GeneratePress + Elementor",
+    title: "M25 · Proyecto E-Commerce: WooCommerce + GeneratePress + Elementor",
     path: "/tema25",
     children: [
       { title: "25.1 Principios básicos de un e-commerce", path: "/tema25#principios-ecommerce" },
@@ -372,7 +354,7 @@ export const menuItems = [
   },
 
   {
-    title: "M27 · Dise\u00f1ando la Home de tu Tienda con Elementor",
+    title: "M26 · Diseñando la Home de tu Tienda con Elementor",
     path: "/tema26",
     children: [
       { title: "26.1 Diagnóstico post-WPZip", path: "/tema26#diagnostico-wpzip" },
@@ -381,6 +363,56 @@ export const menuItems = [
       { title: "26.4 SEO on-page en la home", path: "/tema26#seo-home" },
       { title: "26.5 Workflow en Elementor", path: "/tema26#workflow-elementor" },
       { title: "26.6 Actividades prácticas", path: "/tema26#actividades" },
+    ],
+  },
+
+  {
+    title: "M27 · Subir tu proyecto WordPress a GitHub",
+    path: "/tema27",
+    children: [
+      { title: "27.1 Qué es Git y qué aporta a WordPress", path: "/tema27#que-es-git" },
+      { title: "27.2 Qué se sube a GitHub y qué NO", path: "/tema27#que-subir" },
+      { title: "27.3 Estructura recomendada del repositorio", path: "/tema27#estructura-repo" },
+      { title: "27.4 Crear el .gitignore (WordPress + seguridad)", path: "/tema27#gitignore" },
+      { title: "27.5 Crear un README profesional", path: "/tema27#readme" },
+      { title: "27.6 Dónde guardar pantallazos para el README", path: "/tema27#pantallazos" },
+      { title: "27.7 Cómo subirlo a GitHub (paso a paso)", path: "/tema27#subir-a-github" },
+      { title: "27.8 Checklist final + errores típicos", path: "/tema27#checklist" },
+      { title: "27.9 Práctica evaluable", path: "/tema27#practica" },
+    ],
+  },
+
+  {
+    title: "M28 · Hooks en WordPress: Actions y Filters",
+    path: "/tema28",
+    children: [
+      { title: "28.1 Ya los has usado sin saberlo", path: "/tema28#ya-los-usaste" },
+      { title: "28.2 ¿Qué es un hook?", path: "/tema28#que-es-un-hook" },
+      { title: "28.3 Cómo funciona por dentro", path: "/tema28#como-funciona" },
+      { title: "28.4 Action Hooks: ejecutar código", path: "/tema28#actions" },
+      { title: "28.5 Filter Hooks: modificar datos", path: "/tema28#filters" },
+      { title: "28.6 Diferencia entre Action y Filter", path: "/tema28#diferencia" },
+      { title: "28.7 Crea tu primer hook (paso a paso)", path: "/tema28#primer-hook" },
+      { title: "28.8 Hooks más usados en WordPress", path: "/tema28#hooks-comunes" },
+      { title: "28.9 Ejemplo real: encolado condicional", path: "/tema28#ejemplo-proyecto" },
+      { title: "28.10 Hooks del tema Astra", path: "/tema28#hooks-astra" },
+      { title: "28.11 Práctica evaluable", path: "/tema28#practica" },
+    ],
+  },
+
+  {
+    title: "M29 · Exportar tu proyecto WordPress con LocalWP",
+    path: "/tema29",
+    children: [
+      { title: "29.1 ¿Qué hay que exportar exactamente?", path: "/tema29#que-se-exporta" },
+      { title: "29.2 Exportar el sitio desde LocalWP", path: "/tema29#localwp-export" },
+      { title: "29.3 ¿Qué contiene el archivo exportado?", path: "/tema29#que-contiene-el-zip" },
+      { title: "29.4 Llevarte el archivo a casa", path: "/tema29#llevar-archivo" },
+      { title: "29.5 Instalar LocalWP en casa", path: "/tema29#instalar-localwp" },
+      { title: "29.6 Importar el sitio en LocalWP", path: "/tema29#importar" },
+      { title: "29.7 Primeros pasos después de importar", path: "/tema29#primeros-pasos" },
+      { title: "29.8 Problemas comunes y soluciones", path: "/tema29#problemas-comunes" },
+      { title: "29.9 Práctica evaluable", path: "/tema29#practica" },
     ],
   },
 
@@ -436,52 +468,59 @@ export const menuItems = [
   },
 
   {
-    title: "M33 · SEO para WooCommerce: Arquitectura, Fichas, Categorías e Imágenes",
+    title: "M33 · WooCommerce en Elementor: shortcodes, límites y CSS",
+    path: "/tema34",
+    children: [
+      { title: "33.1 Objetivos del tema", path: "/tema34#objetivos" },
+      { title: "33.2 Arquitectura: Gutenberg, Elementor y WooCommerce", path: "/tema34#arquitectura" },
+      { title: "33.3 Por qué no se mezclan Elementor y WooCommerce", path: "/tema34#por-que-no-se-mezclan" },
+      { title: "33.4 Qué es un shortcode y por qué es la solución", path: "/tema34#que-es-shortcode" },
+      { title: "33.5 Cómo insertar un shortcode en Elementor", path: "/tema34#como-insertarlo" },
+      { title: "33.6 Cómo generar shortcodes de WooCommerce", path: "/tema34#generar-shortcodes" },
+      { title: "33.7 Parámetros más importantes de los shortcodes", path: "/tema34#parametros" },
+      { title: "33.8 Ejemplos prácticos para una landing page", path: "/tema34#ejemplos" },
+      { title: "33.9 Modificar el CSS del resultado del shortcode", path: "/tema34#css" },
+      { title: "33.10 Flujo profesional de trabajo", path: "/tema34#flujo" },
+      { title: "33.11 Errores frecuentes del alumnado", path: "/tema34#errores" },
+      { title: "33.12 Actividad guiada", path: "/tema34#actividad" },
+      { title: "33.13 Resumen final del tema", path: "/tema34#resumen" },
+    ],
+  },
+
+  {
+    title: "M34 · Maquetar páginas con bloques de WooCommerce",
+    path: "/tema35",
+    children: [
+      { title: "34.1 Visión general: Elementor y bloques de WooCommerce", path: "/tema35#vision-general" },
+      { title: "34.2 Qué páginas conviene hacer con cada sistema", path: "/tema35#criterio-paginas" },
+      { title: "34.3 Esquema de decisión por tipo de página", path: "/tema35#tabla-decision" },
+      { title: "34.4 Bloques de WooCommerce que más aportan", path: "/tema35#bloques-aportan" },
+      { title: "34.5 Maquetar la página Tienda", path: "/tema35#pagina-tienda" },
+      { title: "34.6 Aplicación en páginas de producto", path: "/tema35#pagina-producto" },
+      { title: "34.7 Aplicación en carrito y checkout", path: "/tema35#pagina-carrito-checkout" },
+      { title: "34.8 Metodología profesional de trabajo", path: "/tema35#metodologia" },
+      { title: "34.9 Errores frecuentes", path: "/tema35#errores" },
+      { title: "34.10 Práctica guiada", path: "/tema35#practica-guiada" },
+      { title: "34.11 Actividad para el alumnado", path: "/tema35#actividad" },
+      { title: "34.12 Resumen final", path: "/tema35#resumen" },
+    ],
+  },
+
+  {
+    title: "M35 · SEO para WooCommerce: Arquitectura, Fichas, Categorías e Imágenes",
     path: "/tema33",
     children: [
-      { title: "33.1 Qué significa hacer SEO en WooCommerce", path: "/tema33#seo-ecommerce" },
-      { title: "33.2 Arquitectura SEO: categorías, subcategorías y productos", path: "/tema33#arquitectura-categorias" },
-      { title: "33.3 URLs, títulos SEO y meta descriptions", path: "/tema33#urls-metadatos" },
-      { title: "33.4 SEO de categorías y SEO de fichas: diferencias clave", path: "/tema33#seo-categorias-fichas" },
-      { title: "33.5 Por qué optimizar imágenes es obligatorio en WooCommerce", path: "/tema33#imagenes-seo" },
-      { title: "33.6 Optimización de imágenes de forma externa", path: "/tema33#optimizacion-externa" },
-      { title: "33.7 Optimización de imágenes dentro de WordPress", path: "/tema33#optimizacion-interna" },
-      { title: "33.8 Cómo afecta esto específicamente a WooCommerce", path: "/tema33#imagenes-woocommerce" },
-      { title: "33.9 Nombre de archivo, texto alternativo y contexto semántico", path: "/tema33#nombres-alt" },
-      { title: "33.10 Checklist SEO de rendimiento para una tienda WooCommerce", path: "/tema33#velocidad-checklist" },
-      { title: "33.11 Actividades prácticas", path: "/tema33#actividades" },
-    ],
-  },
-
-  {
-    title: "M28 · Subir tu proyecto WordPress a GitHub",
-    path: "/tema27",
-    children: [
-      { title: "27.1 Qué es Git y qué aporta a WordPress", path: "/tema27#que-es-git" },
-      { title: "27.2 Qué se sube a GitHub y qué NO", path: "/tema27#que-subir" },
-      { title: "27.3 Estructura recomendada del repositorio", path: "/tema27#estructura-repo" },
-      { title: "27.4 Crear el .gitignore (WordPress + seguridad)", path: "/tema27#gitignore" },
-      { title: "27.5 Crear un README profesional", path: "/tema27#readme" },
-      { title: "27.6 Dónde guardar pantallazos para el README", path: "/tema27#pantallazos" },
-      { title: "27.7 Cómo subirlo a GitHub (paso a paso)", path: "/tema27#subir-a-github" },
-      { title: "27.8 Checklist final + errores típicos", path: "/tema27#checklist" },
-      { title: "27.9 Práctica evaluable", path: "/tema27#practica" },
-    ],
-  },
-
-  {
-    title: "M29 · Exportar tu proyecto WordPress con LocalWP",
-    path: "/tema29",
-    children: [
-      { title: "29.1 ¿Qué hay que exportar exactamente?", path: "/tema29#que-se-exporta" },
-      { title: "29.2 Exportar el sitio desde LocalWP", path: "/tema29#localwp-export" },
-      { title: "29.3 ¿Qué contiene el archivo exportado?", path: "/tema29#que-contiene-el-zip" },
-      { title: "29.4 Llevarte el archivo a casa", path: "/tema29#llevar-archivo" },
-      { title: "29.5 Instalar LocalWP en casa", path: "/tema29#instalar-localwp" },
-      { title: "29.6 Importar el sitio en LocalWP", path: "/tema29#importar" },
-      { title: "29.7 Primeros pasos después de importar", path: "/tema29#primeros-pasos" },
-      { title: "29.8 Problemas comunes y soluciones", path: "/tema29#problemas-comunes" },
-      { title: "29.9 Práctica evaluable", path: "/tema29#practica" },
+      { title: "35.1 Qué significa hacer SEO en WooCommerce", path: "/tema33#seo-ecommerce" },
+      { title: "35.2 Arquitectura SEO: categorías, subcategorías y productos", path: "/tema33#arquitectura-categorias" },
+      { title: "35.3 URLs, títulos SEO y meta descriptions", path: "/tema33#urls-metadatos" },
+      { title: "35.4 SEO de categorías y SEO de fichas: diferencias clave", path: "/tema33#seo-categorias-fichas" },
+      { title: "35.5 Por qué optimizar imágenes es obligatorio en WooCommerce", path: "/tema33#imagenes-seo" },
+      { title: "35.6 Optimización de imágenes de forma externa", path: "/tema33#optimizacion-externa" },
+      { title: "35.7 Optimización de imágenes dentro de WordPress", path: "/tema33#optimizacion-interna" },
+      { title: "35.8 Cómo afecta esto específicamente a WooCommerce", path: "/tema33#imagenes-woocommerce" },
+      { title: "35.9 Nombre de archivo, texto alternativo y contexto semántico", path: "/tema33#nombres-alt" },
+      { title: "35.10 Checklist SEO de rendimiento para una tienda WooCommerce", path: "/tema33#velocidad-checklist" },
+      { title: "35.11 Actividades prácticas", path: "/tema33#actividades" },
     ],
   },
 

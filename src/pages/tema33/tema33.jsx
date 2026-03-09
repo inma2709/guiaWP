@@ -122,7 +122,7 @@ export default function Tema30_SEOWooCommerce() {
     <TopicLayout>
       {/* ══════════════ HERO ══════════════ */}
       <header className="doc doc-hero">
-        <p className="kicker">UF1841 · Proyecto E-Commerce · Fase 5</p>
+        <p className="kicker"> Proyecto E-Commerce · Fase 5</p>
         <h1>SEO para WooCommerce: Arquitectura, Fichas, Categorías e Imágenes Optimizadas</h1>
         <p className="lead">
           Ya tenemos una tienda funcional, con home, productos, carrito, checkout y fichas

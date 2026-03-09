@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 
 export default function TopicLayout({ title, subtitle, children }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
+
+  // Cada vez que se monta una nueva página, el contenido empieza desde arriba
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="app-shell">

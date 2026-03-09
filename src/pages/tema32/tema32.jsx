@@ -122,7 +122,7 @@ export default function Tema29_FichaProductoWooCommerce() {
     <TopicLayout>
       {/* ══════════════ HERO ══════════════ */}
       <header className="doc doc-hero">
-        <p className="kicker">UF1841 · Proyecto E-Commerce · Fase 4</p>
+        <p className="kicker"> · Proyecto E-Commerce · Fase 4</p>
         <h1>Diseño y Optimización de la Ficha de Producto en WooCommerce</h1>
         <p className="lead">
           Ya tenemos catálogo, carrito y checkout. Ahora trabajamos la página más decisiva de una
@@ -157,6 +157,24 @@ export default function Tema29_FichaProductoWooCommerce() {
           </p>
         </TipBox>
       </header>
+
+      {/* ══════════════ ÍNDICE ══════════════ */}
+      <nav className="doc-index" aria-label="Índice del tema">
+        <h2>Índice</h2>
+        <ol>
+          <li><a href="#importancia-ficha">1. Por qué la ficha de producto es la página más crítica de la tienda</a></li>
+          <li><a href="#anatomia-ficha">2. Anatomía completa de una ficha de producto profesional</a></li>
+          <li><a href="#bloques-clave">3. Los bloques que más influyen en la conversión</a></li>
+          <li><a href="#optimizacion-imagenes">4. Optimización de imágenes en WooCommerce</a></li>
+          <li><a href="#pestanas-inferiores">5. Descripción larga, información adicional y reseñas</a></li>
+          <li><a href="#relacionados-upsell">6. Productos relacionados, upselling y cross-selling</a></li>
+          <li><a href="#seo-ficha">7. SEO on-page en la ficha de producto</a></li>
+          <li><a href="#mobile-producto">8. La ficha en móvil: donde más se rompe el diseño</a></li>
+          <li><a href="#workflow-ficha">9. Workflow profesional para revisar una ficha antes de publicarla</a></li>
+          <li><a href="#actividades">10. Actividades prácticas</a></li>
+          <li><a href="#conclusion">11. Conclusiones del tema</a></li>
+        </ol>
+      </nav>
 
       {/* ══════════════ S1: POR QUÉ ES CLAVE ══════════════ */}
       <section className="doc doc-section" id="importancia-ficha">
@@ -499,10 +517,246 @@ export default function Tema29_FichaProductoWooCommerce() {
           ))}
         </div>
       </section>
+      <section id="optimizacion-imagenes" className="doc-section">
+
+<h2>4. Optimización de imágenes en WooCommerce</h2>
+
+<p>
+La optimización de imágenes es uno de los factores más importantes para el
+rendimiento de una tienda online. En WooCommerce, cada producto suele tener
+varias imágenes: imagen principal, galería, miniaturas y a veces imágenes en
+categorías o banners. Si estas imágenes no están optimizadas correctamente,
+la página tarda más en cargar, la experiencia del usuario empeora y el
+posicionamiento en buscadores puede verse afectado.
+</p>
+
+<p>
+Una tienda con muchas imágenes pesadas puede volverse lenta rápidamente.
+Por eso, en proyectos profesionales la optimización se trabaja en dos fases
+distintas: antes de subir las imágenes y después, dentro de WordPress.
+</p>
+
+<TipBox title="Idea clave">
+<p>
+La optimización de imágenes no empieza en WordPress. Empieza antes,
+en el momento en que preparamos el archivo que vamos a subir.
+</p>
+</TipBox>
+
+<h3>1. Optimizar imágenes antes de subirlas a WordPress</h3>
+
+<p>
+La primera fase consiste en preparar correctamente las imágenes antes de
+subirlas a la biblioteca multimedia. Esto reduce peso, mejora el rendimiento
+del servidor y evita que WordPress tenga que procesar archivos demasiado
+grandes.
+</p>
+
+<h4>1.1 Elegir el tamaño correcto</h4>
+
+<p>
+Uno de los errores más comunes es subir imágenes enormes directamente desde
+la cámara o desde el móvil. Muchas fotografías tienen resoluciones de
+4000 o 5000 píxeles, cuando una tienda online raramente necesita más de
+1200 o 1600 píxeles de ancho.
+</p>
+
+<ul>
+<li>Imagen principal de producto: entre 1200px y 1600px.</li>
+<li>Imágenes de galería: entre 1000px y 1400px.</li>
+<li>Miniaturas: WordPress las genera automáticamente.</li>
+</ul>
+
+<p>
+Reducir la resolución antes de subir la imagen puede disminuir el peso
+del archivo en más del 70%.
+</p>
+
+<h4>1.2 Elegir el formato adecuado</h4>
+
+<ul>
+<li><strong>JPEG</strong>: ideal para fotografías de productos.</li>
+<li><strong>PNG</strong>: útil cuando necesitamos fondo transparente.</li>
+<li><strong>WebP</strong>: formato moderno mucho más ligero que JPEG.</li>
+</ul>
+
+<p>
+Hoy en día muchos temas y plugins convierten automáticamente las imágenes
+a WebP, lo que mejora mucho la velocidad de carga.
+</p>
+
+<h4>1.3 Comprimir la imagen antes de subirla</h4>
+
+<p>
+Incluso después de ajustar el tamaño, conviene comprimir las imágenes para
+reducir aún más su peso sin perder calidad visible.
+</p>
+
+<p>
+Herramientas externas muy utilizadas:
+</p>
+
+<ul>
+<li>TinyPNG</li>
+<li>Squoosh</li>
+<li>ImageOptim</li>
+<li>Photoshop (exportar para web)</li>
+</ul>
+
+<p>
+Estas herramientas pueden reducir el peso de una imagen entre un 40% y
+un 80% sin afectar perceptiblemente a la calidad.
+</p>
+
+<PracticeBox title="Práctica recomendada">
+<p>
+Antes de subir una imagen de producto:
+</p>
+
+<ol>
+<li>Redimensiona la imagen a unos 1400px de ancho.</li>
+<li>Guárdala en formato JPEG o WebP.</li>
+<li>Comprímela con una herramienta externa.</li>
+<li>Sube la versión optimizada a WordPress.</li>
+</ol>
+
+</PracticeBox>
+
+<h3>2. Optimización de imágenes dentro de WordPress</h3>
+
+<p>
+Una vez que las imágenes están en la biblioteca multimedia, podemos aplicar
+una segunda capa de optimización mediante plugins especializados. Estos
+plugins reducen el peso de las imágenes automáticamente y generan versiones
+adaptadas para diferentes dispositivos.
+</p>
+
+<p>
+Uno de los plugins más conocidos y fáciles de usar es <strong>Smush</strong>.
+</p>
+
+<h3>3. Usar el plugin Smush para optimizar imágenes</h3>
+
+<p>
+Smush es un plugin que permite comprimir imágenes automáticamente dentro
+de WordPress. Su funcionamiento es sencillo: analiza las imágenes de la
+biblioteca multimedia y reduce su peso sin pérdida perceptible de calidad.
+</p>
+
+<h4>3.1 Qué puede hacer Smush</h4>
+
+<ul>
+<li>Comprimir imágenes automáticamente al subirlas.</li>
+<li>Optimizar imágenes ya existentes en la biblioteca.</li>
+<li>Eliminar datos innecesarios de las imágenes.</li>
+<li>Generar carga diferida (lazy load).</li>
+<li>Reducir el peso sin afectar visiblemente la calidad.</li>
+</ul>
+
+<h4>3.2 Cómo configurar Smush</h4>
+
+<ol>
+<li>Instalar el plugin Smush desde el repositorio de WordPress.</li>
+<li>Activar el plugin.</li>
+<li>Ir al panel <code>Smush → Bulk Smush</code>.</li>
+<li>Optimizar todas las imágenes existentes.</li>
+<li>Activar la optimización automática para futuras imágenes.</li>
+</ol>
+
+<p>
+Con esta configuración, todas las imágenes nuevas que se suban a la tienda
+se optimizarán automáticamente.
+</p>
+
+<h3>4. Lazy Load: cargar imágenes solo cuando se necesitan</h3>
+
+<p>
+Otra técnica importante es el <strong>Lazy Load</strong>. Consiste en cargar
+las imágenes solo cuando el usuario se acerca a ellas mientras hace scroll
+en la página.
+</p>
+
+<p>
+Esto significa que las imágenes que están al final de la página no se
+cargan inmediatamente, lo que reduce el tiempo inicial de carga.
+</p>
+
+<p>
+Plugins como Smush o muchos sistemas de optimización incluyen esta
+funcionalidad.
+</p>
+
+<h3>5. Optimización de imágenes en WooCommerce</h3>
+
+<p>
+Las tiendas WooCommerce tienen una característica particular: cada producto
+puede generar muchas imágenes derivadas.
+</p>
+
+<ul>
+<li>Imagen principal.</li>
+<li>Miniatura de catálogo.</li>
+<li>Miniatura en carrito.</li>
+<li>Imágenes de galería.</li>
+</ul>
+
+<p>
+WordPress genera automáticamente distintos tamaños para adaptarse a
+diferentes partes de la web. Por eso es importante subir una imagen de
+calidad razonable, pero no excesivamente grande.
+</p>
+
+<h3>6. Buenas prácticas profesionales</h3>
+
+<ul>
+<li>No subir imágenes directamente desde la cámara.</li>
+<li>Preparar siempre las imágenes antes de subirlas.</li>
+<li>Usar compresión externa + compresión en WordPress.</li>
+<li>Usar formatos modernos como WebP cuando sea posible.</li>
+<li>Evitar imágenes pesadas en sliders o banners.</li>
+</ul>
+
+<WarningBox title="Error muy común">
+<p>
+Muchos principiantes instalan un plugin de optimización y creen que el
+problema está resuelto. Si las imágenes originales son enormes, ningún
+plugin puede compensar completamente ese problema.
+</p>
+</WarningBox>
+
+<h3>7. Impacto de la optimización en SEO y rendimiento</h3>
+
+<p>
+Las imágenes optimizadas influyen directamente en:
+</p>
+
+<ul>
+<li>Velocidad de carga de la página.</li>
+<li>Experiencia de usuario.</li>
+<li>Posicionamiento en Google.</li>
+<li>Consumo de recursos del servidor.</li>
+</ul>
+
+<p>
+En tiendas grandes con muchos productos, una mala optimización de imágenes
+puede multiplicar el peso total de la web y ralentizar significativamente
+la navegación.
+</p>
+
+<TipBox title="Conclusión profesional">
+<p>
+La optimización de imágenes es una tarea técnica básica en cualquier
+proyecto web profesional. Preparar correctamente las imágenes antes de
+subirlas y aplicar compresión automática dentro de WordPress permite
+mantener una tienda rápida, eficiente y preparada para crecer.
+</p>
+</TipBox>
+
+</section>
 
       {/* ══════════════ S4: PESTAÑAS ══════════════ */}
       <section className="doc doc-section" id="pestanas-inferiores">
-        <h2>4. Descripción larga, información adicional y reseñas</h2>
+        <h2>5. Descripción larga, información adicional y reseñas</h2>
 
         <div className="doc-content">
           <p>
@@ -587,7 +841,7 @@ export default function Tema29_FichaProductoWooCommerce() {
 
       {/* ══════════════ S5: RELACIONADOS / UPSELL ══════════════ */}
       <section className="doc doc-section" id="relacionados-upsell">
-        <h2>5. Productos relacionados, upselling y cross-selling</h2>
+        <h2>6. Productos relacionados, upselling y cross-selling</h2>
 
         <div className="doc-content">
           <p>
@@ -649,7 +903,7 @@ export default function Tema29_FichaProductoWooCommerce() {
 
       {/* ══════════════ S6: SEO ══════════════ */}
       <section className="doc doc-section" id="seo-ficha">
-        <h2>6. SEO on-page en la ficha de producto</h2>
+        <h2>7. SEO on-page en la ficha de producto</h2>
 
         <div className="doc-content">
           <p>
@@ -718,7 +972,7 @@ export default function Tema29_FichaProductoWooCommerce() {
 
       {/* ══════════════ S7: MÓVIL ══════════════ */}
       <section className="doc doc-section" id="mobile-producto">
-        <h2>7. La ficha en móvil: donde más se rompe el diseño</h2>
+        <h2>8. La ficha en móvil: donde más se rompe el diseño</h2>
 
         <div className="doc-content">
           <p>
@@ -760,7 +1014,7 @@ export default function Tema29_FichaProductoWooCommerce() {
 
       {/* ══════════════ S8: WORKFLOW ══════════════ */}
       <section className="doc doc-section" id="workflow-ficha">
-        <h2>8. Workflow profesional para revisar una ficha antes de publicarla</h2>
+        <h2>9. Workflow profesional para revisar una ficha antes de publicarla</h2>
 
         <div className="doc-content">
           <p>
@@ -818,7 +1072,7 @@ export default function Tema29_FichaProductoWooCommerce() {
 
       {/* ══════════════ ACTIVIDADES ══════════════ */}
       <section className="doc doc-section" id="actividades">
-        <h2>9. Actividades prácticas</h2>
+        <h2>10. Actividades prácticas</h2>
 
         <div className="doc-content">
           <PracticeBox title="🧪 Práctica 1 — Auditar una ficha existente">

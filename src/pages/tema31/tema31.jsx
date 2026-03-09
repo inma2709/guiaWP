@@ -122,7 +122,7 @@ export default function Tema28_CheckoutWooCommerce() {
     <TopicLayout>
       {/* ══════════════ HERO ══════════════ */}
       <header className="doc doc-hero">
-        <p className="kicker">UF1841 · Proyecto E-Commerce · Fase 3</p>
+        <p className="kicker"> · Proyecto E-Commerce · Fase 3</p>
         <h1>Carrito, Checkout y Proceso de Compra en WooCommerce</h1>
         <p className="lead">
           En los temas anteriores montamos la base técnica, diseñamos la home y cargamos el catálogo

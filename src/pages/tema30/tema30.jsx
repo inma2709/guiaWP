@@ -83,7 +83,7 @@ export default function Tema27_ProductosWooCommerce() {
     <TopicLayout>
       {/* ══════════════ HERO ══════════════ */}
       <header className="doc doc-hero">
-        <p className="kicker">UF1841 · Proyecto E-Commerce · Fase 2</p>
+        <p className="kicker"> Proyecto E-Commerce · Fase 2</p>
         <h1>Configuración de Productos en WooCommerce</h1>
         <p className="lead">
           En el tema anterior diseñamos la home y ordenamos la entrada del usuario a la tienda.
@@ -991,15 +991,227 @@ export default function Tema27_ProductosWooCommerce() {
             ))}
           </div>
 
-          <TipBox title="✅ Recomendación práctica">
-            <p>
-              Obliga a tus alumnos a trabajar con una pequeña ficha previa en papel o en tabla: título,
-              tipo de producto, categoría, atributos, precio, stock, SKU e imágenes necesarias. Eso
-              reduce muchísimo los fallos al entrar en WordPress.
-            </p>
-          </TipBox>
+         
         </div>
       </section>
+
+      <section id="ficha-producto-bloques" className="doc-section">
+  <h2>Mejorar la ficha de producto con bloques de WooCommerce</h2>
+
+  <p>
+    La ficha de producto es una de las páginas más importantes de una tienda
+    online. En esta página el usuario deja de explorar el catálogo y empieza a
+    valorar una compra concreta. Por ese motivo la estructura debe ser clara,
+    fácil de entender y orientada a la conversión.
+  </p>
+
+  <p>
+    Aunque WooCommerce ya genera una plantilla base para los productos, podemos
+    mejorar mucho la experiencia añadiendo bloques estratégicos alrededor de la
+    ficha: productos relacionados, recomendaciones, navegación por categorías o
+    información que aumente la confianza del cliente.
+  </p>
+
+  <h3>Bloques de WooCommerce que ayudan a crear una ficha profesional</h3>
+
+  <details className="dd dd-nested" open>
+    <summary>Productos relacionados</summary>
+    <div className="dd-body">
+      <p>
+        Este bloque muestra productos similares o complementarios al que está
+        viendo el usuario. Es uno de los elementos más útiles porque evita que
+        la visita termine si ese producto concreto no convence.
+      </p>
+
+      <ul>
+        <li>Permite descubrir alternativas.</li>
+        <li>Aumenta el tiempo de navegación.</li>
+        <li>Favorece el cross-selling.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details className="dd dd-nested" open>
+    <summary>Productos de la misma categoría</summary>
+    <div className="dd-body">
+      <p>
+        Permite mostrar otros productos dentro de la misma familia o colección.
+        Es muy útil cuando el catálogo tiene variaciones del mismo producto o
+        cuando queremos que el cliente compare opciones.
+      </p>
+
+      <ul>
+        <li>Ayuda a explorar el catálogo.</li>
+        <li>Reduce la sensación de “callejón sin salida”.</li>
+        <li>Funciona muy bien en moda, papelería o tecnología.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details className="dd dd-nested" open>
+    <summary>Productos destacados</summary>
+    <div className="dd-body">
+      <p>
+        Permite mostrar artículos estratégicos seleccionados manualmente.
+        Son útiles para destacar productos estrella o artículos con mayor
+        margen comercial.
+      </p>
+    </div>
+  </details>
+
+  <details className="dd dd-nested" open>
+    <summary>Más vendidos</summary>
+    <div className="dd-body">
+      <p>
+        Este bloque añade prueba social. Cuando el usuario ve qué productos se
+        venden más, interpreta que son artículos populares y confiables.
+      </p>
+    </div>
+  </details>
+
+  <details className="dd dd-nested" open>
+    <summary>Productos rebajados</summary>
+    <div className="dd-body">
+      <p>
+        Si la tienda tiene promociones activas, este bloque puede reforzar la
+        urgencia de compra y aumentar la conversión.
+      </p>
+    </div>
+  </details>
+
+  <h3>Estructura recomendada de una ficha de producto</h3>
+
+  <ol>
+    <li>Zona principal con imagen, título, precio y botón de compra.</li>
+    <li>Descripción breve y ventajas del producto.</li>
+    <li>Información de confianza: envío, devoluciones o garantía.</li>
+    <li>Productos relacionados o de la misma categoría.</li>
+    <li>Opcionalmente productos destacados o más vendidos.</li>
+  </ol>
+
+  <TipBox title="Consejo profesional">
+    <p>
+      Una ficha profesional no necesita muchos bloques, sino los adecuados.
+      El objetivo es ayudar al cliente a decidir y facilitar la navegación
+      hacia otros productos si este no encaja.
+    </p>
+  </TipBox>
+
+  <h3>¿Es conveniente usar una barra lateral (sidebar)?</h3>
+
+  <p>
+    Las barras laterales son áreas secundarias del diseño donde podemos colocar
+    elementos adicionales: filtros, categorías, banners o recomendaciones de
+    productos. No forman parte del contenido principal, sino que acompañan la
+    navegación.
+  </p>
+
+  <p>
+    En tiendas grandes, la sidebar puede ser útil para mejorar la navegación
+    entre categorías o aplicar filtros. Sin embargo, en fichas de producto
+    simples o en dispositivos móviles, muchas veces puede distraer al usuario
+    del botón de compra.
+  </p>
+
+  <details className="dd dd-nested" open>
+    <summary>Cuándo usar sidebar</summary>
+    <div className="dd-body">
+      <ul>
+        <li>En catálogos amplios con muchos productos.</li>
+        <li>Cuando queremos añadir filtros o navegación por categorías.</li>
+        <li>En páginas de tienda o archivo de productos.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details className="dd dd-nested" open>
+    <summary>Cuándo evitar sidebar</summary>
+    <div className="dd-body">
+      <ul>
+        <li>En fichas de producto simples.</li>
+        <li>En páginas de carrito o checkout.</li>
+        <li>Cuando el diseño móvil se vuelve demasiado estrecho.</li>
+      </ul>
+    </div>
+  </details>
+
+  <WarningBox title="Regla práctica">
+    <p>
+      Si la barra lateral ayuda a encontrar productos o filtrar el catálogo,
+      tiene sentido. Si distrae del contenido principal o del botón de compra,
+      conviene eliminarla.
+    </p>
+  </WarningBox>
+
+  <h3>¿Qué son los widgets?</h3>
+
+  <p>
+    Los widgets son pequeños módulos que WordPress permite colocar en zonas
+    específicas del tema, como la barra lateral o el pie de página. Funcionan
+    como piezas reutilizables que añaden contenido o funcionalidad sin tener
+    que programar.
+  </p>
+
+  <p>
+    En una tienda WooCommerce los widgets pueden usarse para añadir elementos
+    útiles de navegación o información.
+  </p>
+
+  <ul>
+    <li>Buscador de productos.</li>
+    <li>Lista de categorías.</li>
+    <li>Mini carrito.</li>
+    <li>Productos destacados.</li>
+    <li>Filtros de catálogo.</li>
+    <li>Información de envío o promociones.</li>
+  </ul>
+
+  <h3>Plugins ligeros que ayudan a dar un aspecto profesional</h3>
+
+  <p>
+    Además de WooCommerce, existen algunos plugins ligeros que pueden mejorar
+    mucho la experiencia de la tienda sin sobrecargar el sistema.
+  </p>
+
+  <ul>
+    <li>
+      <strong>Variation Swatches for WooCommerce</strong>  
+      Convierte los selectores de color o talla en botones visuales más
+      atractivos.
+    </li>
+
+    <li>
+      <strong>FiboSearch</strong>  
+      Mejora el buscador de productos con autocompletado y resultados más
+      rápidos.
+    </li>
+
+    <li>
+      <strong>Customer Reviews for WooCommerce</strong>  
+      Mejora el sistema de reseñas y aumenta la confianza del cliente.
+    </li>
+
+    <li>
+      <strong>Filter Everything</strong>  
+      Permite crear filtros avanzados para navegar por el catálogo.
+    </li>
+
+    <li>
+      <strong>Spectra o Kadence Blocks</strong>  
+      Amplían Gutenberg con bloques de diseño útiles para páginas de apoyo a
+      la tienda.
+    </li>
+  </ul>
+
+  <TipBox title="Criterio para elegir plugins">
+    <ul>
+      <li>Instala solo plugins que resuelvan un problema real.</li>
+      <li>Evita duplicar funcionalidades.</li>
+      <li>Comprueba siempre rendimiento y compatibilidad.</li>
+      <li>Prioriza plugins ligeros y bien mantenidos.</li>
+    </ul>
+  </TipBox>
+</section>
 
       {/* ══════════════ ACTIVIDADES ══════════════ */}
       <section className="doc doc-section" id="actividades">
@@ -1108,15 +1320,9 @@ export default function Tema27_ProductosWooCommerce() {
           </div>
         </div>
 
-        <TipBox title="Próximo tema">
-          <p>
-            En el <strong>Tema 28</strong> trabajaremos la{" "}
-            <strong>configuración de pagos, envíos, impuestos y páginas críticas del checkout</strong>,
-            para que la tienda no solo muestre productos, sino que pueda vender de verdad con un
-            flujo completo de compra.
-          </p>
-        </TipBox>
+      
       </section>
+
     </TopicLayout>
   );
 }

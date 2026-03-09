@@ -536,160 +536,240 @@ img{ max-width:100%; display:block; }
    Añade: hero, índice, secciones, next button, tablas
    ========================================================= */
 
+/* =========================================================
+   DOC PAGES — versión profesional y full width
+   ========================================================= */
+
 .doc{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+/* opcional: si quieres limitar un poco en pantallas enormes */
+@media (min-width: 1600px){
+  .doc{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 /* HERO */
 .doc-hero{
-  background: linear-gradient(
-    135deg,
-    rgba(0,115,170,.14),
-    rgba(0,160,210,.08)
-  );
-  border: 1px solid rgba(0,115,170,.18);
-  border-radius: calc(var(--radius) + 6px);
-  box-shadow: var(--shadow);
-  padding: 1.25rem 1.25rem 1.1rem;
+  width: 100%;
   display: grid;
-  gap: .75rem;
+  gap: 1rem;
+
+  padding: 2rem;
+  border-radius: 24px;
+
+  background:
+    linear-gradient(135deg, rgba(30,64,175,.10), rgba(59,130,246,.08)),
+    linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.96));
+
+  border: 1px solid rgba(30,64,175,.14);
+  box-shadow:
+    0 10px 30px rgba(15,23,42,.08),
+    0 1px 0 rgba(255,255,255,.8) inset;
 }
 
 .doc-kicker{
   margin: 0;
+  width: fit-content;
   display: inline-flex;
   align-items: center;
   gap: .55rem;
-  width: fit-content;
-  padding: .35rem .7rem;
+
+  padding: .45rem .8rem;
   border-radius: 999px;
-  font-weight: 900;
-  letter-spacing: .2px;
-  color: var(--text);
-  background: rgba(255,255,255,.75);
-  border: 1px solid rgba(31,41,55,.14);
+
+  font-size: .85rem;
+  font-weight: 800;
+  letter-spacing: .02em;
+  color: var(--color-html-1);
+
+  background: rgba(255,255,255,.85);
+  border: 1px solid rgba(30,64,175,.16);
 }
 
 .doc-kicker::before{
-  content:"●";
-  font-size: .9rem;
+  content: "●";
   color: var(--primary);
+  font-size: .85rem;
 }
 
 .doc-hero h1{
   margin: 0;
-  font-size: clamp(1.55rem, 2.4vw, 2.25rem);
-  line-height: 1.15;
-  color: var(--text);
-  letter-spacing: -.2px;
+
+  font-size: clamp(2rem, 3vw, 3.25rem);
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  color: var(--color-ink);
 }
 
 .doc-lead{
   margin: 0;
-  max-width: 75ch;
-  color: var(--muted);
-  line-height: 1.65;
-  font-size: 1.02rem;
+  max-width: 95ch;
+
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: var(--color-ink-2);
+}
+
+.doc-lead strong{
+  color: var(--color-ink);
 }
 
 /* ÍNDICE */
 .doc-index{
-  margin-top: 1rem;
-  background: var(--color-card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(31,41,55,.08);
-  padding: 1.1rem 1.1rem 1rem;
+  width: 100%;
+  margin-top: 1.2rem;
+
+  padding: 1.25rem 1.25rem 1.15rem;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,.96);
+  border: 1px solid rgba(15,23,42,.08);
+  box-shadow: 0 10px 26px rgba(15,23,42,.06);
 }
 
 .doc-index h2{
-  margin: 0 0 .6rem;
+  margin: 0 0 .85rem;
   font-size: 1.05rem;
-  color: var(--text);
+  font-weight: 800;
+  color: var(--color-ink);
 }
 
 .doc-index ol{
   margin: 0;
-  padding-left: 1.15rem;
+  padding-left: 0;
+  list-style: none;
+
   display: grid;
-  gap: .35rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: .6rem;
+}
+
+.doc-index li{
+  margin: 0;
 }
 
 .doc-index a{
-  display: inline-flex;
+  min-height: 52px;
+  display: flex;
   align-items: center;
-  gap: .5rem;
-  padding: .35rem .5rem;
-  border-radius: 12px;
+  justify-content: space-between;
+  gap: .8rem;
+
+  padding: .8rem .95rem;
+  border-radius: 14px;
+
   font-weight: 700;
-  color: var(--text);
-  transition: background .2s ease, transform .2s ease;
+  color: var(--color-ink);
+
+  background: rgba(248,250,252,.95);
+  border: 1px solid rgba(15,23,42,.07);
+
+  transition:
+    transform .15s ease,
+    box-shadow .15s ease,
+    background .15s ease,
+    border-color .15s ease;
 }
 
 .doc-index a::after{
-  content:"↘";
+  content: "↗";
+  opacity: .65;
   font-size: .95rem;
-  opacity: .7;
 }
 
 .doc-index a:hover{
-  background: rgba(0,115,170,.08);
   transform: translateY(-1px);
+  background: rgba(59,130,246,.08);
+  border-color: rgba(59,130,246,.18);
+  box-shadow: 0 8px 20px rgba(15,23,42,.06);
   text-decoration: none;
 }
 
 .doc-index a:focus-visible{
   outline: 3px solid var(--color-focus);
-  outline-offset: 2px;
+  outline-offset: 3px;
 }
 
 /* SECCIONES */
 .doc-section{
-  margin-top: 1.1rem;
-  background: var(--color-card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(31,41,55,.08);
-  padding: 1.2rem;
+  width: 100%;
+  margin-top: 1.2rem;
+
+  padding: 1.5rem;
+  border-radius: 22px;
+
+  background: rgba(255,255,255,.98);
+  border: 1px solid rgba(15,23,42,.08);
+  box-shadow: 0 12px 30px rgba(15,23,42,.06);
+
+  scroll-margin-top: 88px;
 }
 
 .doc-section h2{
-  margin: 0 0 .85rem;
-  color: var(--text);
-  font-size: 1.25rem;
-  letter-spacing: -.15px;
+  margin: 0 0 1rem;
+  font-size: clamp(1.3rem, 1.6vw, 1.6rem);
+  line-height: 1.2;
+  letter-spacing: -.02em;
+  color: var(--color-ink);
+}
+
+.doc-section h3{
+  margin: 1.25rem 0 .75rem;
+  font-size: 1.08rem;
+  line-height: 1.3;
+  color: var(--color-ink);
 }
 
 .doc-section p{
-  color: var(--muted);
+  margin: 0 0 1rem;
+  max-width: 95ch;
+  color: var(--color-ink-2);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.doc-section ul,
+.doc-section ol{
+  margin: 0 0 1rem 1.25rem;
+  color: var(--color-ink-2);
+}
+
+.doc-section li{
+  margin: .45rem 0;
   line-height: 1.7;
+}
+
+.doc-section strong{
+  color: var(--color-ink);
 }
 
 .doc-section code{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: .95em;
-  background: rgba(31,41,55,.06);
-  border: 1px solid rgba(31,41,55,.10);
-  padding: .1rem .35rem;
+  font-size: .93em;
+  color: #0f172a;
+  background: rgba(15,23,42,.06);
+  border: 1px solid rgba(15,23,42,.10);
+  padding: .14rem .42rem;
   border-radius: 10px;
 }
 
-/* Bloques de código */
-.doc-section pre,
-.callout pre,
-.practice-box pre{
-  margin: .9rem 0;
-  padding: 1rem;
-  border-radius: 14px;
-  overflow-x: auto;      /* scroll interno horizontal solo en el pre */
-  overflow-y: visible;
-  max-width: 100%;       /* no sobrepasa el contenedor */
+.doc-section pre{
+  margin: 1rem 0 1.1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  overflow: auto;
+
   background: #0b1220;
   color: rgba(255,255,255,.92);
-  border: 1px solid rgba(255,255,255,.10);
-  white-space: pre;      /* conserva indentación sin forzar wrap */
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
 }
 
 .doc-section pre code{
@@ -697,6 +777,114 @@ img{ max-width:100%; display:block; }
   border: 0;
   padding: 0;
   color: inherit;
+}
+
+/* DETAILS */
+.dd.dd-nested{
+  margin: 1rem 0;
+  border-radius: 18px;
+  border: 1px solid rgba(15,23,42,.08);
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.dd > summary{
+  padding: 1rem 1.1rem;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--color-ink);
+
+  background: linear-gradient(
+    135deg,
+    rgba(30,64,175,.08),
+    rgba(59,130,246,.05)
+  ) !important;
+}
+
+.dd > summary::before{
+  color: var(--primary) !important;
+}
+
+.dd-body{
+  padding: 1.1rem 1.2rem 1.2rem;
+  background: #fff;
+}
+
+/* TABLAS */
+.table-wrap{
+  margin: 1rem 0 1.2rem;
+  overflow: auto;
+  border-radius: 18px;
+  border: 1px solid rgba(15,23,42,.10);
+  background: #fff;
+  box-shadow: 0 12px 26px rgba(15,23,42,.06);
+}
+
+.table{
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.table th,
+.table td{
+  text-align: left;
+  padding: .95rem 1rem;
+  border-bottom: 1px solid rgba(15,23,42,.08);
+  vertical-align: top;
+}
+
+.table th{
+  background: linear-gradient(135deg, var(--color-html-1), var(--color-html-2));
+  color: #fff;
+  font-weight: 800;
+}
+
+.table tbody tr:hover td{
+  background: rgba(59,130,246,.04);
+}
+
+/* NEXT */
+.doc-next{
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px){
+  .doc{
+    padding: 1rem;
+  }
+
+  .doc-hero{
+    padding: 1.3rem;
+    border-radius: 20px;
+  }
+
+  .doc-hero h1{
+    max-width: 100%;
+    font-size: clamp(1.7rem, 7vw, 2.3rem);
+  }
+
+  .doc-lead{
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .doc-index{
+    padding: 1rem;
+  }
+
+  .doc-index ol{
+    grid-template-columns: 1fr;
+  }
+
+  .doc-section{
+    padding: 1.15rem;
+    border-radius: 18px;
+  }
 }
 
 /* DETAILS anidados: que no "pesen" tanto */

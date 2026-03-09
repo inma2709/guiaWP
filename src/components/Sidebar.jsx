@@ -1,6 +1,8 @@
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect, useLayoutEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { menuItems } from "../data/menuItems";
+
+const SCROLL_KEY = "sidebar-scroll";
 
 function getIcon(title) {
   if (title?.startsWith("🏠")) return "";
@@ -11,6 +13,7 @@ function getIcon(title) {
 export default function Sidebar({ collapsed, onToggle }) {
   const location = useLocation();
   const [isVisible, setIsVisible] = useState(false);
+  const sidebarRef = useRef(null);
 
   const isGroupActive = useMemo(() => {
     return (groupPath) => {
@@ -46,6 +49,23 @@ export default function Sidebar({ collapsed, onToggle }) {
     if (!collapsed) setIsVisible(false);
   }, [collapsed]);
 
+  // Restaurar el scroll del sidebar al montar (viene de sessionStorage)
+  useLayoutEffect(() => {
+    const saved = sessionStorage.getItem(SCROLL_KEY);
+    if (saved && sidebarRef.current) {
+      sidebarRef.current.scrollTop = parseInt(saved, 10);
+    }
+  }, []);
+
+  // Guardar el scroll del sidebar al desmontar
+  useEffect(() => {
+    return () => {
+      if (sidebarRef.current) {
+        sessionStorage.setItem(SCROLL_KEY, sidebarRef.current.scrollTop);
+      }
+    };
+  }, []);
+
   const sidebarClasses = [
     "sidebar",
     collapsed && "sidebar--collapsed",
@@ -68,7 +88,7 @@ export default function Sidebar({ collapsed, onToggle }) {
         aria-hidden="true"
       />
 
-      <aside className={sidebarClasses} aria-label="Navegación del manual">
+      <aside ref={sidebarRef} className={sidebarClasses} aria-label="Navegación del manual">
         {/* Encabezado con controles */}
         <div
           style={{
@@ -130,6 +150,10 @@ export default function Sidebar({ collapsed, onToggle }) {
                   }
                   title={item.title}
                   onClick={() => {
+                    // Guardar posición actual en sessionStorage antes de navegar
+                    if (sidebarRef.current) {
+                      sessionStorage.setItem(SCROLL_KEY, sidebarRef.current.scrollTop);
+                    }
                     if (window.innerWidth <= 900) setIsVisible(false);
                   }}
                 >
