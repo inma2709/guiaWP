@@ -435,6 +435,23 @@ export const menuItems = [
   },
 
   {
+    title: "M36 · La estructura de WordPress: cómo se organiza una web",
+    path: "/tema36",
+    children: [
+      { title: "36.1 Arquitectura general de WordPress", path: "/tema36#arquitectura-general" },
+      { title: "36.2 Elementos estructurales de una página", path: "/tema36#elementos-estructurales" },
+      { title: "36.3 El papel del tema en la estructura", path: "/tema36#tema" },
+      { title: "36.4 Desde dónde se controla la estructura", path: "/tema36#donde-se-controla" },
+      { title: "36.5 Relación con constructores como Elementor", path: "/tema36#constructores" },
+      { title: "36.6 Estructura de una tienda WooCommerce", path: "/tema36#estructura-tienda" },
+      { title: "36.7 Widgets en WordPress", path: "/tema36#widgets" },
+      { title: "36.8 Flujo profesional para diseñar un sitio", path: "/tema36#flujo-profesional" },
+      { title: "36.9 Diagrama de la arquitectura de WordPress", path: "/tema36#diagrama-arquitectura-wordpress" },
+      { title: "36.10 Cómo se genera una página paso a paso", path: "/tema36#flujo-render-wordpress" },
+    ],
+  },
+
+  {
     title: "M31 · Carrito, Checkout y Proceso de Compra en WooCommerce",
     path: "/tema31",
     children: [
