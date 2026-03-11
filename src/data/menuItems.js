@@ -541,6 +541,23 @@ export const menuItems = [
     ],
   },
 
+  {
+    title: "M36 · Guía profesional de plugins: selección, seguridad y criterio técnico",
+    path: "/tema37",
+    children: [
+      { title: "37.1 Filosofía: menos plugins, mejor elegidos", path: "/tema37#filosofia" },
+      { title: "37.2 Cómo evaluar un plugin antes de instalarlo", path: "/tema37#criterio" },
+      { title: "37.3 Stack base para todo WordPress", path: "/tema37#generales" },
+      { title: "37.4 Seguridad: el bloque no negociable", path: "/tema37#seguridad" },
+      { title: "37.5 Stack para tienda WooCommerce", path: "/tema37#ecommerce" },
+      { title: "37.6 Stack para blog profesional", path: "/tema37#blog" },
+      { title: "37.7 Stack para web corporativa", path: "/tema37#corporativo" },
+      { title: "37.8 Gestión y mantenimiento del ecosistema", path: "/tema37#gestion" },
+      { title: "37.9 Cómo eliminar plugins correctamente", path: "/tema37#borrar" },
+      { title: "37.10 Resumen y checklist final", path: "/tema37#resumen" },
+    ],
+  },
+
   // Sección de Ejercicios
   {
     title: "📚 Ejercicios Prácticos",
